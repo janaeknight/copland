@@ -8,6 +8,12 @@
     <title>Cop OS</title>
     <link href="css/flex.css" type="text/css" rel="stylesheet" />
     <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <!--
+        load = "lazy"
+        image-rendering: pixelated;
+    -->
 </head>
 <body>
     <div class="taskbar">
@@ -68,16 +74,17 @@
             <div class="tb-drop"> <!-- SPECIAL -->
                 <a>Special</a>
                 <div class="dc">
-                    <a>System Settings</a>
-                    <a>Set Password</a>
-                    <a>Empty Trash</a>
+                    <a id="ts-1">System Settings</a>
+                    <a id="ts-2">Set Password</a>
+                    <a id="ts-3">Empty Trash</a >
+                    <a id="ts-4">Close All Windows</a>
                     <hr>
-                    <a>New Personality...</a>
-                    <a>Edit Personality</a>
+                    <a id="ts-5">New Personality...</a >
+                    <a id="ts-6">Edit Personality</a> 
                     <hr>
-                    <a>Restart</a>
-                    <a>Shut Down...</a>
-                    <a>Log Out...</a>
+                    <a id="ts-7">Restart</a>
+                    <a id="ts-8">Shut Down...</a>
+                    <a id="ts-9">Log Out...</a>
                 </div>
             </div>
             <a>Help</a>
@@ -156,7 +163,9 @@
             </button>
             <!------------------------------------------------------------->
         </div>
-        <div id="desk-busy"></div>
+        <div-- id="desk-busy">
+            <!--div class="window"></div-->
+        </div>
     </div>
     <script src="java/javascript.js"></script>
     <script>
