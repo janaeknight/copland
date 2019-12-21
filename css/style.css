@@ -2,14 +2,18 @@ body {
     width: 100vw; height: 100vh;
     margin: 0 auto;
     background-color: #63639D;
+    font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif
 }
 
 .taskbar {
     display: flex; flex-direction: row;
-    font-size: 14.5px; font-weight: bold;
-    padding: 5px 10px; background-color: #DDDDDD;
+    font-size: 14px; font-weight: bold;
+    padding: 3px 10px; background-color: #DDDDDD;
 }
+.taskbar img { display: inline-block; height: 14px; }
 #tb-l, #tb-r { width: 50% }
+#tb-l a { padding-right: 10px; }
+#tb-r a { padding-left: 5px; }
 
 /*
     If >400px, add scroll
@@ -20,15 +24,18 @@ body {
     margin-top: 15px;
 }
 
-#desk-icn {
+#desk-main {
     display: flex;
     flex-wrap: wrap;
     width: 30%; height: 100%;
 }
-#desk-icn button {
+#desk-main button {
     width: 90px; height: 80px;
     background: none; border: none;
     text-align: center; /*margin: 0 auto;*/
 }
-#desk-icn button img { display: block; margin: 0 auto; padding-bottom: 5px; }
-#desk-icn span { background-color: #CFCEE2; padding: 1px; }
+
+#desk-main button img { display: block; margin: 0 auto; padding-bottom: 5px; }
+#desk-main span { background-color: #CFCEE2; padding: 1px 2px; }
+
+#desk-busy { width: 100%; }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="css/woc/iMouse.ico">
     <title>Cop OS</title>
     <link href="css/flex.css" type="text/css" rel="stylesheet" />
     <link href="css/style.css" type="text/css" rel="stylesheet" />
@@ -12,6 +13,7 @@
 <body>
     <div class="taskbar">
         <div id="tb-l">
+            <a><img src="css/logo.png"></a>
             <a>File</a>
             <a>Edit</a>
             <a>View</a>
@@ -19,11 +21,12 @@
             <a>Help</a>
         </div>
         <div class="txt-right" id="tb-r">
-            <a>Right</a>
+            <a id="date"></a>
+            <a><img src="css/eng-us.png"></a></a>
         </div>
     </div>
     <div class="desktop">
-        <div id="desk-icn">
+        <div id="desk-main">
             <!------------------------------------------------------------->
             <button id="">
                 <img src="css/woc/iMac DV Grape on.ico">
@@ -51,28 +54,38 @@
             </button>
                 <!---->
             <button id="">
-                <img src="">
-                <span></span>
+                <img src="css/woc/35mm_film.ico">
+                <span>Multimedia</span>
             </button>
                 <!---->
             <button id="">
-                <img src="">
-                <span></span>
+                <img src="css/woc/Fortune_Cookie.ico">
+                <span>Fortune</span>
             </button>
                 <!---->
             <button id="">
-                <img src="">
-                <span></span>
+                <img src="css/woc/8.5 Sound Set.ico">
+                <span>Theme</span>
             </button>
                 <!---->
             <button id="">
-                <img src="">
-                <span></span>
+                <img src="css/woc/Image_file.ico">
+                <span><em>jackson.img</em></span>
             </button>
                 <!---->
             <button id="">
-                <img src="">
-                <span></span>
+                <img src="css/woc/Image_file.ico">
+                <span><em>winona.img</em></span>
+            </button>
+                <!---->
+            <button id="">
+                <img src="css/woc/Lava Lamp.ico">
+                <span><em>Caution! (Demo)</em></span>
+            </button>
+                <!---->
+            <button id="">
+                <img src="css/woc/WOC6 Folder.ico">
+                <span>Good Stuff</span>
             </button>
                 <!---->
             <button id="">
@@ -81,7 +94,26 @@
             </button>
             <!------------------------------------------------------------->
         </div>
-        <div class="db7" id="desk-main"></div>
+        <div id="desk-busy"></div>
     </div>
+    <script>
+
+        var now    = new Date();
+        var hour   = now.getHours();
+        var minute = now.getMinutes();
+        var second = now.getSeconds();
+        var ap = "AM";
+        if (hour   > 11) { ap = "PM";             }
+        if (hour   > 12) { hour = hour - 12;      }
+        if (hour   == 0) { hour = 12;             }
+        if (hour   < 10) { hour   = "0" + hour;   }
+        if (minute < 10) { minute = "0" + minute; }
+        if (second < 10) { second = "0" + second; }
+        var timeString = hour + ':' + minute  + " " + ap;
+
+        document.getElementById("date").innerHTML = timeString;
+        console.log(timeString);
+
+    </script>
 </body>
 </html>

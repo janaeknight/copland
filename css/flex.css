@@ -1,8 +1,11 @@
-body {
-    cursor: url(http://cur.cursors-4u.net/others/oth-9/oth831.cur), auto !important;
+body, button {
+    cursor: url(http://cur.cursors-4u.net/cursors/cur-4/cur330.cur), auto !important;
 }
-body a button input form {
-    cursor: url(http://cur.cursors-4u.net/others/oth-9/oth831.cur), pointer !important;
+a, button:active, button:focus {
+    cursor: url(http://cur.cursors-4u.net/cursors/cur-4/cur328.cur), pointer !important;
+}
+input:hover, input:focus, textarea:hover, textarea:focus {
+    cursor: url(http://cur.cursors-4u.net/cursors/cur-4/cur332.cur), auto !important;
 }
 
 /*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-*/
