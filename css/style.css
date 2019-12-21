@@ -4,38 +4,60 @@ body {
     background-color: #63639D;
     font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif
 }
+.txt-gray { color:gray; }
+/*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ TASKBAR ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
 
 .taskbar {
     display: flex; flex-direction: row;
     font-size: 14px; font-weight: bold;
     padding: 3px 10px; background-color: #DDDDDD;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 .taskbar img { display: inline-block; height: 14px; }
 #tb-l, #tb-r { width: 50% }
 #tb-l a { padding-right: 10px; }
 #tb-r a { padding-left: 5px; }
 
-/*
-    If >400px, add scroll
-*/
+/*================= TASKBAR DROP */
+
+    .tb-drop { position: relative; display: inline-block; }
+    .tb-drop hr { background-color: darkslategray; size: .5px; margin: .5px;}
+    .dc {
+        display: none; position: absolute;
+        background-color: #DDDDDD;
+        min-width: 200px; margin-top: 3px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        border: 1px groove black; border-top: none;
+        z-index: 1; margin-left: -8px;
+    }
+    .dc img { padding-right: 8px; }
+    .dc a, .dc span {
+        color: black; padding: 5px;
+        text-decoration: none;
+        display: block; font-size: 13.5px;
+    }
+    .dc span { color: gray; }
+    .tb-drop:hover .dc { display: block; }
+    .dc a:hover {background-color: lightgrey}
+
+/*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ DESKTOP ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
 
 .desktop {
     display: flex; flex-direction: row-reverse;
     margin-top: 15px;
 }
-
 #desk-main {
     display: flex;
     flex-wrap: wrap;
-    width: 30%; height: 100%;
+    width: 32%; height: 100%;
 }
 #desk-main button {
     width: 90px; height: 80px;
     background: none; border: none;
     text-align: center; /*margin: 0 auto;*/
 }
-
-#desk-main button img { display: block; margin: 0 auto; padding-bottom: 5px; }
+#desk-main button img {
+    display: block; margin: 0 auto; padding-bottom: 5px;
+}
 #desk-main span { background-color: #CFCEE2; padding: 1px 2px; }
-
 #desk-busy { width: 100%; }

@@ -4,20 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/png" href="css/woc/iMouse.ico">
+    <link rel="icon" type="image/png" href="css/woc/iMac DV Strawberry on.ico">
     <title>Cop OS</title>
     <link href="css/flex.css" type="text/css" rel="stylesheet" />
     <link href="css/style.css" type="text/css" rel="stylesheet" />
-    <script src="java/javascript.js"></script>
 </head>
 <body>
     <div class="taskbar">
         <div id="tb-l">
-            <a><img src="css/logo.png"></a>
-            <a>File</a>
-            <a>Edit</a>
-            <a>View</a>
-            <a>Special</a>
+            <div class="tb-drop"> <!-- APPLE -->
+                <a><img src="css/logo.png"></a>
+                <div class="dc">
+                    <a class="txt-center">About This Computer...</a>
+                    <hr>
+                    <a><img src="css/woc/Visor Pro.ico">Domovoi</a>
+                    <a><img src="css/woc/a woman.ico">Contacts</a>
+                    <a><img src="css/woc/Cheap Casette.ico">Tunes</a>
+                    <a><img src="css/woc/Clipping.ico"> ERSC - Yearly Subscription</a>
+                    <a><img src="css/woc/Network_Render.ico">The Web</a>
+                    <a><img src="css/woc/CCi_ReWritable.ico">CD Player</a>
+                    <a><img src="css/woc/calendar.ico">Calendar</a>
+                    <a><img src="css/woc/Quickcam.ico">Hype&copy; Instant Chat</a>
+                    <a><img src="css/woc/Construction.ico">Control Panel</a>
+                    <a><img src="css/woc/Post It Notes.ico">Note Stuff</a>
+                </div>
+            </div>
+            <div class="tb-drop"> <!-- FILE -->
+                <a>File</a>
+                <div class="dc">
+                    <a>New</a>
+                    <a>Open...</a>
+                    <hr>
+                    <a>Quit</a>
+                </div>
+            </div>
+            <div class="tb-drop"> <!-- EDIT -->
+                <a>Edit</a>
+                <div class="dc">
+                    <span>Cut</span>
+                    <span>Copy</span>
+                    <span>Paste</span>
+                </div>
+            </div>
+            <div class="tb-drop"> <!-- VIEW -->
+                <a>View</a>
+                <div class="dc">
+                    <span>Go to</span>
+                    <span>Stop</span>
+                    <span>Refresh</span>
+                    <hr>
+                    <span>Zoom (100%)</span>
+                    <span>Text size</span>
+                    <span>Encoding</span>
+                    <span>Style</span>
+                    <hr>
+                    <span>Back</span>
+                    <span>Next</span>
+                    <span>Source</span>
+                    <hr>
+                    <span>Enter Full Screen</span>
+                </div>
+            </div>
+            <div class="tb-drop"> <!-- SPECIAL -->
+                <a>Special</a>
+                <div class="dc">
+                    <a>System Settings</a>
+                    <a>Set Password</a>
+                    <a>Empty Trash</a>
+                    <hr>
+                    <a>New Personality...</a>
+                    <a>Edit Personality</a>
+                    <hr>
+                    <a>Restart</a>
+                    <a>Shut Down...</a>
+                    <a>Log Out...</a>
+                </div>
+            </div>
             <a>Help</a>
         </div>
         <div class="txt-right" id="tb-r">
@@ -96,6 +158,7 @@
         </div>
         <div id="desk-busy"></div>
     </div>
+    <script src="java/javascript.js"></script>
     <script>
 
         var now    = new Date();
