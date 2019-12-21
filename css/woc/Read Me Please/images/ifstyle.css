@@ -1,0 +1,28 @@
+
+.blackbody { color: black; font-size: 11px; font-family: Arial, Geneva, Helvetica }
+.blackbodysmall { color: black; font-size: 10px; font-family: Arial, Geneva, Helvetica }
+.blurbheads  { color: #336; font-weight: bold; font-size: 11px; font-family: Arial, Geneva, Helvetica }
+.boldbody   { color: #336; font-weight: bold; font-size: 11px; font-family: Verdana, Geneva, Helvetica }
+.button { color: white; font-weight: bold; font-size: 11px; font-family: Arial, Geneva, Helvetica; background-color: #336 }
+.datetext  { color: #333; font-size: 11px; font-family: Arial, Geneva, Helvetica }
+.disabled { color: #99c; font-size: 11px; font-family: Arial, Geneva, Helvetica }
+.disabledbold { color: #99c; font-weight: bold; font-size: 11px; font-family: Arial, Geneva, Helvetica }
+.figuremarker { color: #c00; font-weight: bold; font-size: 11px; font-family: Arial, Geneva, Helvetica }
+.iblitehead { color: #c30; font-weight: bold; font-size: 11px; font-family: Arial, Geneva, Helvetica }
+.ibprohead { color: #339; font-weight: bold; font-size: 11px; font-family: Arial, Geneva, Helvetica }
+.mature { color: #c00; font-size: 11px; font-family: Arial, Geneva, Helvetica }
+.whitetext { color: #fff; font-size: 11px; font-family: Arial, Geneva, Helvetica }
+a   { color: #006; font-size: 11px; font-family: Verdana, "Espy Sans", Geneva, Helvetica }
+a.navbar  { color: #006; font-size: 11px; font-family: Verdana, Geneva, Helvetica; text-decoration: none }
+a:active  { color: #c30; font-size: 11px; font-family: Verdana, "Espy Sans", Geneva, Helvetica }
+a:hover  { color: #c30; font-size: 11px; font-family: Verdana, "Espy Sans", Geneva, Helvetica }
+a:hover.navbar  { color: #c30; font-size: 11px; font-family: Verdana, Geneva, Helvetica; text-decoration: none }
+a:visited  { color: #339; font-size: 11px; font-family: Verdana, "Espy Sans", Geneva, Helvetica }
+body   { color: #339; font-size: 11px; font-family: Verdana, "Espy Sans", Geneva, Helvetica; background-color: #ccf }
+div   { color: #336; font-size: 11px; font-family: Verdana, "Espy Sans", Geneva, Helvetica }
+img  { color: #339; font-size: 11px; font-family: Verdana, "Espy Sans", Geneva, Helvetica }
+input  { font-size: 11px; font-family: Verdana, "Espy Sans", Geneva, Helvetica; text-decoration: none }
+select  { font-size: 11px; font-family: Verdana, "Espy Sans", Geneva, Helvetica; text-decoration: none }
+textarea   { font-size: 11px; font-family: Verdana, "Espy Sans", Geneva, Helvetica; text-decoration: none }
+td   { color: #336; font-size: 11px; font-family: Verdana, "Espy Sans", Geneva, Helvetica; text-decoration: none }
+p { color: #339; font-size: 11px; font-family: Verdana; text-decoration: none }

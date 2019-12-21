@@ -1,0 +1,34 @@
+body {
+    width: 100vw; height: 100vh;
+    margin: 0 auto;
+    background-color: #63639D;
+}
+
+.taskbar {
+    display: flex; flex-direction: row;
+    font-size: 14.5px; font-weight: bold;
+    padding: 5px 10px; background-color: #DDDDDD;
+}
+#tb-l, #tb-r { width: 50% }
+
+/*
+    If >400px, add scroll
+*/
+
+.desktop {
+    display: flex; flex-direction: row-reverse;
+    margin-top: 15px;
+}
+
+#desk-icn {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%; height: 100%;
+}
+#desk-icn button {
+    width: 90px; height: 80px;
+    background: none; border: none;
+    text-align: center; /*margin: 0 auto;*/
+}
+#desk-icn button img { display: block; margin: 0 auto; padding-bottom: 5px; }
+#desk-icn span { background-color: #CFCEE2; padding: 1px; }

@@ -1,0 +1,48 @@
+body {
+    cursor: url(http://cur.cursors-4u.net/others/oth-9/oth831.cur), auto !important;
+}
+body a button input form {
+    cursor: url(http://cur.cursors-4u.net/others/oth-9/oth831.cur), pointer !important;
+}
+
+/*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-*/
+
+/* TENTHS */
+
+.db1 { width: 10%; }
+.db2 { width: 20%; }
+.db3 { width: 30%; }
+.db4 { width: 40%; }
+.db5 { width: 50%; }
+.db6 { width: 60%; }
+.db7 { width: 70%; }
+.db8 { width: 80%; }
+.db9 { width: 90%; }
+
+/* DIVIDED FROM 100 */
+
+.do3 { width: 33.33% }
+.do4 { width: 25% }
+.do5 { width: 20% }
+.do6 { width: 16.67% }
+.do8 { width: 12.5% }
+
+/*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-*/
+
+.row { display: flex; flex-direction: row; width: 100%; }
+.column { display: flex; flex-direction: column; }
+
+/*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-*/
+
+.txt-center { text-align: center; }
+.txt-right { text-align: right; }
+.txt-left { text-align: left; }
+.txt-justify { text-align: justify; }
+
+/*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-*/
+
+.margin { margin-left: auto; margin-right: auto;}
+.center img { margin-left: auto; margin-right: auto; }
+.radius { border-radius: 100%; }
+
+
