@@ -163,29 +163,19 @@
             </button>
             <!------------------------------------------------------------->
         </div>
-        <div-- id="desk-busy">
-            <!--div class="window"></div-->
+        <div id="desk-busy">
+            <div class="window" id="themeTerm">
+                <div class="w-tb">
+                    <button id=""><a>x</a></button>
+                    <span>Appearance</span>
+                </div>
+            </div>
+            <!--div class="window" id=""></div-->
         </div>
     </div>
-    <script src="java/javascript.js"></script>
     <script>
-
-        var now    = new Date();
-        var hour   = now.getHours();
-        var minute = now.getMinutes();
-        var second = now.getSeconds();
-        var ap = "AM";
-        if (hour   > 11) { ap = "PM";             }
-        if (hour   > 12) { hour = hour - 12;      }
-        if (hour   == 0) { hour = 12;             }
-        if (hour   < 10) { hour   = "0" + hour;   }
-        if (minute < 10) { minute = "0" + minute; }
-        if (second < 10) { second = "0" + second; }
-        var timeString = hour + ':' + minute  + " " + ap;
-
-        document.getElementById("date").innerHTML = timeString;
-        console.log(timeString);
-
+        $('#window').addClass('lol');
     </script>
+    <script src="java/javascript.js"></script>
 </body>
 </html>

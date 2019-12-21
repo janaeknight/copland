@@ -67,9 +67,25 @@ body {
 
 .window {
     width: 550px; height: 300px;
-    background-color: #E6F9F9;
+    background-color: #DDDDDD;
     border: 1px groove slategray;
+    box-shadow: 0px 4px 12px 0px rgba(0,0,0,0);
+    border-top-right-radius: 5px;
 }
 .w-tb {
+    display: flex; flex-direction: row;
+    height: 25px; width: 98%;
     background-color: #DDDDDD;
+    font-weight: bold; font-size: 14.2px;
+    background-image: url("https://i.ibb.co/KWx5ZCT/dots.png");
+    background-position: center; background-repeat: repeat-x;
+    background-size: 20%; margin: 2px auto;
+}
+.w-tb span, .w-tb button { background-color: #DDDDDD; }
+.w-tb span { text-align: center; }
+.w-tb span { padding: 0 5px; margin: auto 0; }
+.w-tb button {
+    width: auto; height: 13px;
+    border: .5px solid black; margin: auto 0;
+    font-size: 10px; text-align: center; padding: 0 4px;
 }
