@@ -66,11 +66,11 @@ body {
 /*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ WINDOW ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
 
 .window {
-    width: 550px; height: 300px;
     background-color: #DDDDDD;
     border: 1px groove slategray;
     box-shadow: 0px 4px 12px 0px rgba(0,0,0,0);
     border-top-right-radius: 5px;
+    margin-left: 5%; /* literally margins windows left */
 }
 .w-tb {
     display: flex; flex-direction: row;
@@ -83,8 +83,8 @@ body {
 }
 .w-tb span, .w-tb button { background-color: #DDDDDD; }
 .w-tb span {
-    padding: 0 10px; margin: auto;
-    text-align: center;
+    padding: 0 10px !important; margin: auto !important;
+    text-align: center !important;
 }
 .w-tb button {
     width: auto; height: 13px;
@@ -93,3 +93,24 @@ body {
 }
 .w-tb a { visibility:  hidden; }
 .w-tb:hover a { visibility: visible; }
+
+.busy-r {
+    display: flex; flex-direction: row;
+    width: 98%; height: auto; margin: 0 5px ;
+    border: 1px groove lightgray;
+    margin: 0 auto; padding-bottom: 5px;
+}
+.busy-c {
+    display: flex; flex-direction: column;
+    width: inherit; height: inherit; margin: 0 5px ;
+    width: 98%; height: auto; margin: 0 5px ;
+    border: 1px groove lightgray;
+    margin: 0 auto; padding-bottom: 5px;
+}
+
+/*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ THEMES / W ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
+
+#themeTerm {
+    width: 550px; height: 500px;
+}
+#themeTerm span { display: block; font-weight: bolder; margin: 5px; }

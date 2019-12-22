@@ -1,11 +1,7 @@
 // document.getElementById("...").addEventListener("click", myFunction);
 
-document.body.style.backgroundImage = "url('https://i.ibb.co/KbJQ1bQ/1999.jpg')";
-document.body.style.backgroundSize = "850px";
-
-// 128 for classic repeat
-// 300px for purple static
-// 850px for 1999
+//document.body.style.backgroundImage = "url('https://i.ibb.co/KbJQ1bQ/1999.jpg')";
+//document.body.style.backgroundSize = "850px";
 
 
 
@@ -65,5 +61,91 @@ document.body.style.backgroundSize = "850px";
 
     🔗 https://ibb.co/album/mrzrva, copland os wallpaper arch.
 
-
     */
+
+// THEMES
+
+    // -- // IMG COLORS
+
+    document.getElementById("colorSub").addEventListener("click", colorSub)
+    function colorSub() {
+        let cbgSel = document.getElementById("cbgSel");
+        let cbgSelected = cbgSel.options[cbgSel.selectedIndex].text;
+        console.log("User selected background color: " +cbgSelected,);
+        document.body.style.backgroundImage = "none";
+
+        if (cbgSelected == "Purple") {
+            document.body.style.backgroundColor = "#63639D";
+        }
+        if (cbgSelected == "Blue") {
+            document.body.style.backgroundColor = "cadetblue";
+        }
+        if (cbgSelected == "Green") {
+            document.body.style.backgroundColor = "greenyellow";
+        }
+        if (cbgSelected == "Orange") {
+            document.body.style.backgroundColor = "lightsalmon";
+        }
+        if (cbgSelected == "Yellow") {
+            document.body.style.backgroundColor = "khaki";
+        }
+        if (cbgSelected == "Light Pink") {
+            document.body.style.backgroundColor = "coral";
+        }
+        if (cbgSelected == "Hot Pink") {
+            document.body.style.backgroundColor = "magenta";
+        }
+    }
+
+    // -- // IMG BACKGROUNDS
+
+    document.getElementById("themeSub").addEventListener("click", themeSub)
+    function themeSub() {
+        let ibgSel = document.getElementById("ibgSel");
+        let ibgSelected = ibgSel.options[ibgSel.selectedIndex].text;
+        console.log("User selected background: " +ibgSelected,);
+
+        if (ibgSelected == "None") {
+            document.body.style.backgroundColor = "#63639D";
+        }
+        if (ibgSelected == "Purple 1") {
+            document.body.style.backgroundImage = "url('https://i.ibb.co/j9Ysj3F/classic-mac-os-tile-wallpapers-1.png')";
+            document.body.style.backgroundSize = "128px";
+        }
+        if (ibgSelected == "Purple 2") {
+            document.body.style.backgroundImage = "url('https://i.ibb.co/dPj3zBx/classic-mac-os-tile-wallpapers-3.png')";
+            document.body.style.backgroundSize = "128px";
+        }
+        if (ibgSelected == "Purple 3") {
+            document.body.style.backgroundImage = "url('https://i.ibb.co/0X0v7NZ/classic-mac-os-tile-wallpapers-8.png')";
+            document.body.style.backgroundSize = "128px";
+        }
+        if (ibgSelected == "Blue 1") {
+            document.body.style.backgroundImage = "url('https://i.ibb.co/0tZW83X/classic-mac-os-tile-wallpapers-9.png')";
+            document.body.style.backgroundSize = "128px";
+        }
+        if (ibgSelected == "Black 1") {
+            document.body.style.backgroundImage = "url('https://i.ibb.co/Lpx2M5V/classic-mac-os-tile-wallpapers-6.png')";
+            document.body.style.backgroundSize = "128px";
+        }
+        if (ibgSelected == "Floating Cat") {
+            document.body.style.backgroundImage = "url('https://i.ibb.co/NsTxX1G/classic-mac-os-tile-wallpapers-4.png')";
+            document.body.style.backgroundSize = "128px";
+        }
+        if (ibgSelected == "Stars") {
+            document.body.style.backgroundImage = "url('https://i.ibb.co/YT66PvK/classic-mac-os-tile-wallpapers-2.png')";
+            document.body.style.backgroundSize = "128px";
+        }
+        if (ibgSelected == "Circut Board") {
+            document.body.style.backgroundImage = "url('https://i.ibb.co/f0FSTD4/classic-mac-os-tile-wallpapers-7.png')";
+            document.body.style.backgroundSize = "128px";
+        }
+        if (ibgSelected == "NEW! Purple Lines") {
+            document.body.style.backgroundImage = "url('https://i.ibb.co/F4Y8rxD/purplline.jpg')";
+            document.body.style.backgroundSize = "300px";
+        }
+        if (ibgSelected == "NEW! Age Logo") {
+            document.body.style.backgroundImage = "url('https://i.ibb.co/n6FVW6V/1999.jpg')";
+            document.body.style.backgroundSize = "850px";
+        }
+    }
