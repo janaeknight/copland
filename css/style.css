@@ -82,10 +82,14 @@ body {
     background-size: 20%; margin: 2px auto;
 }
 .w-tb span, .w-tb button { background-color: #DDDDDD; }
-.w-tb span { text-align: center; }
-.w-tb span { padding: 0 5px; margin: auto 0; }
+.w-tb span {
+    padding: 0 10px; margin: auto;
+    text-align: center;
+}
 .w-tb button {
     width: auto; height: 13px;
     border: .5px solid black; margin: auto 0;
     font-size: 10px; text-align: center; padding: 0 4px;
 }
+.w-tb a { visibility:  hidden; }
+.w-tb:hover a { visibility: visible; }

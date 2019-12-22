@@ -1,7 +1,7 @@
 body, button {
     cursor: url(http://cur.cursors-4u.net/cursors/cur-4/cur330.cur), auto !important;
 }
-a, button:active, button:focus {
+a, button:active, button:focus, .w-tb button:hover {
     cursor: url(http://cur.cursors-4u.net/cursors/cur-4/cur328.cur), pointer !important;
 }
 input:hover, input:focus, textarea:hover, textarea:focus {
