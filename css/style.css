@@ -73,8 +73,8 @@ body {
     margin-left: 5%; /* literally margins windows left */
 }
 .w-tb {
-    display: flex; flex-direction: row;
-    height: 25px; width: 98%;
+    display: flex !important; flex-direction: row !important;
+    height: 25px !important; width: 98% !important;
     background-color: #DDDDDD;
     font-weight: bold; font-size: 14.2px;
     background-image: url("https://i.ibb.co/KWx5ZCT/dots.png");
@@ -88,8 +88,8 @@ body {
 }
 .w-tb button {
     width: auto; height: 13px;
-    border: .5px solid black; margin: auto 0;
-    font-size: 10px; text-align: center; padding: 0 4px;
+    border: .5px solid black !important; margin: auto 0 !important;
+    font-size: 10px; text-align: center !important; padding: 0 4px !important;
 }
 .w-tb a { visibility:  hidden; }
 .w-tb:hover a { visibility: visible; }
@@ -114,3 +114,11 @@ body {
     width: 550px; height: 500px;
 }
 #themeTerm span { display: block; font-weight: bolder; margin: 5px; }
+.tt a {
+    font-size: 13px;
+    width: auto; padding: 1px 9px;
+    background-color: lightgray;
+    border: 1px groove lightskyblue;
+}
+.tt select { margin: 0 6px; }
+

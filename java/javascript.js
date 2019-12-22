@@ -1,7 +1,8 @@
 // document.getElementById("...").addEventListener("click", myFunction);
 
-//document.body.style.backgroundImage = "url('https://i.ibb.co/KbJQ1bQ/1999.jpg')";
-//document.body.style.backgroundSize = "850px";
+//  SETS DEFAULT BACKGROUND IMG
+document.body.style.backgroundImage = "url('https://i.ibb.co/n6FVW6V/1999.jpg')";
+document.body.style.backgroundSize = "850px";
 
 
 
@@ -84,13 +85,16 @@
             document.body.style.backgroundColor = "greenyellow";
         }
         if (cbgSelected == "Orange") {
-            document.body.style.backgroundColor = "lightsalmon";
+            document.body.style.backgroundColor = "coral";
+        }
+        if (cbgSelected == "Red") {
+            document.body.style.backgroundColor = "tomato";
         }
         if (cbgSelected == "Yellow") {
             document.body.style.backgroundColor = "khaki";
         }
         if (cbgSelected == "Light Pink") {
-            document.body.style.backgroundColor = "coral";
+            document.body.style.backgroundColor = "lightsalmon";
         }
         if (cbgSelected == "Hot Pink") {
             document.body.style.backgroundColor = "magenta";
@@ -104,6 +108,7 @@
         let ibgSel = document.getElementById("ibgSel");
         let ibgSelected = ibgSel.options[ibgSel.selectedIndex].text;
         console.log("User selected background: " +ibgSelected,);
+        document.body.style.backgroundImage = "none";
 
         if (ibgSelected == "None") {
             document.body.style.backgroundColor = "#63639D";
