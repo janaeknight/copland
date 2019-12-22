@@ -69,7 +69,7 @@ body {
     background-color: #DDDDDD;
     border: 1px groove slategray;
     box-shadow: 0px 4px 12px 0px rgba(0,0,0,0);
-    border-top-right-radius: 5px;
+    border-top-right-radius: 5px; padding-bottom: 6px;
     margin-left: 5%; /* literally margins windows left */
 }
 .w-tb {
@@ -111,7 +111,7 @@ body {
 /*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ THEMES / W ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
 
 #themeTerm {
-    width: 550px; height: 500px;
+    width: 500px; height: auto;
 }
 #themeTerm span { display: block; font-weight: bolder; margin: 5px; }
 .tt a {
