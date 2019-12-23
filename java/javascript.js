@@ -1,6 +1,7 @@
 // document.getElementById("...").addEventListener("click", myFunction);
 
-//  SETS DEFAULT BACKGROUND IMG
+//  SETS DEFAULT BACKGROUND IMG (onload)
+
     document.body.style.backgroundImage = "url('https://i.ibb.co/n6FVW6V/1999.jpg')";
     document.body.style.backgroundSize = "850px";
 
@@ -8,6 +9,7 @@
 
 
 // Close All Windows
+
     var allWindows = document.querySelectorAll(".window");
     document.getElementById("ts-4").addEventListener("click", closeWindows);
     function closeWindows() {
