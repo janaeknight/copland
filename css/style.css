@@ -6,6 +6,9 @@ body {
     background-repeat: repeat;
 }
 .txt-gray { color:gray; }
+
+.f1 { font-size: 14px;} .f2 { font-size: 14.5px;} .f3 { font-size: 15px;}
+.f4 { font-size: 13px;} .f5 { font-size: 12px;} .f6 { font-size: 16px;}
 /*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ TASKBAR ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
 
 .taskbar {
@@ -121,4 +124,20 @@ body {
     border: 1px groove lightskyblue;
 }
 .tt select { margin: 0 6px; }
+
+    /*
+        ---> screensaver
+        ---> username
+        ---> my computer
+    */
+
+/*~-~-~-~-~-~-~-~-~-~ ABOUT THIS COMPUTER / W ~-~-~-~-~-~-~-~-~-~*/
+
+#aboutComputerTerm {
+    width: 560px; height: auto;
+}
+
+.atct { margin: 5px; }
+
+#aboutComputerTerm hr { border-top: 1px dashed darkslategray; width: 98%; }
 
