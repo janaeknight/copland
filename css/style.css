@@ -141,3 +141,12 @@ body {
 
 #aboutComputerTerm hr { border-top: 1px dashed darkslategray; width: 98%; }
 
+/*~-~-~-~-~-~-~-~-~-~ ERSC / W ~-~-~-~-~-~-~-~-~-~*/
+
+#erscTerm {
+    width: 620px; min-height: 240px;
+    background-color: steelblue;
+}
+#erscTerm .w-tb { background-color: steelblue; }
+#erscTerm .w-tb span, #erscTerm .w-tb button {background-color: steelblue; }
+/*.ersct { }*/
