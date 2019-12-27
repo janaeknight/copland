@@ -1,5 +1,18 @@
 // document.getElementById("...").addEventListener("click", myFunction);
 
+    /* JAVASCRIPT COOKIES
+    
+        ----> Setting A Cookie
+            document.cookie = "username=John Doe";
+        ----> Reading Cookies
+            var x = document.cookie;
+                -- OR
+                    document.cookie     returns all cookies in a string
+        ----> 
+    
+    */
+
+
 //  SETS DEFAULT BACKGROUND IMG (onload)
 
     document.body.style.backgroundImage = "url('https://i.ibb.co/n6FVW6V/1999.jpg')";
