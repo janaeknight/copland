@@ -52,7 +52,17 @@
 
 
 
-
+    $(function() {
+        $("#themeTerm").draggable();
+        $("#aboutComputerTerm").draggable();
+        $("#erscTerm").draggable();
+        $("#").draggable();
+        $("#").draggable();
+        $("#").draggable();
+        $("#").draggable();
+        $("#").draggable();
+        $("#").draggable();
+    });
 
 
 
