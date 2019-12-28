@@ -58,7 +58,7 @@ body {
 #desk-main button {
     width: 90px; height: 80px;
     background: none; border: none;
-    text-align: center; margin: auto;
+    text-align: center;
 }
 #desk-main button img {
     display: block; margin: 0 auto; padding-bottom: 5px;
