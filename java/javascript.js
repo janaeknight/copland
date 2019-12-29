@@ -61,11 +61,18 @@
     document.getElementById("ta-1").addEventListener("click", function(){ 
         document.getElementById("aboutComputerTerm").style.display = "block";
     });
-    document.getElementById("").addEventListener("click", function(){ 
+    /*document.getElementById("").addEventListener("click", function(){ 
         document.getElementById("").style.display = "block";
     });
     document.getElementById("").addEventListener("click", function(){ 
         document.getElementById("").style.display = "block";
+    });*/
+
+
+// Desktop Tab Functions
+
+    document.getElementById("dt-8").addEventListener("dblclick", function(){ 
+        document.getElementById("themeTerm").style.display = "block";
     });
 
 
