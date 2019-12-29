@@ -120,7 +120,7 @@ body {
 /*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ THEMES / W ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
 
 #themeTerm {
-    width: 500px; height: auto; display: none;
+    width: 500px; height: auto;
 }
 #themeTerm span { display: block; font-weight: bolder; margin: 5px; }
 .tt a {
@@ -136,6 +136,28 @@ body {
         ---> username
         ---> my computer
     */
+
+.themeLeftOp {
+    width: 92%; height: 250px;
+    background-color: snow; border: 1px inset black;
+    overflow-y: scroll; margin: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+    background-color: lightgray;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+  }
+
+  /*
+    #534D4D on theme page button hightlight
+  */
 
 /*~-~-~-~-~-~-~-~-~-~ ABOUT THIS COMPUTER / W ~-~-~-~-~-~-~-~-~-~*/
 
