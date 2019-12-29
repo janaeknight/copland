@@ -75,6 +75,8 @@
         document.getElementById("themeTerm").style.display = "block";
     });
 
+    // on .window click add class for z index to raise 4444 (activeZ) on (this)
+
 
 
 
