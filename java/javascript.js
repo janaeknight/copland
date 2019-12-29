@@ -57,7 +57,7 @@
         $("#aboutComputerTerm").draggable();
         $("#erscTerm").draggable();
         $("#").draggable();
-        $("#").draggable();
+        $("#").draggable(); // .window draggable???
         $("#").draggable();
         $("#").draggable();
         $("#").draggable();
