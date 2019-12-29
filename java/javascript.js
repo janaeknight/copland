@@ -1,4 +1,5 @@
 // document.getElementById("...").addEventListener("click", myFunction);
+// element.addEventListener("click", function(){ alert("Hello World!"); });
 
     /* JAVASCRIPT COOKIES
     
@@ -52,16 +53,19 @@
 
 
 
-    $(function() {
-        $("#themeTerm").draggable();
-        $("#aboutComputerTerm").draggable();
-        $("#erscTerm").draggable();
-        $("#").draggable();
-        $("#").draggable(); // .window draggable???
-        $("#").draggable();
-        $("#").draggable();
-        $("#").draggable();
-        $("#").draggable();
+    $(function() { $(".window").draggable(); }); // <!--- makes windows draggable
+
+
+// Taskbar Tab Functions
+
+    document.getElementById("ta-1").addEventListener("click", function(){ 
+        document.getElementById("aboutComputerTerm").style.display = "block";
+    });
+    document.getElementById("").addEventListener("click", function(){ 
+        document.getElementById("").style.display = "block";
+    });
+    document.getElementById("").addEventListener("click", function(){ 
+        document.getElementById("").style.display = "block";
     });
 
 
@@ -88,6 +92,12 @@
     🔗 https://ibb.co/album/mrzrva, copland os wallpaper arch.
 
     */
+
+
+
+
+
+
 
 // THEMES
 

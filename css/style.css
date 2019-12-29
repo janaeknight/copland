@@ -32,7 +32,7 @@ body {
         min-width: 200px; margin-top: 3px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         border: 1px groove black; border-top: none;
-        z-index: 1; margin-left: -8px;
+        z-index: 55555; margin-left: -8px;
     }
     .dc img { padding-right: 8px; }
     .dc a, .dc span {
