@@ -122,7 +122,7 @@ body {
 #themeTerm {
     width: 500px; height: auto;
 }
-#themeTerm span { display: block; font-weight: bolder; margin: 5px; }
+.themeTitle { display: block; font-weight: bolder; margin: 5px; }
 .tt a {
     font-size: 13px;
     width: auto; padding: 1px 9px;
@@ -150,18 +150,26 @@ body {
     border: none; font-size: 13px;
     font-weight: 275; margin-top: 10px;
 }
-.themeLeftOp img { padding-top: 3px; margin-bottom: -5px; width: 50%; }
+.themeLeftOp img {
+    display: block; width: 50%;
+    padding-top: 3px; margin-bottom: -5px;
+    margin: 0 auto;
+}
 
 .thOpSel {
     width: 95%; height: 200px;
-    background-color: coral;
-    margin: 5px 0;
+    margin: 5px 0; overflow-y: scroll;
+    border: 1.1px solid black;
 }
 .thb {
     display: flex; flex-direction: row;
-    width: 200px; height: 22px;
-    margin: auto 0;
+    width: 100%; height: 22px;
+    margin: auto 0; padding: 1px 0;
     background-color: lightgray;
+}
+.thb span {
+    margin-left: 5px; margin-top: 1.5px;
+    font-weight: 545;
 }
 .thbBox {
     width: 35px; height: 12px;
@@ -170,6 +178,18 @@ body {
     margin: auto 0; margin-left: 5px; margin-right: 5px;
     background-color: lightseagreen;
 }
+
+.tbb1 { background-color: #63639D;}
+.tbb2 { background-color: cadetblue;}
+.tbb3 { background-color: greenyellow;}
+.tbb4 { background-color: tomato;}
+.tbb5 { background-color: lightpink;}
+.tbb6 { background-color: magenta;}
+.tbb7 { background-color: turquoise;}
+.tbb8 { background-color: gray;}
+.tbb9 { background-color: coral;}
+
+
 
   /*
     #534D4D on theme page button highlight
