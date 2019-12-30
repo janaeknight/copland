@@ -156,7 +156,7 @@ body {
     margin: 0 auto;
 }
 .thOpSel {
-    width: 95%; height: 200px;
+    width: 95%; height: 204px;
     margin: 5px 0; overflow-y: scroll;
     border: 1.1px solid black;
 }
@@ -179,18 +179,30 @@ body {
     border: 1px solid black;
     margin: auto 0; margin-left: 5px; margin-right: 5px;
     background-color: lightseagreen;
+    background-position: center;
+    background-size: 30px;
 }
 .thOpSel a:hover { background-color: #b8b8b8; color: #1f1e1e; }
 
-.tbb1 { background-color: #63639D;}
-.tbb2 { background-color: cadetblue;}
-.tbb3 { background-color: greenyellow;}
-.tbb4 { background-color: tomato;}
-.tbb5 { background-color: lightpink;}
-.tbb6 { background-color: magenta;}
-.tbb7 { background-color: turquoise;}
-.tbb8 { background-color: gray;}
-.tbb9 { background-color: coral;}
+.tbbPur { background-color: #63639D;}
+.tbbBlue { background-color: cadetblue;}
+.tbbGreen { background-color: greenyellow;}
+.tbbRed { background-color: tomato;}
+.tbbLiPink { background-color: lightpink;}
+.tbbHotPink { background-color: magenta;}
+.tbbTurq { background-color: turquoise;}
+.tbbGray { background-color: gray;}
+.tbbOrange { background-color: coral;}
+.tbbPurp1 { background-image: url("https://i.ibb.co/j9Ysj3F/classic-mac-os-tile-wallpapers-1.png"); }
+.tbbPurp2 { background-image: url("https://i.ibb.co/dPj3zBx/classic-mac-os-tile-wallpapers-3.png"); }
+.tbbPurp3 { background-image: url("https://i.ibb.co/0X0v7NZ/classic-mac-os-tile-wallpapers-8.png"); }
+.tbbBlue1 { background-image: url("https://i.ibb.co/0tZW83X/classic-mac-os-tile-wallpapers-9.png"); }
+.tbbBlack1 { background-image: url("https://i.ibb.co/Lpx2M5V/classic-mac-os-tile-wallpapers-6.png"); }
+.tbbCat { background-image: url("https://i.ibb.co/NsTxX1G/classic-mac-os-tile-wallpapers-4.png"); }
+.tbbStars { background-image: url("https://i.ibb.co/YT66PvK/classic-mac-os-tile-wallpapers-2.png"); }
+.tbbCircut { background-image: url("https://i.ibb.co/f0FSTD4/classic-mac-os-tile-wallpapers-7.png"); }
+.tbbLines { background-image: url("https://i.ibb.co/F4Y8rxD/purplline.jpg"); }
+.tbbAge { background-image: url("https://i.ibb.co/n6FVW6V/1999.jpg"); }
 
 .bgSelectedOption { background-color: #b0aeae; color: #1f1e1e; }
 
@@ -224,7 +236,11 @@ body {
 
 
 
+/*=========================================================*/
 
+    .fontArticle, .windowsArticle { display: none; }
+
+/*=========================================================*/
 
 
 

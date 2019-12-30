@@ -123,60 +123,94 @@
         $("#bgcPur").addClass("bgSelectedOption");
         document.body.style.backgroundColor = "#63639D";    
     });
+    $("#bgcBlue").on( "click", function() {
+        $("#bgcBlue").addClass("bgSelectedOption");
+        document.body.style.backgroundColor = "cadetblue";    
+    });
+    $("#bgcGreen").on( "click", function() {
+        $("#bgcGreen").addClass("bgSelectedOption");
+        document.body.style.backgroundColor = "greenyellow";    
+    });
+    $("#bgcRed").on( "click", function() {
+        $("#bgcRed").addClass("bgSelectedOption");
+        document.body.style.backgroundColor = "tomato";    
+    });
+    $("#bgcLiPink").on( "click", function() {
+        $("#bgcLiPink").addClass("bgSelectedOption");
+        document.body.style.backgroundColor = "lightpink";    
+    });
+    $("#bgcHotPink").on( "click", function() {
+        $("#bgcHotPink").addClass("bgSelectedOption");
+        document.body.style.backgroundColor = "magenta";    
+    });
+    $("#bgcTurq").on( "click", function() {
+        $("#bgcTurq").addClass("bgSelectedOption");
+        document.body.style.backgroundColor = "turquoise";    
+    });
+    $("#bgcGray").on( "click", function() {
+        $("#bgcGray").addClass("bgSelectedOption");
+        document.body.style.backgroundColor = "gray";    
+    });
+    $("#bgcOrange").on( "click", function() {
+        $("#bgcOrange").addClass("bgSelectedOption");
+        document.body.style.backgroundColor = "coral";    
+    });
 
 
 
-    // -- // IMG BACKGROUNDS
 
-    /*document.getElementById("themeSub").addEventListener("click", themeSub)
-    function themeSub() {
-        let ibgSel = document.getElementById("ibgSel");
-        let ibgSelected = ibgSel.options[ibgSel.selectedIndex].text;
-        console.log("User selected background: " +ibgSelected,);
-        document.body.style.backgroundImage = "none";
-
-        if (ibgSelected == "None") {
-            document.body.style.backgroundColor = "#63639D";
-        }
-        if (ibgSelected == "Purple 1") {
+    $("#bgcPurp1").on( "click", function() {
+        $("#bgcPurp1").addClass("bgSelectedOption");
             document.body.style.backgroundImage = "url('https://i.ibb.co/j9Ysj3F/classic-mac-os-tile-wallpapers-1.png')";
             document.body.style.backgroundSize = "128px";
-        }
-        if (ibgSelected == "Purple 2") {
+    });
+    $("#bgcPurp2").on( "click", function() {
+        $("#bgcPurp2").addClass("bgSelectedOption");
             document.body.style.backgroundImage = "url('https://i.ibb.co/dPj3zBx/classic-mac-os-tile-wallpapers-3.png')";
             document.body.style.backgroundSize = "128px";
-        }
-        if (ibgSelected == "Purple 3") {
+    });
+    $("#bgcPurp3").on( "click", function() {
+        $("#bgcPurp3").addClass("bgSelectedOption");
             document.body.style.backgroundImage = "url('https://i.ibb.co/0X0v7NZ/classic-mac-os-tile-wallpapers-8.png')";
             document.body.style.backgroundSize = "128px";
-        }
-        if (ibgSelected == "Blue 1") {
+    });
+    $("#bgcBlue1").on( "click", function() {
+        $("#bgcBlue1").addClass("bgSelectedOption");
             document.body.style.backgroundImage = "url('https://i.ibb.co/0tZW83X/classic-mac-os-tile-wallpapers-9.png')";
             document.body.style.backgroundSize = "128px";
-        }
-        if (ibgSelected == "Black 1") {
+    });
+    $("#bgcBlack1").on( "click", function() {
+        $("#bgcBlack1").addClass("bgSelectedOption");
             document.body.style.backgroundImage = "url('https://i.ibb.co/Lpx2M5V/classic-mac-os-tile-wallpapers-6.png')";
             document.body.style.backgroundSize = "128px";
-        }
-        if (ibgSelected == "Floating Cat") {
+    });
+    $("#bgcCat").on( "click", function() {
+        $("#bgcCat").addClass("bgSelectedOption");
             document.body.style.backgroundImage = "url('https://i.ibb.co/NsTxX1G/classic-mac-os-tile-wallpapers-4.png')";
             document.body.style.backgroundSize = "128px";
-        }
-        if (ibgSelected == "Stars") {
+    });
+    $("#bgcStars").on( "click", function() {
+        $("#bgcStars").addClass("bgSelectedOption");
             document.body.style.backgroundImage = "url('https://i.ibb.co/YT66PvK/classic-mac-os-tile-wallpapers-2.png')";
             document.body.style.backgroundSize = "128px";
-        }
-        if (ibgSelected == "Circut Board") {
+    });
+    $("#bgcCircut").on( "click", function() {
+        $("#bgcCircut").addClass("bgSelectedOption");
             document.body.style.backgroundImage = "url('https://i.ibb.co/f0FSTD4/classic-mac-os-tile-wallpapers-7.png')";
             document.body.style.backgroundSize = "128px";
-        }
-        if (ibgSelected == "NEW! Purple Lines") {
+    });
+    $("#bgcLines").on( "click", function() {
+        $("#bgcLines").addClass("bgSelectedOption");
             document.body.style.backgroundImage = "url('https://i.ibb.co/F4Y8rxD/purplline.jpg')";
             document.body.style.backgroundSize = "300px";
-        }
-        if (ibgSelected == "NEW! Age Logo") {
+    });
+    $("#bgcAge").on( "click", function() {
+        $("#bgcAge").addClass("bgSelectedOption");
             document.body.style.backgroundImage = "url('https://i.ibb.co/n6FVW6V/1999.jpg')";
             document.body.style.backgroundSize = "850px";
-        }
-    }
-    */
+    });
+    
+
+
+
+    // -------------> add highlight to article buttons on click
