@@ -230,20 +230,29 @@ body {
 }
 #erscTerm .w-tb { background-color: steelblue; }
 #erscTerm .w-tb span, #erscTerm .w-tb button {background-color: steelblue; }
-/*.ersct { }*/
 
+/*~-~-~-~-~-~-~-~-~-~ GALLERY / W's ~-~-~-~-~-~-~-~-~-~*/
 
-
-
+.galleryWindow { display: none; width: 345px; height: auto }
+.galleryWindow img {
+    display: block; image-rendering: pixelated;
+    width: 88%; margin: 4px auto;
+}
 
 /*=========================================================*/
 
-    .fontArticle, .windowsArticle { display: none; }
+    .fontArticle, .windowsArticle, #screensaver, .bgP2 { display: none; }
 
 /*=========================================================*/
 
 
-
+#screensaver {
+    width: 100vw; height: 100vh;
+    overflow: hidden; background-color: lightblue;
+    background-image: url('https://s5.gifyu.com/images/INZkyuF.gif');
+    background-position: center; background-repeat: repeat;
+    background-size: cover;
+}
 
 
 

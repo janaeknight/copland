@@ -28,26 +28,25 @@
             clearTimeout(wait);
             wait = setTimeout(cb, ms);
 
+            document.querySelector("#screensaver").style.display = "none";
             document.querySelector(".desktop").style.display = "flex";
             document.querySelector(".taskbar").style.display = "flex";
         };
     }
-    onInactive(5000, function () {
-        console.log('Inactive for 5 seconds');
+    onInactive(180000, function () {
+        console.log('Screensaver activated. (3 minutes)');
         document.querySelector(".desktop").style.display = "none";
         document.querySelector(".taskbar").style.display = "none";
-        document.body.style.backgroundImage = "none";
+        document.querySelector("#screensaver").style.display = "block";
     });
 
 
 // Close All Windows
 
-    var allWindows = document.querySelectorAll(".window");
     document.getElementById("ts-4").addEventListener("click", closeWindows);
     function closeWindows() {
-        //allWindows.style.display = "none";
-        //console.log("All active windows have been closed.");
-        console.log(allWindows);
+        $('.window').hide();
+        console.log("All active windows have been closed.");
     }
 
 
@@ -70,7 +69,7 @@
 
 
 
-
+    $(".window").addClass("ui-widget-content"); // <-- drag class (REQ.)
     $(function() { $(".window").draggable(); }); // <!--- makes windows draggable
 
 
@@ -120,9 +119,6 @@
     🔗 https://ibb.co/album/mrzrva, copland os wallpaper arch.
 
     */
-
-
-
 
 
 
