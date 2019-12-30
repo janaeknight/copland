@@ -152,6 +152,25 @@ body {
 }
 .themeLeftOp img { padding-top: 3px; margin-bottom: -5px; width: 50%; }
 
+.thOpSel {
+    width: 95%; height: 200px;
+    background-color: coral;
+    margin: 5px 0;
+}
+.thb {
+    display: flex; flex-direction: row;
+    width: 200px; height: 22px;
+    margin: auto 0;
+    background-color: lightgray;
+}
+.thbBox {
+    width: 35px; height: 12px;
+    margin: 4px 2px;
+    border: 1px solid black;
+    margin: auto 0; margin-left: 5px; margin-right: 5px;
+    background-color: lightseagreen;
+}
+
   /*
     #534D4D on theme page button highlight
   */
