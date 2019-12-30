@@ -75,6 +75,7 @@ body {
 /*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ WINDOW ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
 
 .window {
+    position: fixed;
     background-color: #DDDDDD;
     border: 1px groove slategray; font-size: 14px;
     box-shadow: 0px 4px 12px 0px rgba(0,0,0,0);
@@ -238,6 +239,8 @@ body {
     display: block; image-rendering: pixelated;
     width: 88%; margin: 4px auto;
 }
+#winonaTerm { left: 30%; top: 15%; }
+#romeoTerm { top: 45%; }
 
 /*=========================================================*/
 

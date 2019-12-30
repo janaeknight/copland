@@ -91,6 +91,12 @@
     document.getElementById("dt-8").addEventListener("dblclick", function(){ 
         document.getElementById("themeTerm").style.display = "block";
     });
+    document.getElementById("dt-9").addEventListener("dblclick", function(){ 
+        document.getElementById("romeoTerm").style.display = "block";
+    });
+    document.getElementById("dt-10").addEventListener("dblclick", function(){ 
+        document.getElementById("winonaTerm").style.display = "block";
+    });
 
     // on .window click add class for z index to raise 4444 (activeZ) on (this)
 
