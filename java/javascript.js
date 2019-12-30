@@ -13,13 +13,31 @@
     
     */
 
-
 //  SETS DEFAULT BACKGROUND IMG (onload)
 
     document.body.style.backgroundImage = "url('https://i.ibb.co/n6FVW6V/1999.jpg')";
     document.body.style.backgroundSize = "850px";
 
+//  SCREENSAVER / ACTIVITY TIMEOUT
 
+    function onInactive(ms, cb) {
+
+        var wait = setTimeout(cb, ms);
+
+        document.onmousemove = document.mousedown = document.mouseup = document.onkeydown = document.onkeyup = document.focus = function () {
+            clearTimeout(wait);
+            wait = setTimeout(cb, ms);
+
+            document.querySelector(".desktop").style.display = "flex";
+            document.querySelector(".taskbar").style.display = "flex";
+        };
+    }
+    onInactive(5000, function () {
+        console.log('Inactive for 5 seconds');
+        document.querySelector(".desktop").style.display = "none";
+        document.querySelector(".taskbar").style.display = "none";
+        document.body.style.backgroundImage = "none";
+    });
 
 
 // Close All Windows
@@ -87,8 +105,9 @@
 
     /*
 
-    👏 http://osxdaily.com/2018/01/01/classic-mac-os-tiling-wallpapers/, classic wallpapers
+    👏🏻 http://osxdaily.com/2018/01/01/classic-mac-os-tiling-wallpapers/, classic wallpapers
     👏 http://www.iconarchive.com/artist/iconfactory.html, pseudo os icons
+    👏🏿 https://stackoverflow.com/questions/24338450/how-to-detect-user-inactivity-with-javascript, imbondbaby -- timeout function
 
 
     */
@@ -156,8 +175,7 @@
         document.body.style.backgroundColor = "coral";    
     });
 
-
-
+    // -- // IMG WALLPAPERS
 
     $("#bgcPurp1").on( "click", function() {
         $("#bgcPurp1").addClass("bgSelectedOption");
@@ -209,8 +227,5 @@
             document.body.style.backgroundImage = "url('https://i.ibb.co/n6FVW6V/1999.jpg')";
             document.body.style.backgroundSize = "850px";
     });
-    
-
-
 
     // -------------> add highlight to article buttons on click
