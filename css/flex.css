@@ -49,3 +49,5 @@ input:hover, input:focus, textarea:hover, textarea:focus {
 .radius { border-radius: 100%; }
 
 
+.cntr-box { width: inherit; height: inherit; margin: 0 auto; }
+

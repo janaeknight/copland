@@ -76,7 +76,7 @@ body {
 
 .window {
     background-color: #DDDDDD;
-    border: 1px groove slategray;
+    border: 1px groove slategray; font-size: 14px;
     box-shadow: 0px 4px 12px 0px rgba(0,0,0,0);
     border-top-right-radius: 5px; padding-bottom: 6px;
     margin-left: 5%; /* literally margins windows left */
@@ -138,25 +138,22 @@ body {
     */
 
 .themeLeftOp {
-    width: 92%; height: 250px;
-    background-color: snow; border: 1px inset black;
+    width: 85%; height: 250px;
+    background-color: snow;
+    border: 1px inset black;
     overflow-y: scroll; margin: auto;
 }
-
-/* width */
-::-webkit-scrollbar {
-    width: 20px;
-    background-color: lightgray;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: red;
-    border-radius: 10px;
-  }
+.themeLeftOp button {
+    display: block; margin: 8px auto;
+    width: 94%; min-height: 58px;
+    background-color: inherit;
+    border: none; font-size: 13px;
+    font-weight: 275; margin-top: 10px;
+}
+.themeLeftOp img { padding-top: 3px; margin-bottom: -5px; width: 50%; }
 
   /*
-    #534D4D on theme page button hightlight
+    #534D4D on theme page button highlight
   */
 
 /*~-~-~-~-~-~-~-~-~-~ ABOUT THIS COMPUTER / W ~-~-~-~-~-~-~-~-~-~*/
@@ -178,3 +175,52 @@ body {
 #erscTerm .w-tb { background-color: steelblue; }
 #erscTerm .w-tb span, #erscTerm .w-tb button {background-color: steelblue; }
 /*.ersct { }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    SCROLLBAR SETTINGS 
+        -- ADD LEFT AND RIGHT X AXIS ARROWS
+*/
+
+
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 11px;
+        background-color: lightgray;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #9898FB;
+    }
+    /* Buttons */
+    ::-webkit-scrollbar-button:single-button {
+        background-color: #bbbbbb;
+        display: block;
+        border-style: solid;
+        height: 13px;
+        width: 16px;
+    }
+    /* Up */
+    ::-webkit-scrollbar-button:single-button:vertical:decrement {
+        border-width: 0 8px 8px 8px;
+        border-color: transparent transparent #555555 transparent;
+    }
+    /* Down */
+    ::-webkit-scrollbar-button:single-button:vertical:increment {
+        border-width: 8px 8px 0 8px;
+        border-color: #555555 transparent transparent transparent;
+    }
