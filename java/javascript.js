@@ -112,42 +112,23 @@
 
     // -- // IMG COLORS
 
-    document.getElementById("colorSub").addEventListener("click", colorSub)
-    function colorSub() {
-        let cbgSel = document.getElementById("cbgSel");
-        let cbgSelected = cbgSel.options[cbgSel.selectedIndex].text;
-        console.log("User selected background color: " +cbgSelected,);
-        document.body.style.backgroundImage = "none";
+        // removes grey background from selected option
 
-        if (cbgSelected == "Purple") {
-            document.body.style.backgroundColor = "#63639D";
-        }
-        if (cbgSelected == "Blue") {
-            document.body.style.backgroundColor = "cadetblue";
-        }
-        if (cbgSelected == "Green") {
-            document.body.style.backgroundColor = "greenyellow";
-        }
-        if (cbgSelected == "Orange") {
-            document.body.style.backgroundColor = "coral";
-        }
-        if (cbgSelected == "Red") {
-            document.body.style.backgroundColor = "tomato";
-        }
-        if (cbgSelected == "Yellow") {
-            document.body.style.backgroundColor = "khaki";
-        }
-        if (cbgSelected == "Light Pink") {
-            document.body.style.backgroundColor = "lightsalmon";
-        }
-        if (cbgSelected == "Hot Pink") {
-            document.body.style.backgroundColor = "magenta";
-        }
-    }
+            $(".thb").on( "click", function() {
+                $(".thb").removeClass("bgSelectedOption");
+                document.body.style.backgroundImage = "none";
+            });
+    
+    $("#bgcPur").on( "click", function() {
+        $("#bgcPur").addClass("bgSelectedOption");
+        document.body.style.backgroundColor = "#63639D";    
+    });
+
+
 
     // -- // IMG BACKGROUNDS
 
-    document.getElementById("themeSub").addEventListener("click", themeSub)
+    /*document.getElementById("themeSub").addEventListener("click", themeSub)
     function themeSub() {
         let ibgSel = document.getElementById("ibgSel");
         let ibgSelected = ibgSel.options[ibgSel.selectedIndex].text;
@@ -198,3 +179,4 @@
             document.body.style.backgroundSize = "850px";
         }
     }
+    */

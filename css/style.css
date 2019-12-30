@@ -155,11 +155,13 @@ body {
     padding-top: 3px; margin-bottom: -5px;
     margin: 0 auto;
 }
-
 .thOpSel {
     width: 95%; height: 200px;
     margin: 5px 0; overflow-y: scroll;
     border: 1.1px solid black;
+}
+#themeTerm select {
+    border-radius: 5px;
 }
 .thb {
     display: flex; flex-direction: row;
@@ -178,6 +180,7 @@ body {
     margin: auto 0; margin-left: 5px; margin-right: 5px;
     background-color: lightseagreen;
 }
+.thOpSel a:hover { background-color: #b8b8b8; color: #1f1e1e; }
 
 .tbb1 { background-color: #63639D;}
 .tbb2 { background-color: cadetblue;}
@@ -188,6 +191,8 @@ body {
 .tbb7 { background-color: turquoise;}
 .tbb8 { background-color: gray;}
 .tbb9 { background-color: coral;}
+
+.bgSelectedOption { background-color: #b0aeae; color: #1f1e1e; }
 
 
 
