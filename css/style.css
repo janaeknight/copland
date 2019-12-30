@@ -217,6 +217,7 @@ body {
 
 #aboutComputerTerm {
     width: 560px; height: auto; display: none;
+    top: 18%; left: 18%;
 }
 
 .atct { margin: 5px; }
