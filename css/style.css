@@ -205,10 +205,15 @@ body {
 .tbbCircut { background-image: url("https://i.ibb.co/f0FSTD4/classic-mac-os-tile-wallpapers-7.png"); }
 .tbbLines { background-image: url("https://i.ibb.co/F4Y8rxD/purplline.jpg"); }
 .tbbAge { background-image: url("https://i.ibb.co/n6FVW6V/1999.jpg"); }
+.tbbCourage { background-image: url("https://i.ibb.co/SdnwDVM/courage.jpg"); }
+.tbbGoals  { background-image: url("https://i.ibb.co/0Y6VkCH/goals.jpg"); }
+.tbbMario  { background-image: url("https://i.ibb.co/b1MqDq3/mario.jpg"); }
+.tbbSub  { background-image: url("https://i.ibb.co/r4CSH5D/submarine.png"); }
+.tbbEarth  { background-image: url("https://i.ibb.co/mSbndcV/earth.jpg"); }
+.tbbCher { background-image: url("https://i.ibb.co/qgkjTbq/cher.jpg"); }
+.tbbJur { background-image: url("https://i.ibb.co/18b0pVz/jurassic.jpg"); }
 
 .bgSelectedOption { background-color: #b0aeae; color: #1f1e1e; }
-
-
 
   /*
     #534D4D on theme page button highlight
@@ -246,7 +251,7 @@ body {
 
 /*=========================================================*/
 
-    .fontArticle, .windowsArticle, #screensaver, .bgP2 { display: none; }
+    .fontArticle, .windowsArticle, #screensaver, .bgP2, .bgP3 { display: none; }
 
 /*=========================================================*/
 

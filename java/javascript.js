@@ -47,7 +47,7 @@
     function closeWindows() {
         $('.window').hide();
         console.log("All active windows have been closed.");
-    }
+    };
 
 // Close (this) Window
 
@@ -56,7 +56,7 @@
     function closeThisWin() {
         let winToClose = this.parentElement.parentElement;
         winToClose.style.display = "none";
-    }
+    };
 
 
 // Time - Taskbar
@@ -76,7 +76,7 @@
     document.getElementById("date").innerHTML = timeString;
     console.log(timeString);
 
-
+// Window UI
 
     $(".window").addClass("ui-widget-content"); // <-- drag class (REQ.)
     $(function() { $(".window").draggable(); }); // <!--- makes windows draggable
@@ -123,8 +123,8 @@
 
     /*
 
-    👏🏻 http://osxdaily.com/2018/01/01/classic-mac-os-tiling-wallpapers/, classic wallpapers
-    👏 http://www.iconarchive.com/artist/iconfactory.html, pseudo os icons
+    👏 http://osxdaily.com/2018/01/01/classic-mac-os-tiling-wallpapers/, classic wallpapers
+    👏🏻 http://www.iconarchive.com/artist/iconfactory.html, pseudo os icons
     👏🏿 https://stackoverflow.com/questions/24338450/how-to-detect-user-inactivity-with-javascript, imbondbaby -- timeout function
 
 
@@ -146,22 +146,23 @@
 
     // BG PAGE SELECT
 
+    $("#bgPgBtn").on( "click", function() {
 
-    $("#themeBgPgSel").on( "click", function() {
+        let bgPgSel = $("#themeBgPgSel option:selected").text();
 
-        let bgPgSel = $("#themeBgPgSel option:selected").val();
-
-        if (bgPgSel === 1) {
-            $('.bgP2').hide();
+        if (bgPgSel === "Color Backgrounds") {
+            $('.bgP2').hide(); $('.bgP3').hide();
             $('.bgP1').show();
-        }
-        if (bgPgSel === 2) {
-            $('.bgP1').hide();
+        };
+        if (bgPgSel === "Image Backgrounds") {
+            $('.bgP1').hide(); $('.bgP3').hide();
             $('.bgP2').show();
-        }
-
-        console.log(bgPgSel);
-
+        };
+        if (bgPgSel === "Custom Backgrounds") {
+            $('.bgP1').hide(); $('.bgP2').hide();
+            $('.bgP3').show();
+        };
+    
     });
 
 
@@ -262,6 +263,50 @@
         $("#bgcAge").addClass("bgSelectedOption");
             document.body.style.backgroundImage = "url('https://i.ibb.co/n6FVW6V/1999.jpg')";
             document.body.style.backgroundSize = "850px";
+    });
+
+    // -- // CUSTOM BGS
+
+    $("#bgcCourage").on( "click", function() {
+        $("#bgcCourage").addClass("bgSelectedOption");
+        document.body.style.backgroundImage = "url('https://i.ibb.co/SdnwDVM/courage.jpg')";
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundPosition = "center";
+    });
+    $("#bgcGoals").on( "click", function() {
+        $("#bgcGoals").addClass("bgSelectedOption");
+        document.body.style.backgroundImage = "url('https://i.ibb.co/0Y6VkCH/goals.jpg')";
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundPosition = "center";
+    });
+    $("#bgcMario").on( "click", function() {
+        $("#bgcMario").addClass("bgSelectedOption");
+        document.body.style.backgroundImage = "url('https://i.ibb.co/b1MqDq3/mario.jpg')";
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundPosition = "center";
+    });
+    $("#bgcSub").on( "click", function() {
+        $("#bgcSub").addClass("bgSelectedOption");
+        document.body.style.backgroundImage = "url('https://i.ibb.co/r4CSH5D/submarine.png')";
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundPosition = "center";
+    });
+    $("#bgcEarth").on( "click", function() {
+        $("#bgcEarth").addClass("bgSelectedOption");
+        document.body.style.backgroundImage = "url('https://i.ibb.co/mSbndcV/earth.jpg')";
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundPosition = "center";
+    });
+    $("#bgcCher").on( "click", function() {
+        $("#bgcCher").addClass("bgSelectedOption");
+        document.body.style.backgroundImage = "url('https://i.ibb.co/qgkjTbq/cher.jpg')";
+        document.body.style.backgroundSize = "auto";
+    });
+    $("#bgcJur").on( "click", function() {
+        $("#bgcJur").addClass("bgSelectedOption");
+        document.body.style.backgroundImage = "url('https://i.ibb.co/18b0pVz/jurassic.jpg')";
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundPosition = "center";
     });
 
     // -------------> add highlight to article buttons on click
