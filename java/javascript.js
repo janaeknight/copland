@@ -49,6 +49,15 @@
         console.log("All active windows have been closed.");
     }
 
+// Close (this) Window
+
+    document.querySelectorAll(".closeWin").forEach(function(a) { a.addEventListener("click", closeThisWin)});
+
+    function closeThisWin() {
+        let winToClose = this.parentElement.parentElement;
+        winToClose.style.display = "none";
+    }
+
 
 // Time - Taskbar
 
