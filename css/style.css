@@ -81,6 +81,7 @@ body {
     box-shadow: 0px 4px 12px 0px rgba(0,0,0,0);
     border-top-right-radius: 5px; padding-bottom: 6px;
     margin-left: 5%; /* literally margins windows left */
+    z-index: auto;
 }
 .w-tb {
     display: flex !important; flex-direction: row !important;
@@ -259,7 +260,7 @@ body {
 }
 
 
-
+.activeZ { z-index: 444444; }
 
 
 
@@ -284,8 +285,7 @@ body {
         background-color: #bbbbbb;
         display: block;
         border-style: solid;
-        height: 13px;
-        width: 16px;
+        width: 16px; height: 13px;
     }
     /* Up */
     ::-webkit-scrollbar-button:single-button:vertical:decrement {

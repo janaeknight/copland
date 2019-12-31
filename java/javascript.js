@@ -96,12 +96,16 @@
     });
     document.getElementById("dt-10").addEventListener("dblclick", function(){ 
         document.getElementById("winonaTerm").style.display = "block";
+        $("#winonaTerm").addClass("activeZ");
     });
 
-    // on .window click add class for z index to raise 4444 (activeZ) on (this)
+    // on .window click, add class for z index to raise 4444 (activeZ) on (this)
 
-
-
+    $(".window").on( "click", function() {
+        $(".window").removeClass("activeZ");
+        $(this).addClass("activeZ");
+        // functional, but nonActiveZ window layers stack in html order
+    });
 
 
 
@@ -130,6 +134,27 @@
 
 
 // THEMES
+
+    // BG PAGE SELECT
+
+
+    $("#themeBgPgSel").on( "click", function() {
+
+        let bgPgSel = $("#themeBgPgSel option:selected").val();
+
+        if (bgPgSel === 1) {
+            $('.bgP2').hide();
+            $('.bgP1').show();
+        }
+        if (bgPgSel === 2) {
+            $('.bgP1').hide();
+            $('.bgP2').show();
+        }
+
+        console.log(bgPgSel);
+
+    });
+
 
     // -- // IMG COLORS
 
