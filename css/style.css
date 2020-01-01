@@ -9,6 +9,13 @@ body {
 
 .f1 { font-size: 14px;} .f2 { font-size: 14.5px;} .f3 { font-size: 15px;}
 .f4 { font-size: 13px;} .f5 { font-size: 12px;} .f6 { font-size: 16px;}
+
+/*=========================================================*/
+
+.fontArticle, .windowsArticle, #screensaver, .bgP2, .bgP3 { display: none; }
+
+/*=========================================================*/
+
 /*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ TASKBAR ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
 
 .taskbar {
@@ -75,7 +82,7 @@ body {
 /*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ WINDOW ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
 
 .window {
-    position: fixed;
+    position: fixed; display: none;
     background-color: #DDDDDD;
     border: 1px groove slategray; font-size: 14px;
     box-shadow: 0px 4px 12px 0px rgba(0,0,0,0);
@@ -222,7 +229,7 @@ body {
 /*~-~-~-~-~-~-~-~-~-~ ABOUT THIS COMPUTER / W ~-~-~-~-~-~-~-~-~-~*/
 
 #aboutComputerTerm {
-    width: 560px; height: auto; display: none;
+    width: 560px; height: auto;
     top: 18%; left: 18%;
 }
 
@@ -234,14 +241,14 @@ body {
 
 #erscTerm {
     width: 620px; min-height: 240px;
-    background-color: steelblue; display: none;
+    background-color: steelblue;
 }
 #erscTerm .w-tb { background-color: steelblue; }
 #erscTerm .w-tb span, #erscTerm .w-tb button {background-color: steelblue; }
 
 /*~-~-~-~-~-~-~-~-~-~ GALLERY / W's ~-~-~-~-~-~-~-~-~-~*/
 
-.galleryWindow { display: none; width: 345px; height: auto }
+.galleryWindow { width: 345px; height: auto }
 .galleryWindow img {
     display: block; image-rendering: pixelated;
     width: 88%; margin: 4px auto;
@@ -249,10 +256,48 @@ body {
 #winonaTerm { left: 30%; top: 15%; }
 #romeoTerm { top: 45%; }
 
-/*=========================================================*/
+/*~-~-~-~-~-~-~-~-~-~ FORTUNE / W ~-~-~-~-~-~-~-~-~-~*/
 
-    .fontArticle, .windowsArticle, #screensaver, .bgP2, .bgP3 { display: none; }
-
+#fortuneTerm {
+    width: 580px; min-height: 425px; display: block;
+    top: 17%; left: 4%; display: none;
+    /*background-color: #E6C179;*/
+    background-color: #dead4e;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-box-shadow: 10px 10px -1px -1px rgba(121,158,230,1);
+    -moz-box-shadow: 10px 10px -1px -1px rgba(121,158,230,1);
+    box-shadow: 10px 10px 1px -1px rgba(121,158,230,1);
+    border-left: 8px solid #e6799e;
+    border-top: 8px solid #e6799e;
+}
+#fortuneTerm .w-tb, #fortuneTerm .w-tb span, #fortuneTerm .w-tb button { background-color: #dead4e; }
+#fortuneTerm .w-tb {
+    background-image: url("https://i.ibb.co/0XXGnbh/fortune-link-2.png");
+    background-position: center; background-repeat: repeat-x;
+    background-size: auto;
+}
+#fortuneTerm .w-tb span {
+    height: inherit; padding-top: 4px !important;
+    padding-left: 0px !important; padding-right: 2px !important;
+}
+#fortuneTerm .busy-c {
+    border: none; text-align: center;
+    font-family: 'Shojumaru', cursive;
+}
+#fortuneTerm .busy-c a {
+    padding: 4px 0;
+}
+#fortuneTerm .busy-c a:hover {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/1b/10-band_Rainbow_Flag.png");
+    background-size: contain;
+}
+#fortuneTerm h1 { font-size: 50px;  margin: 14px 0; }
+#fortuneTerm img {
+    display: block; width: 50%; margin: auto;
+    padding: 10px 0; padding-bottom: 20px;
+}
 /*=========================================================*/
 
 
