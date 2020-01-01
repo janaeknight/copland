@@ -5,14 +5,19 @@ body {
     font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     background-repeat: repeat;
 }
+
 .txt-gray { color:gray; }
+.txt-mono { font-family: monospace !important; }
+.txt-bubble { font-family: 'Bubblegum Sans', cursive !important; }
 
 .f1 { font-size: 14px;} .f2 { font-size: 14.5px;} .f3 { font-size: 15px;}
 .f4 { font-size: 13px;} .f5 { font-size: 12px;} .f6 { font-size: 16px;}
+.f7 {font-size: 21px;} .f8 {font-size: 22px;} .f9 {font-size: 22.5px;}
 
 /*=========================================================*/
 
-.fontArticle, .windowsArticle, #screensaver, .bgP2, .bgP3 { display: none; }
+.fontArticle, .windowsArticle, #screensaver, .bgP2, .bgP3, .fortunePg2, .fortunePg3, .postCookie
+{ display: none; }
 
 /*=========================================================*/
 
@@ -259,7 +264,7 @@ body {
 /*~-~-~-~-~-~-~-~-~-~ FORTUNE / W ~-~-~-~-~-~-~-~-~-~*/
 
 #fortuneTerm {
-    width: 580px; min-height: 425px; display: block;
+    width: 580px; height: auto; display: block;
     top: 17%; left: 4%; display: none;
     /*background-color: #E6C179;*/
     background-color: #dead4e;
@@ -287,6 +292,7 @@ body {
     font-family: 'Shojumaru', cursive;
 }
 #fortuneTerm .busy-c a {
+    display: block;
     padding: 4px 0;
 }
 #fortuneTerm .busy-c a:hover {
@@ -298,6 +304,10 @@ body {
     display: block; width: 50%; margin: auto;
     padding: 10px 0; padding-bottom: 20px;
 }
+.preCookie img { padding: 25px 0 !important;}
+.preCookie { height: inherit; width: inherit; margin: auto auto;}
+.postCookie p { font-size: 28px; margin: 35px 15px 20px 15px; } 
+.postCookie a { margin: 10px 0;}
 /*=========================================================*/
 
 

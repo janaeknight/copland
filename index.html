@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Shojumaru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Shojumaru&display=swap" rel="stylesheet">
     <!--
         load = "lazy"
         image-rendering: pixelated;
@@ -248,10 +248,6 @@
                                                 <div class="thbBox tbbOrange"></div>
                                                 <span>Orange</span>
                                             </a>
-                                            <!--a class="thb" id="bgc">
-                                                <div class="thbBox tbb"></div>
-                                                <span>Color</span>
-                                            </a-->
 
                                         </div>
                                     </div>
@@ -434,12 +430,29 @@
                     <button id=""><a>-</a></button>
                 </div>
                 <div class="busy-c">
-                    <h1>FORTUNE</h1>
-                    <img src="css/fortune/coolok-uy.png">
+                    <div class="fortunePg1">
+                        <h1>FORTUNE</h1>
+                        <img src="css/fortune/coolok-uy.png">
 
-                    <a id="">« Open Today's Cookie »</a>
-                    <a id="">« Settings »</a>
+                        <a id="getFortuneBtn">« Open Today's Cookie »</a>
+                        <a id="">« Zodiac Mad »</a>
+                        <a id="">« Settings »</a><br>
 
+                        <span class="txt-mono f5">LLC&copy; FreeToPlayGames1.co</span>
+                    </div>
+                    <div class="fortunePg2">
+                        <div class="preCookie">
+                            <img src="css/fortune/loadingluck.gif">
+                            <span class="f7">Opening Cookie...</span>
+                        </div>
+                        <div class="postCookie">
+                            <h2 class="txt-bubble"><u>Today's Fortune:</u></h2>
+                            <p class="" id="todaysCookie"></p>
+                            <span class="f7 txt-bubble" id="todaysLuckies"></span>
+                            
+                            <a id="fortuneB2M">« Back to Menu »</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!--div class="window ui-widget-content" id="">
