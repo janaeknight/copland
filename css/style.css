@@ -265,7 +265,7 @@ body {
 
 #fortuneTerm {
     width: 580px; height: auto; display: block;
-    top: 17%; left: 4%; display: none;
+    top: 17%; left: 4%;
     /*background-color: #E6C179;*/
     background-color: #dead4e;
     border-top-left-radius: 5px;
