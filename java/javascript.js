@@ -20,6 +20,8 @@
 
 //  SCREENSAVER / ACTIVITY TIMEOUT
 
+    // Timeout (3 minutes)
+
     function onInactive(ms, cb) {
 
         var wait = setTimeout(cb, ms);
@@ -150,6 +152,27 @@
 
 
 // THEMES
+
+    // On Theme (left) button click, hide all divs (right)
+
+    $(".thOBtn").on( "click", function() {
+        $(".thOA").hide();
+    });
+
+        // And show this
+
+        $("#thOBgs").on( "click", function() {
+            $(".backgroundArticle").show();
+        });
+        $("#thOFonts").on( "click", function() {
+            $(".fontArticle").show();
+        });
+        $("#thOWindows").on( "click", function() {
+            $(".windowsArticle").show();
+        });
+        $("#thOSavers").on( "click", function() {
+            $(".screensaversArticle").show();
+        });
 
     // BG PAGE SELECT
 

@@ -16,7 +16,7 @@ body {
 
 /*=========================================================*/
 
-.fontArticle, .windowsArticle, #screensaver, .bgP2, .bgP3, .fortunePg2, .fortunePg3, .postCookie
+.fontArticle, .windowsArticle, .screensaversArticle, #screensaver, .bgP2, .bgP3, .fortunePg2, .fortunePg3, .postCookie
 { display: none; }
 
 /*=========================================================*/
@@ -134,7 +134,7 @@ body {
 /*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ THEMES / W ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
 
 #themeTerm {
-    width: 500px; height: auto;
+    width: 500px; height: auto; display: block;
 }
 .themeTitle { display: block; font-weight: bolder; margin: 5px; }
 .tt a {
@@ -237,9 +237,7 @@ body {
     width: 560px; height: auto;
     top: 18%; left: 18%;
 }
-
 .atct { margin: 5px; }
-
 #aboutComputerTerm hr { border-top: 1px dashed darkslategray; width: 98%; }
 
 /*~-~-~-~-~-~-~-~-~-~ ERSC / W ~-~-~-~-~-~-~-~-~-~*/
@@ -264,9 +262,8 @@ body {
 /*~-~-~-~-~-~-~-~-~-~ FORTUNE / W ~-~-~-~-~-~-~-~-~-~*/
 
 #fortuneTerm {
-    width: 580px; height: auto; display: block;
+    width: 580px; height: auto;
     top: 17%; left: 4%;
-    /*background-color: #E6C179;*/
     background-color: #dead4e;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -319,6 +316,14 @@ body {
     background-size: cover;
 }
 
+.ss1 /* screensaver name */ { background-image: url(''); }
+.ss2 /* screensaver name */ { background-image: url(''); }
+.ss3 /* screensaver name */ { background-image: url(''); }
+.ss4 /* screensaver name */ { background-image: url(''); }
+.ss5 /* screensaver name */ { background-image: url(''); }
+.ss6 /* screensaver name */ { background-image: url(''); }
+.ss7 /* screensaver name */ { background-image: url(''); }
+.ss8 /* screensaver name */ { background-image: url(''); }
 
 .activeZ { z-index: 444444; }
 
