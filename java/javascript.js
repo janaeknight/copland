@@ -329,8 +329,11 @@
     });
     $("#bgcCher").on( "click", function() {
         $("#bgcCher").addClass("bgSelectedOption");
-        document.body.style.backgroundImage = "url('https://i.ibb.co/qgkjTbq/cher.jpg')";
-        document.body.style.backgroundSize = "auto";
+        document.body.style.backgroundImage = "url('https://i.ibb.co/JHd77zQ/cher.jpg')";
+        document.body.style.backgroundSize = "100vh";
+        document.body.style.backgroundPosition = "center";
+        document.body.style.backgroundColor = "#F6E13A";
+        document.body.style.backgroundRepeat = "repeat-y";
     });
     $("#bgcJur").on( "click", function() {
         $("#bgcJur").addClass("bgSelectedOption");

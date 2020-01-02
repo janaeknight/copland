@@ -133,9 +133,7 @@ body {
 
 /*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ THEMES / W ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
 
-#themeTerm {
-    width: 500px; height: auto; display: block;
-}
+#themeTerm { width: 500px; height: 325.5; display: block; }
 .themeTitle { display: block; font-weight: bolder; margin: 5px; }
 .tt a {
     font-size: 13px;
@@ -165,7 +163,7 @@ body {
     font-weight: 275; margin-top: 10px;
 }
 .themeLeftOp img {
-    display: block; width: 50%;
+    display: block; width: 46%;
     padding-top: 3px; margin-bottom: -5px;
     margin: 0 auto;
 }
@@ -231,6 +229,22 @@ body {
     #534D4D on theme page button highlight
   */
 
+/*~-~-~-~-~-~-~-~-~ CONTROL PANEL / W ~-~-~-~-~-~-~-~-~*/
+
+#controlPanelTerm {
+    display: block; width: 490px; height: 100px;
+    bottom: 1%; left: -4%; padding-bottom: 0;
+}
+#controlPanelTerm .busy-r {
+    width: inherit; height: auto;
+    background-color: gray; border: none;
+}
+#cpMain { margin: 0 auto; }
+#cpMain button img { display: block; margin: 0 auto; padding: 4px 0; }
+#cpMain button {
+    width: 90px; height: auto;
+    text-align: center; margin-top: 5px;
+}
 /*~-~-~-~-~-~-~-~-~-~ ABOUT THIS COMPUTER / W ~-~-~-~-~-~-~-~-~-~*/
 
 #aboutComputerTerm {
