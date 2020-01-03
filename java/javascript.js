@@ -20,6 +20,13 @@
 
 //  SCREENSAVER / ACTIVITY TIMEOUT
 
+    // removes grey background from selected option
+
+    $(".thbs").on( "click", function() {
+        $(".thbs").removeClass("bgSelectedOption");
+        $("#screensaver").removeClass(); // <!--- removes sel screen
+    });
+
     // Timeout (3 minutes)
 
     function onInactive(ms, cb) {
@@ -44,7 +51,9 @@
 
         // <!--- screensaver apply
 
-
+        $("#").on( "click", function() {
+            $("#").addClass("");   
+        });
 
 
 // Close All Windows
@@ -260,46 +269,55 @@
         $("#bgcPurp1").addClass("bgSelectedOption");
             document.body.style.backgroundImage = "url('https://i.ibb.co/j9Ysj3F/classic-mac-os-tile-wallpapers-1.png')";
             document.body.style.backgroundSize = "128px";
+            document.body.style.backgroundRepeat = "repeat";
     });
     $("#bgcPurp2").on( "click", function() {
         $("#bgcPurp2").addClass("bgSelectedOption");
             document.body.style.backgroundImage = "url('https://i.ibb.co/dPj3zBx/classic-mac-os-tile-wallpapers-3.png')";
             document.body.style.backgroundSize = "128px";
+            document.body.style.backgroundRepeat = "repeat";
     });
     $("#bgcPurp3").on( "click", function() {
         $("#bgcPurp3").addClass("bgSelectedOption");
             document.body.style.backgroundImage = "url('https://i.ibb.co/0X0v7NZ/classic-mac-os-tile-wallpapers-8.png')";
             document.body.style.backgroundSize = "128px";
+            document.body.style.backgroundRepeat = "repeat";
     });
     $("#bgcBlue1").on( "click", function() {
         $("#bgcBlue1").addClass("bgSelectedOption");
             document.body.style.backgroundImage = "url('https://i.ibb.co/0tZW83X/classic-mac-os-tile-wallpapers-9.png')";
             document.body.style.backgroundSize = "128px";
+            document.body.style.backgroundRepeat = "repeat";
     });
     $("#bgcBlack1").on( "click", function() {
         $("#bgcBlack1").addClass("bgSelectedOption");
             document.body.style.backgroundImage = "url('https://i.ibb.co/Lpx2M5V/classic-mac-os-tile-wallpapers-6.png')";
             document.body.style.backgroundSize = "128px";
+            document.body.style.backgroundRepeat = "repeat";
     });
     $("#bgcCat").on( "click", function() {
         $("#bgcCat").addClass("bgSelectedOption");
             document.body.style.backgroundImage = "url('https://i.ibb.co/NsTxX1G/classic-mac-os-tile-wallpapers-4.png')";
             document.body.style.backgroundSize = "128px";
+            document.body.style.backgroundRepeat = "repeat";
     });
     $("#bgcStars").on( "click", function() {
         $("#bgcStars").addClass("bgSelectedOption");
             document.body.style.backgroundImage = "url('https://i.ibb.co/YT66PvK/classic-mac-os-tile-wallpapers-2.png')";
             document.body.style.backgroundSize = "128px";
+            document.body.style.backgroundRepeat = "repeat";
     });
     $("#bgcCircut").on( "click", function() {
         $("#bgcCircut").addClass("bgSelectedOption");
             document.body.style.backgroundImage = "url('https://i.ibb.co/f0FSTD4/classic-mac-os-tile-wallpapers-7.png')";
             document.body.style.backgroundSize = "128px";
+            document.body.style.backgroundRepeat = "repeat";
     });
     $("#bgcLines").on( "click", function() {
         $("#bgcLines").addClass("bgSelectedOption");
             document.body.style.backgroundImage = "url('https://i.ibb.co/F4Y8rxD/purplline.jpg')";
             document.body.style.backgroundSize = "300px";
+            document.body.style.backgroundRepeat = "repeat";
     });
     $("#bgcAge").on( "click", function() {
         $("#bgcAge").addClass("bgSelectedOption");
