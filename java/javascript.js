@@ -400,22 +400,33 @@ if ( document.getElementById("soundMPTerm").style.display = "block" ) {
     console.log("SMP Radio is --- live.");
 }
 
+// RADIO
+
 var audioFeed = document.getElementById("audioFeed");
 let audioPauseTime = 0;
 let playedToday = "no";
 
+    // Play Button
+
 $("#sMPPlayBtn").on( "click", function() {
 
-    audioFeed.currentTime = Math.floor(Math.random() * audioFeed.duration);
-    // audioFeed.play();
+    if (playedToday === "no") {
+        audioFeed.currentTime = Math.floor(Math.random() * audioFeed.duration);
+        audioFeed.play();
+        playedToday = "yes"; // <!-- starts stream at rand interval
+    } else {
+        audioFeed.play(); // <!-- starts stream at paused time
+    }
     console.log("Stream Duration: " +audioFeed.duration,);
-    console.log("Stream Started at: " +audioFeed.currentTime,);
-    
+    console.log("Stream Started: " +audioFeed.currentTime,);
 });
+
 $("#sMPPauseBtn").on( "click", function() {
     audioFeed.pause();
 });
+
 $("#sMPCloseBtn").on( "click", function() {
+    audioFeed.pause();
     $("#soundMPTerm").hide();
 });
 
