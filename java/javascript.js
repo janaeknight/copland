@@ -135,6 +135,7 @@
     👏 http://osxdaily.com/2018/01/01/classic-mac-os-tiling-wallpapers/, classic wallpapers
     👏🏻 http://www.iconarchive.com/artist/iconfactory.html, pseudo os icons
     👏🏿 https://stackoverflow.com/questions/24338450/how-to-detect-user-inactivity-with-javascript, imbondbaby -- timeout function
+    👏🏿 https://www.youtube.com/watch?v=VpWQpF7ujMQ&list=PLRmEDzV8AcElZ3Mrm64sq7fgCrTIsDq7n&index=4, -- radio ads
 
 
         EXTENSIONS
@@ -396,11 +397,12 @@ $("#fortuneB2M").on( "click", function() {
     $(".fortunePg1").show();
 });
 
+
+// RADIO
+
 if ( document.getElementById("soundMPTerm").style.display = "block" ) {
     console.log("SMP Radio is --- live.");
 }
-
-// RADIO
 
 var audioFeed = document.getElementById("audioFeed");
 let audioPauseTime = 0;
@@ -414,15 +416,21 @@ $("#sMPPlayBtn").on( "click", function() {
         audioFeed.currentTime = Math.floor(Math.random() * audioFeed.duration);
         audioFeed.play();
         playedToday = "yes"; // <!-- starts stream at rand interval
+        console.log("Stream Duration: " +audioFeed.duration,);
+        console.log("Stream Started: " +audioFeed.currentTime,);
     } else {
         audioFeed.play(); // <!-- starts stream at paused time
     }
-    console.log("Stream Duration: " +audioFeed.duration,);
-    console.log("Stream Started: " +audioFeed.currentTime,);
+    document.getElementById("sMPPlayingTitle").innerHTML = "Streaming...";
+    $(sMPPlayingTitle).removeClass();
+    $(sMPPlayingTitle).addClass("txt-green");
 });
 
 $("#sMPPauseBtn").on( "click", function() {
     audioFeed.pause();
+    document.getElementById("sMPPlayingTitle").innerHTML = "Paused";
+    $(sMPPlayingTitle).removeClass();
+    $(sMPPlayingTitle).addClass("txt-red");
 });
 
 $("#sMPCloseBtn").on( "click", function() {
