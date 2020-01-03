@@ -134,7 +134,7 @@ body {
 
 /*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ THEMES / W ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
 
-#themeTerm { width: 500px; height: 325.5; display: none; }
+#themeTerm { width: 500px; height: 325.5; display: block; }
 .themeTitle { display: block; font-weight: bolder; margin: 5px; }
 .tt a {
     font-size: 13px;
@@ -233,7 +233,7 @@ body {
 /*~-~-~-~-~-~-~-~-~ CONTROL PANEL / W ~-~-~-~-~-~-~-~-~*/
 
 #controlPanelTerm {
-    display: none; width: 490px; height: 100px;
+    width: 490px; height: 100px;
     bottom: 1%; left: -4%; padding-bottom: 0;
 }
 #controlPanelTerm .busy-r {
@@ -373,19 +373,47 @@ body {
 #screensaver {
     width: 100vw; height: 100vh;
     overflow: hidden; background-color: lightblue;
-    background-image: url('https://s5.gifyu.com/images/INZkyuF.gif');
     background-position: center; background-repeat: repeat;
     background-size: cover;
 }
+.screensaversArticle .busy-c {
+    border: none; margin: 0; padding-bottom: 0;
+    border-top: 1px dotted darkslategray;
+}
+#screensPreviewBox {
+    display: block; margin: auto;
+    width: 98%; height: 150px; margin-top: 3px;
+    border: 1px solid darkslategray;
+    border-radius: 5px; background-color: skyblue;
+    background-size: cover; background-position: center;
+}
+.screensaversArticle button {
+    width: 90px; height: 30px;
+}
+.thOpSel2 {
+    width: 99%; height: 60px;
+    margin: 5px 0; overflow-y: scroll;
+    border: 1.1px solid black;
+}
+.thbs {
+    display: flex; flex-direction: row;
+    width: 100%; height: 22px;
+    margin: auto 0; padding: 1px 0;
+    background-color: lightgray;
+}
+.thbs span {
+    margin-left: 5px; margin-top: 1.5px;
+    font-weight: 545;
+}
 
-.ss1 /* screensaver name */ { background-image: url(''); }
-.ss2 /* screensaver name */ { background-image: url(''); }
-.ss3 /* screensaver name */ { background-image: url(''); }
-.ss4 /* screensaver name */ { background-image: url(''); }
-.ss5 /* screensaver name */ { background-image: url(''); }
-.ss6 /* screensaver name */ { background-image: url(''); }
-.ss7 /* screensaver name */ { background-image: url(''); }
-.ss8 /* screensaver name */ { background-image: url(''); }
+.ss1 /* screensaver name */ { background-image: url('https://s5.gifyu.com/images/INZkyuF.gif'); }
+.ss2 /* screensaver name */ { background-image: url('https://s5.gifyu.com/images/matrix.gif'); }
+.ss3 /* screensaver name */ { background-image: url('https://s5.gifyu.com/images/people.md.gif'); }
+.ss4 /* screensaver name */ { background-image: url('https://s5.gifyu.com/images/greece648d515dc4e9edc3.md.gif'); }
+.ss5 /* screensaver name */ { background-image: url('https://s5.gifyu.com/images/bart.md.gif'); }
+.ss6 /* screensaver name */ { background-image: url('https://s5.gifyu.com/images/winblows.md.gif'); }
+.ss7 /* screensaver name */ { background-image: url('https://s5.gifyu.com/images/top.md.gif'); }
+.ss8 /* screensaver name */ { background-image: url('https://s5.gifyu.com/images/jon307752abe801df84.md.gif'); }
 
 .activeZ { z-index: 444444; }
 
