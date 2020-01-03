@@ -42,7 +42,7 @@
             document.querySelector(".taskbar").style.display = "flex";
         };
     }
-    onInactive(180000, function () {
+    onInactive(18000, function () {
         console.log('Screensaver activated. (3 minutes)');
         document.querySelector(".desktop").style.display = "none";
         document.querySelector(".taskbar").style.display = "none";
@@ -51,9 +51,31 @@
 
         // <!--- screensaver apply
 
+        $("#ss1").on( "click", function() {
+            $("#ss1").addClass("bgSelectedOption");
+            $("#screensaver").addClass("ss1");   
+        });
+        /*$("#").on( "click", function() {
+            $("#").addClass("");   
+        });
         $("#").on( "click", function() {
             $("#").addClass("");   
         });
+        $("#").on( "click", function() {
+            $("#").addClass("");   
+        });
+        $("#").on( "click", function() {
+            $("#").addClass("");   
+        });
+        $("#").on( "click", function() {
+            $("#").addClass("");   
+        });
+        $("#").on( "click", function() {
+            $("#").addClass("");   
+        });
+        $("#").on( "click", function() {
+            $("#").addClass("");   
+        });*/
 
 
 // Close All Windows
