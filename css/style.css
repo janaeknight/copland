@@ -133,7 +133,7 @@ body {
 
 /*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ THEMES / W ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
 
-#themeTerm { width: 500px; height: 325.5; display: block; }
+#themeTerm { width: 500px; height: 325.5; display: none; }
 .themeTitle { display: block; font-weight: bolder; margin: 5px; }
 .tt a {
     font-size: 13px;
@@ -232,7 +232,7 @@ body {
 /*~-~-~-~-~-~-~-~-~ CONTROL PANEL / W ~-~-~-~-~-~-~-~-~*/
 
 #controlPanelTerm {
-    display: block; width: 490px; height: 100px;
+    display: none; width: 490px; height: 100px;
     bottom: 1%; left: -4%; padding-bottom: 0;
 }
 #controlPanelTerm .busy-r {
@@ -319,6 +319,49 @@ body {
 .preCookie { height: inherit; width: inherit; margin: auto auto;}
 .postCookie p { font-size: 28px; margin: 35px 15px 20px 15px; } 
 .postCookie a { margin: 10px 0;}
+
+/*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ RADIO / W ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
+
+#soundMPTerm {
+    display: block;
+    width: 286px; height: 100px;
+    border-top-right-radius: 0;
+    border: 1.5px solid black;
+    font-family: monospace;
+}
+.innerSoundMP {
+    width: 96%; height: 90%;
+    display: flex; flex-direction: column;
+    background-color: #E2E2E2;
+    border: 1px solid black;
+    margin: auto; margin-top: 3%;
+}
+.sMPLive {
+    background-color: #020302; color: #808CD2;
+    margin: 8px 6px;
+    font-family: 'Cute Font', cursive; font-weight: bolder;
+}
+#sMPTime {
+    width: 62px; height: 45px;
+    font-size: 24px; text-align: right;
+}
+#sMPTime span { margin: 6px 8px; }
+#sMPTitle {
+    width: 178px; height: 39px;
+}
+#sMPPlayingTitle { display: block; font-size: 16.3px; padding-bottom: 3px; }
+#smpTop {
+    display: flex; flex-direction: row;
+    margin-left: 15%;
+}
+#smpTop .row span { margin: 0 auto; }
+.innerSoundMP button {
+    width: auto; color: darkslategray;
+    border: .5px inset black;
+    border-radius: 5px !important;
+}
+.smpRowBtm span { margin: 0 8px !important; font-size: 14px;}
+
 /*=========================================================*/
 
 

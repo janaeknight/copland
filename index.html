@@ -12,6 +12,7 @@
     <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Shojumaru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap" rel="stylesheet">
     <!--
         load = "lazy"
         image-rendering: pixelated;
@@ -28,7 +29,7 @@
                     <hr>
                     <a id="ta-"><img src="css/woc/Visor Pro.ico">Domovoi</a>
                     <a id="ta-"><img src="css/woc/a woman.ico">Contacts</a>
-                    <a id="ta-"><img src="css/woc/Cheap Casette.ico">Tunes</a>
+                    <a id="ta-"><img src="css/woc/Cheap Casette.ico">SMP (Beta)</a>
                     <a id="ta-"><img src="css/woc/Clipping.ico"> ERSC - Yearly Subscription</a>
                     <a id="ta-"><img src="css/woc/Network_Render.ico">The Web</a>
                     <a id="ta-"><img src="css/woc/CCi_ReWritable.ico">CD Player</a>
@@ -112,7 +113,7 @@
                 <!---->
             <button id="dt-3">
                 <img src="css/woc/Casette.ico">
-                <span>Tunes</span>
+                <span>SMP (Beta)</span>
             </button>
                 <!---->
             <button id="dt-4">
@@ -395,7 +396,7 @@
                     </div>
                     <hr>
                     <span class="txt-center f3">
-                        <b>Copland OS </b> was a Macintosh operating system intended to be released as System 8, but was abandoned and subsequently replaced with -.
+                        <b>Copland OS </b> was a Macintosh operating system intended to be released as System 8, but was abandoned and subsequently replaced with the blandly named <b>Mac OS 8</b>- which was pretty lame since Copland had a pretty rad 3d theme. According to <u>Wikipedia</u> (the most reliable news source), 
                     </span>
                 </div>
             </div> <!-- aboutComputerTerm -->
@@ -455,7 +456,7 @@
                 </div>
                 <img src="css/rpatzzzzz.png" alt="jesus christ" load="lazy">
             </div> <!-- winonaTerm -->
-            <div class="window ui-widget-content" id="fortuneTerm">
+            <div class="window" id="fortuneTerm">
                 <div class="w-tb">
                     <button class="closeWin"><a>x</a></button>
                     <span>☺ Daily Fortune ☺</span>
@@ -487,7 +488,39 @@
                     </div>
                 </div>
             </div>
-            <!--div class="window ui-widget-content" id="">
+            <div class="window" id="soundMPTerm">
+                <div class="innerSoundMP">
+                    <div id="smpTop">
+                        <div class="sMPLive" id="sMPTime">
+                            <span class="blink-1">LIVE</span>
+                        </div>
+                        <div class="sMPLive" id="sMPTitle">
+                            <div class="row">
+                                <span class="" id="sMPPlayingTitle">Now Playing ... </span>
+                            </div>
+                            <div class="row smpRowBtm">
+                                <div class="db7">
+                                    <span>128 KBPS</span>
+                                </div>
+                                <div class="db4 txt-right">
+                                    <span>44 KHZ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row sMPBtns">
+                        <button id="sMPPlayBtn">▶</button>
+                        <button id="sMPPauseBtn">■</button>
+                        <button id="sMPCloseBtn">✖</button>
+                    </div>
+                    <div class="smpHidden">
+                        <audio id="audioFeed" loop>
+                            <source src="css/audio/seas/The Chordettes-Mr. Sandman.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <!--div class="window" id="">
                 <div class="w-tb">
                     <button class="closeWin"><a>x</a></button>
                     <span>Title</span>

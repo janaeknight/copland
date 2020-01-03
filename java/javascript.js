@@ -137,6 +137,13 @@
     👏🏿 https://stackoverflow.com/questions/24338450/how-to-detect-user-inactivity-with-javascript, imbondbaby -- timeout function
 
 
+        EXTENSIONS
+
+        🖇 Animista - Animations I was too lazy to do myself
+        🖇 JQuery - Javascript I was too lazy to do myself
+        🖇 Google Fonts - Fonts I was too lazy to do myself
+
+
     */
 
 
@@ -387,5 +394,28 @@ document.getElementById("todaysLuckies").innerHTML = "Lucky Numbers:  " +todayLu
 $("#fortuneB2M").on( "click", function() {
     $(".fortunePg2").hide();
     $(".fortunePg1").show();
+});
+
+if ( document.getElementById("soundMPTerm").style.display = "block" ) {
+    console.log("SMP Radio is --- live.");
+}
+
+var audioFeed = document.getElementById("audioFeed");
+let audioPauseTime = 0;
+let playedToday = "no";
+
+$("#sMPPlayBtn").on( "click", function() {
+
+    audioFeed.currentTime = Math.floor(Math.random() * audioFeed.duration);
+    // audioFeed.play();
+    console.log("Stream Duration: " +audioFeed.duration,);
+    console.log("Stream Started at: " +audioFeed.currentTime,);
+    
+});
+$("#sMPPauseBtn").on( "click", function() {
+    audioFeed.pause();
+});
+$("#sMPCloseBtn").on( "click", function() {
+    $("#soundMPTerm").hide();
 });
 
