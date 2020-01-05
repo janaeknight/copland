@@ -44,7 +44,7 @@
             document.querySelector(".taskbar").style.display = "flex";
         };
     }
-    onInactive(1000, function () {
+    onInactive(180000, function () {
         console.log('Screensaver activated. (3 minutes)');
         document.querySelector(".desktop").style.display = "none";
         document.querySelector(".taskbar").style.display = "none";
@@ -153,9 +153,19 @@
         document.getElementById("").style.display = "block";
     });*/
 
+// My Computer Button Functions
+
+    $("#dtFortune").on( "dblclick", function() {
+        $("#fortuneTerm").show();
+        $("#fortuneTerm").addClass("activeZ");
+    });
 
 // Desktop Tab Functions
 
+    $("#dt-1").on( "dblclick", function() {
+        $("#myComputerTerm").show();
+        $("#myComputerTerm").addClass("activeZ");
+    });
     $("#dt-3").on( "dblclick", function() {
         $("#soundMPTerm").show();
         $("#soundMPTerm").addClass("activeZ");
@@ -216,7 +226,14 @@
     
     */
 
+// MY COMPUTER
 
+    // On (this) click, change button span color
+
+    $(".dtBtn").on( "click", function() {
+        $(".dtBtn").children('span').css("background-color", "gainsboro");
+        $(this).children('span').css("background-color", "#bdbdbd");
+    });
 
 
 // THEMES
@@ -549,7 +566,7 @@ var audioFeed = document.getElementById("audioFeed");
 let audioPauseTime = 0;
 let playedToday = "no";
 
-    // Play Button
+    // Buttons
 
 $("#sMPPlayBtn").on( "click", function() {
 

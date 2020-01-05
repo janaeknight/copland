@@ -67,6 +67,7 @@ body {
     display: flex; flex-wrap: wrap;
     justify-content: flex-end;
     width: 32%; height: 100%;
+    /* set width to auto and max-width to 35% for flexible desktop */
 }
 #desk-main button {
     width: 90px; height: 80px;
@@ -117,7 +118,6 @@ body {
 }
 .w-tb a { visibility:  hidden; }
 .w-tb:hover a { visibility: visible; }
-
 .busy-r {
     display: flex; flex-direction: row;
     width: 98%; height: auto; margin: 0 5px ;
@@ -132,9 +132,39 @@ body {
     margin: 0 auto; padding-bottom: 5px;
 }
 
+/*~-~-~-~-~-~-~-~-~-~-~-~ MY COMPUTER / W ~-~-~-~-~-~-~-~~~-~-~-~*/
+
+#myComputerTerm {
+    width: 630px; height: 625.5;
+    left: 40px; top: 80px;
+}
+#myComputerTerm .dtCBox {
+    width: 98%; height: auto;
+    background-color: gainsboro;
+    border: 1px inset lightgray; margin: 0 auto;
+}
+#myComputerTerm .dtContainer {
+    display: flex; flex-direction: row;
+    flex-wrap: wrap; overflow-y: scroll;
+    justify-content: flex-end; align-content: flex-start;
+    width: 99%; height: 420px;
+    margin: 4px auto; margin-right: 2px;
+}
+#myComputerTerm .dtContainer button {
+    width: 90px; height: 80px;
+    background: none; border: none;
+    background-color: transparent;
+    text-align: center; margin: 6px 5px;
+}
+#myComputerTerm .dtContainer button img {
+    display: block; width: 32px;
+    margin: 0 auto; padding-bottom: 8px;
+}
+#myComputerTerm .dtContainer button:focus { outline: none; }
+
 /*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ THEMES / W ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
 
-#themeTerm { width: 500px; height: 325.5; display: block; }
+#themeTerm { width: 500px; height: 325.5; }
 .themeTitle { display: block; font-weight: bolder; margin: 5px; }
 .tt a {
     font-size: 13px;
@@ -198,7 +228,7 @@ body {
 .thOpSel a:hover { background-color: #b8b8b8; color: #1f1e1e; }
 .backgroundArticle select:focus { outline: none; }
 .backgroundArticle button {
-    position: fixed;
+    position: fixed; font-weight: 520;
     height: 18px; margin-left: -5px;
     margin-top: .6px; background-color: white;
     border: 1px solid darkgray; border-left: none; 
@@ -268,14 +298,16 @@ body {
 }
 #controlPanelTerm .busy-r {
     width: inherit; height: auto;
-    background-color: gray; border: none;
+    background-color: gainsboro; border: none;
 }
 #cpMain { margin: 0 auto; }
 #cpMain button img { display: block; margin: 0 auto; padding: 4px 0; }
 #cpMain button {
     width: 90px; height: auto;
     text-align: center; margin-top: 5px;
+    border: none; background: none;
 }
+#cpMain button:focus { outline: none; }
 /*~-~-~-~-~-~-~-~-~-~ ABOUT THIS COMPUTER / W ~-~-~-~-~-~-~-~-~-~*/
 
 #aboutComputerTerm {
