@@ -578,4 +578,3 @@ $("#sMPCloseBtn").on( "click", function() {
     audioFeed.pause();
     $("#soundMPTerm").hide();
 });
-

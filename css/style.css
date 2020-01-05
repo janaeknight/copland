@@ -64,8 +64,8 @@ body {
     margin-top: 15px;
 }
 #desk-main {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; flex-wrap: wrap;
+    justify-content: flex-end;
     width: 32%; height: 100%;
 }
 #desk-main button {
@@ -487,4 +487,21 @@ body {
         border-color: #555555 transparent transparent transparent;
     }
 
-    
+    #docsTerm {
+        
+        width: 680.71px; height: 485px;
+    }
+    .docFrame {
+        width: 100%; height: 94.9%;
+        background-color: snow;
+        margin: auto;
+    }
+    .thisDoc {
+        width: inherit; height: 102.3%;
+    }
+    .thisDoc textarea {
+        min-width: 99.45%; max-width: 99%;
+        min-height: 97%; max-height: 97%; border: none;
+        margin: 0; text-align: left;
+    }
+    .thisDoc textarea:focus { outline: none; }
