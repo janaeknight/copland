@@ -21,9 +21,11 @@
 //  SCREENSAVER / ACTIVITY TIMEOUT
 
     // removes grey background from selected option
-
+ 
     $(".thbs").on( "click", function() {
-        $(".thbs").removeClass("bgSelectedOption");
+        $(".thbs").css("background-color", "lightgray");
+        $(this).css("background-color", "#b0aeae;");
+        $("#screensPreviewBox").removeClass();
         $("#screensaver").removeClass(); // <!--- removes sel screen
     });
 
@@ -42,7 +44,7 @@
             document.querySelector(".taskbar").style.display = "flex";
         };
     }
-    onInactive(18000, function () {
+    onInactive(180000, function () {
         console.log('Screensaver activated. (3 minutes)');
         document.querySelector(".desktop").style.display = "none";
         document.querySelector(".taskbar").style.display = "none";
@@ -52,30 +54,49 @@
         // <!--- screensaver apply
 
         $("#ss1").on( "click", function() {
-            $("#ss1").addClass("bgSelectedOption");
+            $("#screensPreviewBox").addClass("ss1");
             $("#screensaver").addClass("ss1");   
         });
-        /*$("#").on( "click", function() {
-            $("#").addClass("");   
+        $("#ss2").on( "click", function() {
+            $("#screensPreviewBox").addClass("ss2");
+            $("#screensaver").addClass("ss2");   
         });
-        $("#").on( "click", function() {
-            $("#").addClass("");   
+        $("#ss3").on( "click", function() {
+            $("#screensPreviewBox").addClass("ss3");
+            $("#screensaver").addClass("ss3");   
         });
-        $("#").on( "click", function() {
-            $("#").addClass("");   
+        $("#ss4").on( "click", function() {
+            $("#screensPreviewBox").addClass("ss4");
+            $("#screensaver").addClass("ss4"); 
         });
-        $("#").on( "click", function() {
-            $("#").addClass("");   
+        $("#ss5").on( "click", function() {
+            $("#screensPreviewBox").addClass("ss5");
+            $("#screensaver").addClass("ss5");  
         });
-        $("#").on( "click", function() {
-            $("#").addClass("");   
+        $("#ss6").on( "click", function() {
+            $("#screensPreviewBox").addClass("ss6");
+            $("#screensaver").addClass("ss6");  
         });
-        $("#").on( "click", function() {
-            $("#").addClass("");   
+        $("#ss7").on( "click", function() {
+            $("#screensPreviewBox").addClass("ss7");
+            $("#screensaver").addClass("ss7");  
         });
-        $("#").on( "click", function() {
-            $("#").addClass("");   
-        });*/
+        $("#ss8").on( "click", function() {
+            $("#screensPreviewBox").addClass("ss8");
+            $("#screensaver").addClass("ss8");  
+        });
+        $("#ss9").on( "click", function() {
+            $("#screensPreviewBox").addClass("ss9");
+            $("#screensaver").addClass("ss9");  
+        });
+        $("#ss10").on( "click", function() {
+            $("#screensPreviewBox").addClass("ss10");
+            $("#screensaver").addClass("ss10");  
+        });
+        $("#ss11").on( "click", function() {
+            $("#screensPreviewBox").addClass("ss11");
+            $("#screensaver").addClass("ss11");  
+        });
 
 
 // Close All Windows
@@ -135,21 +156,25 @@
 
 // Desktop Tab Functions
 
-    document.getElementById("dt-8").addEventListener("dblclick", function(){ 
+    $("#dt-3").on( "dblclick", function() {
+        $("#soundMPTerm").show();
+        $("#soundMPTerm").addClass("activeZ");
+    });
+    $("#dt-7").on( "dblclick", function() {
+        $("#fortuneTerm").show();
+        $("#fortuneTerm").addClass("activeZ");
+    });
+    $("#dt-8").on( "dblclick", function() {
         $("#themeTerm").show();
         $("#themeTerm").addClass("activeZ");
     });
-    document.getElementById("dt-9").addEventListener("dblclick", function(){ 
+    $("#dt-9").on( "dblclick", function() {
         $("#romeoTerm").show();
         $("#romeoTerm").addClass("activeZ");
     });
-    document.getElementById("dt-10").addEventListener("dblclick", function(){ 
+    $("#dt-10").on( "dblclick", function() {
         $("#winonaTerm").show();
         $("#winonaTerm").addClass("activeZ");
-    });
-    document.getElementById("dt-7").addEventListener("dblclick", function(){ 
-        $("#fortuneTerm").show();
-        $("#fortuneTerm").addClass("activeZ");
     });
 
     // on .window click, add class for z index to raise 4444 (activeZ) on (this)
@@ -187,8 +212,8 @@
 
     /*
 
-    🔗 https://ibb.co/album/mrzrva, copland os wallpaper arch.
-
+    🔗 https://ibb.co/album/kPcYQa, copland os wallpaper arch.
+    
     */
 
 
@@ -199,6 +224,8 @@
     // On Theme (left) button click, hide all divs (right)
 
     $(".thOBtn").on( "click", function() {
+        $(".thOBtn").children('span').css("background-color", "snow");
+        $(this).children('span').css("background-color", "lightgray");
         $(".thOA").hide();
     });
 
@@ -227,7 +254,7 @@
             $('.bgP2').hide(); $('.bgP3').hide();
             $('.bgP1').show();
         };
-        if (bgPgSel === "Image Backgrounds") {
+        if (bgPgSel === "Pattern Backgrounds") {
             $('.bgP1').hide(); $('.bgP3').hide();
             $('.bgP2').show();
         };
@@ -245,142 +272,213 @@
 
             $(".thb").on( "click", function() {
                 $(".thb").removeClass("bgSelectedOption");
+                $(this).addClass("bgSelectedOption");
                 document.body.style.backgroundImage = "none";
             });
     
     $("#bgcPur").on( "click", function() {
-        $("#bgcPur").addClass("bgSelectedOption");
         document.body.style.backgroundColor = "#63639D";    
     });
     $("#bgcBlue").on( "click", function() {
-        $("#bgcBlue").addClass("bgSelectedOption");
         document.body.style.backgroundColor = "cadetblue";    
     });
     $("#bgcGreen").on( "click", function() {
-        $("#bgcGreen").addClass("bgSelectedOption");
         document.body.style.backgroundColor = "greenyellow";    
     });
     $("#bgcRed").on( "click", function() {
-        $("#bgcRed").addClass("bgSelectedOption");
         document.body.style.backgroundColor = "tomato";    
     });
     $("#bgcLiPink").on( "click", function() {
-        $("#bgcLiPink").addClass("bgSelectedOption");
         document.body.style.backgroundColor = "lightpink";    
     });
     $("#bgcHotPink").on( "click", function() {
-        $("#bgcHotPink").addClass("bgSelectedOption");
         document.body.style.backgroundColor = "magenta";    
     });
     $("#bgcTurq").on( "click", function() {
-        $("#bgcTurq").addClass("bgSelectedOption");
         document.body.style.backgroundColor = "turquoise";    
     });
     $("#bgcGray").on( "click", function() {
-        $("#bgcGray").addClass("bgSelectedOption");
         document.body.style.backgroundColor = "gray";    
     });
     $("#bgcOrange").on( "click", function() {
-        $("#bgcOrange").addClass("bgSelectedOption");
         document.body.style.backgroundColor = "coral";    
     });
 
     // -- // IMG WALLPAPERS
 
     $("#bgcPurp1").on( "click", function() {
-        $("#bgcPurp1").addClass("bgSelectedOption");
-            document.body.style.backgroundImage = "url('https://i.ibb.co/j9Ysj3F/classic-mac-os-tile-wallpapers-1.png')";
-            document.body.style.backgroundSize = "128px";
-            document.body.style.backgroundRepeat = "repeat";
+        document.body.style.backgroundImage = "url('https://i.ibb.co/vwb3HZz/purple1.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
     });
     $("#bgcPurp2").on( "click", function() {
-        $("#bgcPurp2").addClass("bgSelectedOption");
-            document.body.style.backgroundImage = "url('https://i.ibb.co/dPj3zBx/classic-mac-os-tile-wallpapers-3.png')";
-            document.body.style.backgroundSize = "128px";
-            document.body.style.backgroundRepeat = "repeat";
+        document.body.style.backgroundImage = "url('https://i.ibb.co/FHns9W2/purple2.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
     });
     $("#bgcPurp3").on( "click", function() {
-        $("#bgcPurp3").addClass("bgSelectedOption");
-            document.body.style.backgroundImage = "url('https://i.ibb.co/0X0v7NZ/classic-mac-os-tile-wallpapers-8.png')";
-            document.body.style.backgroundSize = "128px";
-            document.body.style.backgroundRepeat = "repeat";
+        document.body.style.backgroundImage = "url('https://i.ibb.co/NZp7gkB/purple3.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
+    });
+    $("#bgcPurp4").on( "click", function() {
+        document.body.style.backgroundImage = "url('https://i.ibb.co/ScZGXnV/purple4.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
     });
     $("#bgcBlue1").on( "click", function() {
-        $("#bgcBlue1").addClass("bgSelectedOption");
-            document.body.style.backgroundImage = "url('https://i.ibb.co/0tZW83X/classic-mac-os-tile-wallpapers-9.png')";
-            document.body.style.backgroundSize = "128px";
-            document.body.style.backgroundRepeat = "repeat";
+        document.body.style.backgroundImage = "url('https://i.ibb.co/M26Xr2z/blue1.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
+    });
+    $("#bgcBlue2").on( "click", function() {
+        document.body.style.backgroundImage = "url('https://i.ibb.co/xzcrp4h/blue2.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
+    });
+    $("#bgcBlue3").on( "click", function() {
+        document.body.style.backgroundImage = "url('https://i.ibb.co/Dpv6HP1/Blue3.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
+    });
+    $("#bgcBlue4").on( "click", function() {
+        document.body.style.backgroundImage = "url('https://i.ibb.co/JjTK7V9/Blue4.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
+    });
+    $("#bgcRed1").on( "click", function() {
+        document.body.style.backgroundImage = "url('https://i.ibb.co/0V24p94/red1.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
+    });
+    $("#bgcRed2").on( "click", function() {
+        document.body.style.backgroundImage = "url('https://i.ibb.co/m9Vz4P1/red2.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
+    });
+    $("#bgcRed3").on( "click", function() {
+        document.body.style.backgroundImage = "url('https://i.ibb.co/pbXzBLC/red3.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
+    });
+    $("#bgcGreen1").on( "click", function() {
+        document.body.style.backgroundImage = "url('https://i.ibb.co/bRPg1s2/green1.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
+    });
+    $("#bgcGreen2").on( "click", function() {
+        document.body.style.backgroundImage = "url('https://i.ibb.co/dDCM0vq/green2.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
+    });
+    $("#bgcGreen3").on( "click", function() {
+        document.body.style.backgroundImage = "url('https://i.ibb.co/4TFNHCv/green3.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
     });
     $("#bgcBlack1").on( "click", function() {
-        $("#bgcBlack1").addClass("bgSelectedOption");
-            document.body.style.backgroundImage = "url('https://i.ibb.co/Lpx2M5V/classic-mac-os-tile-wallpapers-6.png')";
-            document.body.style.backgroundSize = "128px";
-            document.body.style.backgroundRepeat = "repeat";
+        document.body.style.backgroundImage = "url('https://i.ibb.co/TBrC1WG/black1.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
+    });
+    $("#bgcBlack2").on( "click", function() {
+        document.body.style.backgroundImage = "url('https://i.ibb.co/C8p5SG6/black2.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
+    });
+    $("#bgcBlack3").on( "click", function() {
+        document.body.style.backgroundImage = "url('https://i.ibb.co/SKp6J0Q/black3.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
+    });
+    $("#bgcWhite1").on( "click", function() {
+        document.body.style.backgroundImage = "url('https://i.ibb.co/FDGdTzY/white1.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
+    });
+    $("#bgcWhite2").on( "click", function() {
+        document.body.style.backgroundImage = "url('https://i.ibb.co/qF9x5LB/white2.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
+    });
+    $("#bgcWhite3").on( "click", function() {
+        document.body.style.backgroundImage = "url('https://i.ibb.co/W5tXjTg/white3.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
+    });
+    $("#bgcGrid").on( "click", function() {
+        document.body.style.backgroundImage = "url('https://i.ibb.co/q07bJBz/grid.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
+    });
+    $("#bgcShapes").on( "click", function() {
+        document.body.style.backgroundImage = "url('https://i.ibb.co/Rp5QYHv/shapes.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
+    });
+    $("#bgcNoise").on( "click", function() {
+        document.body.style.backgroundImage = "url('https://i.ibb.co/WPsJzhR/noise.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
+    });
+    $("#bgcSkull").on( "click", function() {
+        document.body.style.backgroundImage = "url('https://i.ibb.co/mNvdSC6/skull.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
     });
     $("#bgcCat").on( "click", function() {
-        $("#bgcCat").addClass("bgSelectedOption");
-            document.body.style.backgroundImage = "url('https://i.ibb.co/NsTxX1G/classic-mac-os-tile-wallpapers-4.png')";
-            document.body.style.backgroundSize = "128px";
+            document.body.style.backgroundImage = "url('https://i.ibb.co/3CnhQdG/cats.png')";
+            document.body.style.backgroundSize = "64px";
             document.body.style.backgroundRepeat = "repeat";
     });
     $("#bgcStars").on( "click", function() {
-        $("#bgcStars").addClass("bgSelectedOption");
-            document.body.style.backgroundImage = "url('https://i.ibb.co/YT66PvK/classic-mac-os-tile-wallpapers-2.png')";
-            document.body.style.backgroundSize = "128px";
+            document.body.style.backgroundImage = "url('https://i.ibb.co/VN348TZ/stars.png')";
+            document.body.style.backgroundSize = "64px";
             document.body.style.backgroundRepeat = "repeat";
     });
     $("#bgcCircut").on( "click", function() {
-        $("#bgcCircut").addClass("bgSelectedOption");
-            document.body.style.backgroundImage = "url('https://i.ibb.co/f0FSTD4/classic-mac-os-tile-wallpapers-7.png')";
-            document.body.style.backgroundSize = "128px";
+            document.body.style.backgroundImage = "url('https://i.ibb.co/1mKKzzj/circut.png')";
+            document.body.style.backgroundSize = "64px";
             document.body.style.backgroundRepeat = "repeat";
     });
     $("#bgcLines").on( "click", function() {
-        $("#bgcLines").addClass("bgSelectedOption");
-            document.body.style.backgroundImage = "url('https://i.ibb.co/F4Y8rxD/purplline.jpg')";
-            document.body.style.backgroundSize = "300px";
-            document.body.style.backgroundRepeat = "repeat";
+        document.body.style.backgroundImage = "url('https://i.ibb.co/F4Y8rxD/purplline.jpg')";
+        document.body.style.backgroundSize = "300px";
+        document.body.style.backgroundRepeat = "repeat";
     });
     $("#bgcAge").on( "click", function() {
-        $("#bgcAge").addClass("bgSelectedOption");
-            document.body.style.backgroundImage = "url('https://i.ibb.co/n6FVW6V/1999.jpg')";
-            document.body.style.backgroundSize = "850px";
+        document.body.style.backgroundImage = "url('https://i.ibb.co/n6FVW6V/1999.jpg')";
+        document.body.style.backgroundSize = "850px";
     });
 
     // -- // CUSTOM BGS
 
     $("#bgcCourage").on( "click", function() {
-        $("#bgcCourage").addClass("bgSelectedOption");
         document.body.style.backgroundImage = "url('https://i.ibb.co/SdnwDVM/courage.jpg')";
         document.body.style.backgroundSize = "cover";
         document.body.style.backgroundPosition = "center";
     });
     $("#bgcGoals").on( "click", function() {
-        $("#bgcGoals").addClass("bgSelectedOption");
         document.body.style.backgroundImage = "url('https://i.ibb.co/0Y6VkCH/goals.jpg')";
         document.body.style.backgroundSize = "cover";
         document.body.style.backgroundPosition = "center";
     });
     $("#bgcMario").on( "click", function() {
-        $("#bgcMario").addClass("bgSelectedOption");
         document.body.style.backgroundImage = "url('https://i.ibb.co/b1MqDq3/mario.jpg')";
         document.body.style.backgroundSize = "cover";
         document.body.style.backgroundPosition = "center";
     });
     $("#bgcSub").on( "click", function() {
-        $("#bgcSub").addClass("bgSelectedOption");
         document.body.style.backgroundImage = "url('https://i.ibb.co/r4CSH5D/submarine.png')";
         document.body.style.backgroundSize = "cover";
         document.body.style.backgroundPosition = "center";
     });
     $("#bgcEarth").on( "click", function() {
-        $("#bgcEarth").addClass("bgSelectedOption");
         document.body.style.backgroundImage = "url('https://i.ibb.co/mSbndcV/earth.jpg')";
         document.body.style.backgroundSize = "cover";
         document.body.style.backgroundPosition = "center";
     });
     $("#bgcCher").on( "click", function() {
-        $("#bgcCher").addClass("bgSelectedOption");
         document.body.style.backgroundImage = "url('https://i.ibb.co/JHd77zQ/cher.jpg')";
         document.body.style.backgroundSize = "100vh";
         document.body.style.backgroundPosition = "center";
@@ -388,7 +486,6 @@
         document.body.style.backgroundRepeat = "repeat-y";
     });
     $("#bgcJur").on( "click", function() {
-        $("#bgcJur").addClass("bgSelectedOption");
         document.body.style.backgroundImage = "url('https://i.ibb.co/18b0pVz/jurassic.jpg')";
         document.body.style.backgroundSize = "cover";
         document.body.style.backgroundPosition = "center";

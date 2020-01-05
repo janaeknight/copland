@@ -165,7 +165,7 @@ body {
 }
 .themeLeftOp img {
     display: block; width: 46%;
-    padding-top: 3px; margin-bottom: -5px;
+    padding-top: 3px; padding-bottom: 3px;
     margin: 0 auto;
 }
 .thOpSel {
@@ -196,33 +196,63 @@ body {
     background-size: 30px;
 }
 .thOpSel a:hover { background-color: #b8b8b8; color: #1f1e1e; }
+.backgroundArticle select:focus { outline: none; }
+.backgroundArticle button {
+    position: fixed;
+    height: 18px; margin-left: -5px;
+    margin-top: .6px; background-color: white;
+    border: 1px solid darkgray; border-left: none; 
+    
+}
+.thOBtn:focus { outline: none; }
+.backgroundArticle button:focus { outline: none; }
 
-.tbbPur { background-color: #63639D;}
-.tbbBlue { background-color: cadetblue;}
-.tbbGreen { background-color: greenyellow;}
-.tbbRed { background-color: tomato;}
-.tbbLiPink { background-color: lightpink;}
-.tbbHotPink { background-color: magenta;}
-.tbbTurq { background-color: turquoise;}
-.tbbGray { background-color: gray;}
-.tbbOrange { background-color: coral;}
-.tbbPurp1 { background-image: url("https://i.ibb.co/j9Ysj3F/classic-mac-os-tile-wallpapers-1.png"); }
-.tbbPurp2 { background-image: url("https://i.ibb.co/dPj3zBx/classic-mac-os-tile-wallpapers-3.png"); }
-.tbbPurp3 { background-image: url("https://i.ibb.co/0X0v7NZ/classic-mac-os-tile-wallpapers-8.png"); }
-.tbbBlue1 { background-image: url("https://i.ibb.co/0tZW83X/classic-mac-os-tile-wallpapers-9.png"); }
-.tbbBlack1 { background-image: url("https://i.ibb.co/Lpx2M5V/classic-mac-os-tile-wallpapers-6.png"); }
-.tbbCat { background-image: url("https://i.ibb.co/NsTxX1G/classic-mac-os-tile-wallpapers-4.png"); }
-.tbbStars { background-image: url("https://i.ibb.co/YT66PvK/classic-mac-os-tile-wallpapers-2.png"); }
-.tbbCircut { background-image: url("https://i.ibb.co/f0FSTD4/classic-mac-os-tile-wallpapers-7.png"); }
-.tbbLines { background-image: url("https://i.ibb.co/F4Y8rxD/purplline.jpg"); }
-.tbbAge { background-image: url("https://i.ibb.co/n6FVW6V/1999.jpg"); }
-.tbbCourage { background-image: url("https://i.ibb.co/SdnwDVM/courage.jpg"); }
-.tbbGoals  { background-image: url("https://i.ibb.co/0Y6VkCH/goals.jpg"); }
-.tbbMario  { background-image: url("https://i.ibb.co/b1MqDq3/mario.jpg"); }
-.tbbSub  { background-image: url("https://i.ibb.co/r4CSH5D/submarine.png"); }
-.tbbEarth  { background-image: url("https://i.ibb.co/mSbndcV/earth.jpg"); }
-.tbbCher { background-image: url("https://i.ibb.co/qgkjTbq/cher.jpg"); }
-.tbbJur { background-image: url("https://i.ibb.co/18b0pVz/jurassic.jpg"); }
+.bgcPur { background-color: #63639D;}
+.bgcBlue { background-color: cadetblue;}
+.bgcGreen { background-color: greenyellow;}
+.bgcRed { background-color: tomato;}
+.bgcLiPink { background-color: lightpink;}
+.bgcHotPink { background-color: magenta;}
+.bgcTurq { background-color: turquoise;}
+.bgcGray { background-color: gray;}
+.bgcOrange { background-color: coral;}
+
+.bgcPurp1 { background-image: url("../css/person/patterns/purple1.png"); }
+.bgcPurp2 { background-image: url("../css/person/patterns/purple2.png"); }
+.bgcPurp3 { background-image: url("../css/person/patterns/purple3.png"); }
+.bgcPurp4 { background-image: url("../css/person/patterns/purple4.png") }
+.bgcBlue1 { background-image: url("../css/person/patterns/blue1.png"); }
+.bgcBlue2 { background-image: url("../css/person/patterns/blue2.png"); }
+.bgcBlue3 { background-image: url("../css/person/patterns/blue4.png"); }
+.bgcBlue4 { background-image: url("../css/person/patterns/blue5.png"); }
+.bgcRed1 { background-image: url("../css/person/patterns/red1.png"); }
+.bgcRed2 { background-image: url("../css/person/patterns/red2.png"); }
+.bgcRed3 { background-image: url("../css/person/patterns/red3.png"); }
+.bgcGreen1 { background-image: url("../css/person/patterns/green1.png"); }
+.bgcGreen2 { background-image: url("../css/person/patterns/green2.png"); }
+.bgcGreen3 { background-image: url("../css/person/patterns/green3.png"); }
+.bgcBlack1 { background-image: url("../css/person/patterns/black1.png"); }
+.bgcBlack2 { background-image: url("../css/person/patterns/black2.png"); }
+.bgcBlack3 { background-image: url("../css/person/patterns/black3.png"); }
+.bgcWhite1 { background-image: url("../css/person/patterns/white1.png"); }
+.bgcWhite2 { background-image: url("../css/person/patterns/white2.png"); }
+.bgcWhite3 { background-image: url("../css/person/patterns/white3.png"); }
+.bgcCat { background-image: url("../css/person/patterns/cats.png"); }
+.bgcStars { background-image: url("../css/person/patterns/stars.png"); }
+.bgcGrid { background-image: url("../css/person/patterns/grid.png"); }
+.bgcShapes { background-image: url("../css/person/patterns/shapes.png"); }
+.bgcNoise { background-image: url("../css/person/patterns/noise.png"); }
+.bgcSkull { background-image: url("../css/person/patterns/skull.png"); }
+.bgcCircut { background-image: url("../css/person/patterns/circut.png"); }
+.bgcLines { background-image: url("../css/person/patterns/lines.jpg"); }
+.bgcAge { background-image: url("../css/person/patterns/age.jpg"); }
+.bgcCourage { background-image: url("../css/person/custom/courage.jpg"); }
+.bgcGoals  { background-image: url("../css/person/custom/goals.jpg"); }
+.bgcMario  { background-image: url("../css/person/custom/mario.jpg"); }
+.bgcSub  { background-image: url("../css/person/custom/submarine.png"); }
+.bgcEarth  { background-image: url("../css/person/custom/earth.jpg"); }
+.bgcCher { background-image: url("../css/person/custom/cher.jpg"); }
+.bgcJur { background-image: url("../css/person/custom/jurassic.jpg"); }
 
 .bgSelectedOption { background-color: #b0aeae; color: #1f1e1e; }
 
@@ -395,6 +425,7 @@ body {
     margin: 5px 0; overflow-y: scroll;
     border: 1.1px solid black;
 }
+.thOpSel2 a:hover { background-color: #b8b8b8 !important; color: #1f1e1e; }
 .thbs {
     display: flex; flex-direction: row;
     width: 100%; height: 22px;
@@ -406,14 +437,17 @@ body {
     font-weight: 545;
 }
 
-.ss1 /* screensaver name */ { background-image: url('https://s5.gifyu.com/images/INZkyuF.gif'); }
-.ss2 /* screensaver name */ { background-image: url('https://s5.gifyu.com/images/matrix.gif'); }
-.ss3 /* screensaver name */ { background-image: url('https://s5.gifyu.com/images/people.md.gif'); }
-.ss4 /* screensaver name */ { background-image: url('https://s5.gifyu.com/images/greece648d515dc4e9edc3.md.gif'); }
-.ss5 /* screensaver name */ { background-image: url('https://s5.gifyu.com/images/bart.md.gif'); }
-.ss6 /* screensaver name */ { background-image: url('https://s5.gifyu.com/images/winblows.md.gif'); }
-.ss7 /* screensaver name */ { background-image: url('https://s5.gifyu.com/images/top.md.gif'); }
-.ss8 /* screensaver name */ { background-image: url('https://s5.gifyu.com/images/jon307752abe801df84.md.gif'); }
+.ss1 { background-image: url("../css/person/screensav/toast.gif"); }
+.ss2 { background-image: url("../css/person/screensav/matrix.gif"); }
+.ss3 { background-image: url("../css/person/screensav/people.gif"); }
+.ss4 { background-image: url("../css/person/screensav/greece.gif"); }
+.ss5 { background-image: url("../css/person/screensav/bart.gif"); }
+.ss6 { background-image: url("../css/person/screensav/winblows.gif"); }
+.ss7 { background-image: url("../css/person/screensav/top.gif"); }
+.ss8 { background-image: url("../css/person/screensav/jon.gif"); }
+.ss9 { background-image:url("../css/person/screensav/business.gif") }
+.ss10 { background-image:url("../css/person/screensav/hand1.gif") }
+.ss11 { background-image:url("../css/person/screensav/watermelon.gif") }
 
 .activeZ { z-index: 444444; }
 
@@ -452,3 +486,5 @@ body {
         border-width: 8px 8px 0 8px;
         border-color: #555555 transparent transparent transparent;
     }
+
+    
