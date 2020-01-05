@@ -44,7 +44,7 @@
             document.querySelector(".taskbar").style.display = "flex";
         };
     }
-    onInactive(180000, function () {
+    onInactive(1000, function () {
         console.log('Screensaver activated. (3 minutes)');
         document.querySelector(".desktop").style.display = "none";
         document.querySelector(".taskbar").style.display = "none";
