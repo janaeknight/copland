@@ -153,38 +153,37 @@
         document.getElementById("").style.display = "block";
     });*/
 
-// My Computer Button Functions
+// My Computer/Desktop Button Functions
 
-    $("#dtFortune").on( "dblclick", function() {
+    $(".dtFortune").on( "dblclick", function() {
         $("#fortuneTerm").show();
         $("#fortuneTerm").addClass("activeZ");
     });
-
-// Desktop Tab Functions
-
-    $("#dt-1").on( "dblclick", function() {
+    $(".dtMyComputer").on( "dblclick", function() {
         $("#myComputerTerm").show();
         $("#myComputerTerm").addClass("activeZ");
     });
-    $("#dt-3").on( "dblclick", function() {
+    $(".dtSoundMP").on( "dblclick", function() {
         $("#soundMPTerm").show();
         $("#soundMPTerm").addClass("activeZ");
     });
-    $("#dt-7").on( "dblclick", function() {
-        $("#fortuneTerm").show();
-        $("#fortuneTerm").addClass("activeZ");
-    });
-    $("#dt-8").on( "dblclick", function() {
+    $(".dtTheme").on( "dblclick", function() {
         $("#themeTerm").show();
         $("#themeTerm").addClass("activeZ");
     });
-    $("#dt-9").on( "dblclick", function() {
+    $(".dtRomeo").on( "dblclick", function() {
         $("#romeoTerm").show();
         $("#romeoTerm").addClass("activeZ");
     });
-    $("#dt-10").on( "dblclick", function() {
+    $(".dtWinona").on( "dblclick", function() {
         $("#winonaTerm").show();
         $("#winonaTerm").addClass("activeZ");
+    });
+    $(".dtGoodStuffSh").on( "dblclick", function() {
+        $("#docsTerm").show();
+        $(".docFrame").children().hide();
+        $("#doc54").show();
+        $("#docsTerm").addClass("activeZ");
     });
 
     // on .window click, add class for z index to raise 4444 (activeZ) on (this)

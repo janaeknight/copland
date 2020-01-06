@@ -419,15 +419,22 @@ body {
     margin-left: 15%;
 }
 #smpTop .row span { margin: 0 auto; }
+.sMPBtns { display: flex; flex-direction: row; }
 .innerSoundMP button {
-    width: auto; height: 20px;
+    width: 20px; height: 20px;
     color: darkslategray;
     border: .5px inset black;
     border-radius: 5px !important;
-    margin: 0 1px;
+    margin: 0 -2px;
 }
-.sMPBtns span { font-size: 10px; margin: 6px 4px 0 4px; }
-.smpRowBtm span { margin: 0 8px !important; font-size: 14px;}
+.innerSoundMP button img { width: 12px; margin: 3px; margin-left: -3px; }
+.innerSoundMP button:focus { outline: none; }
+.sMPBtns span { font-size: 10px; width: 60%; margin-left: 4px; }
+.smpBtnCon {
+    width: 40%; height: inherit; margin-right: 7px;
+    align-items: flex-end; text-align: right;
+}
+.smpRowBtm span { margin: 0 10px !important; font-size: 14px;}
 
 /*=========================================================*/
 
@@ -519,8 +526,7 @@ body {
         border-color: #555555 transparent transparent transparent;
     }
 
-    #docsTerm {
-        
+    #docsTerm {       
         width: 680.71px; height: 485px;
     }
     .docFrame {
