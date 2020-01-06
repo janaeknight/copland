@@ -18,6 +18,7 @@
     document.body.style.backgroundImage = "url('https://i.ibb.co/n6FVW6V/1999.jpg')";
     document.body.style.backgroundSize = "850px";
 
+
 //  SCREENSAVER / ACTIVITY TIMEOUT
 
     // removes grey background from selected option
@@ -212,7 +213,8 @@
         🖇 Animista - Animations I was too lazy to do myself
         🖇 JQuery - Javascript I was too lazy to do myself
         🖇 Google Fonts - Fonts I was too lazy to do myself
-
+            ---->  Cute Font, Bubblegum Sans, Shojumaru, IBM Plex Sans, Reenie Beanie
+                -- compl.
 
     */
 
@@ -509,6 +511,46 @@
 
     // -------------> add highlight to article buttons on click
 
+    // FONT SELECT
+
+    // removes body font override class
+        $(".thfo").on( "click", function() {
+            $("body").removeClass();
+        });
+
+    
+    $("#foDefault").on( "click", function() {
+        $("body").addClass("txt-default");
+        $("button").children().css("font-family", "Arial, sans-serif");
+    });
+    $("#foThick").on( "click", function() {
+        $("body").addClass("txt-thixk");
+        $("button").children().css("font-family", "Tahoma, Verdana, sans-serif");
+    });
+    $("#foCute").on( "click", function() {
+        $("body").addClass("txt-cute");
+        $("button").children().css("font-family", "Cute Font, cursive"); 
+    });
+    $("#foBoring").on( "click", function() {
+        $("body").addClass("txt-boring");
+        $("button").children().css("font-family", "monospace");
+    });
+    $("#foBoxy").on( "click", function() {
+        $("body").addClass("txt-boxy");
+        $("button").children().css("font-family", "IBM Plex Sans, sans-serif");
+    });
+    $("#foCurly").on( "click", function() {
+        $("body").addClass("txt-curly");
+        $("button").children().css("font-family", "Reenie Beanie, cursive");
+    });
+    $("#foComic").on( "click", function() {
+        $("body").addClass("txt-comic");
+        $("button").children().css("font-family", "Comic Sans MS, cursive");
+    });
+    $("#foSymbol").on( "click", function() {
+        $("body").addClass("txt-symbol");
+        $("button").children().css("font-family", "Wingdings, Webdings");
+    });
 
 // DAILY FORTUNE
 

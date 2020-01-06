@@ -21,14 +21,13 @@
     <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Shojumaru&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Reenie+Beanie&display=swap" rel="stylesheet">
     <!--
         load = "lazy"
         image-rendering: pixelated;
     -->
 </head>
-<body>
+<body class="txt-default">
     <div class="ss1" id="screensaver"></div>
     <div class="taskbar">
         <div id="tb-l">
@@ -317,23 +316,23 @@
                 </div>
                 <div class="busy-r">
                     <div id="cpMain">
-                        <button id="">
+                        <button class="">
                             <img src="css/eclipse/users.ico">
                             <span>User Info</span>
                         </button>
-                        <button id="">
+                        <button class="">
                             <img src="css/woc/key.ico">
                             <span>Password</span>
                         </button>
-                        <button id="">
+                        <button class="dtTheme">
                             <img src="css/eclipse/applications.ico">
                             <span>Appearance</span>
                         </button>
-                        <button id="">
+                        <button class="">
                             <img src="css/eclipse/internet.ico">
                             <span>System</span>
                         </button>
-                        <button id="">
+                        <button class="">
                             <img src="css/eclipse/extensions.ico">
                             <span>Extensions</span>
                         </button>
@@ -428,7 +427,17 @@
                                 <div class="bgP2">
                                     <div class="cntr-box">
                                         <div class="thOpSel">
+                                            <!--  REARRANGE -->
+                                            <!-- UPDATE README  -->
 
+                                            <a class="thb" id="bgcAge">
+                                                <div class="thbBox bgcAge"></div>
+                                                <span><b>NEW! </b> Age Logo</span>
+                                            </a>
+                                            <a class="thb" id="bgcLines">
+                                                <div class="thbBox bgcLines"></div>
+                                                <span><b>NEW! </b> Purple Lines</span>
+                                            </a>
                                             <a class="thb" id="bgcPurp1">
                                                 <div class="thbBox bgcPurp1"></div>
                                                 <span>Purple 1</span>
@@ -537,14 +546,6 @@
                                                 <div class="thbBox bgcSkull"></div>
                                                 <span>Skulls</span>
                                             </a>
-                                            <a class="thb" id="bgcLines">
-                                                <div class="thbBox bgcLines"></div>
-                                                <span><b>NEW! </b> Purple Lines</span>
-                                            </a>
-                                            <a class="thb" id="bgcAge">
-                                                <div class="thbBox bgcAge"></div>
-                                                <span><b>NEW! </b> Age Logo</span>
-                                            </a>
 
                                         </div>
                                     </div>
@@ -586,7 +587,41 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="thOA fontArticle"></div>
+                            <div class="thOA fontArticle">
+                                <div class="cntr-box">
+                                    <div class="busy-c">
+                                        <span class="margin5"><b>Fonts</b></span>
+                                        <div class="busy-r">
+
+                                            <a class="thfo txt-default" id="foDefault">
+                                                Default Font
+                                            </a>
+                                            <a class="thfo txt-thixk" id="foThick">
+                                                Thick Font
+                                            </a>
+                                            <a class="thfo txt-cute" id="foCute">
+                                                Cute Font
+                                            </a>
+                                            <a class="thfo txt-mono" id="foBoring">
+                                                Boring Font
+                                            </a>
+                                            <a class="thfo txt-boxy" id="foBoxy">
+                                                Boxy Font
+                                            </a>
+                                            <a class="thfo txt-curly" id="foCurly">
+                                                Curly Font
+                                            </a>
+                                            <a class="thfo txt-comic" id="foComic">
+                                                Comic Font
+                                            </a>
+                                            <a class="thfo txt-symbol" id="foSymbol">
+                                                Secret
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="thOA windowsArticle"></div>
                             <div class="thOA screensaversArticle">
                                 <div class="busy-c">

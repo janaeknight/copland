@@ -2,18 +2,32 @@ body {
     width: 100vw; height: 100vh;
     margin: 0 auto;
     background-color: #63639D;
-    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     background-repeat: repeat;
 }
+/* BY COLOR */
+    .txt-gray { color:gray; } .txt-red { color: firebrick; }
+    .txt-green { color: greenyellow; }
 
-.txt-gray { color:gray; } .txt-red { color: firebrick; }
-.txt-green { color: greenyellow; }
-.txt-mono { font-family: monospace !important; }
-.txt-bubble { font-family: 'Bubblegum Sans', cursive !important; }
+/* SYSTEM */
+    .txt-default { font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif !important; }
+    .txt-thixk { font-family: Tahoma, Verdana, sans-serif !important; }
+    .txt-cute { font-family: 'Cute Font', cursive !important; }
+    .txt-mono { font-family: monospace !important; }
+    .txt-boxy { font-family: 'IBM Plex Sans', sans-serif !important; }
+    .txt-comic { font-family: "Comic Sans MS", cursive !important; }
+    .txt-curly { font-family: 'Reenie Beanie', cursive !important; }
+    .txt-symbol { font-family: Wingdings, Webdings !important; }
 
-.f1 { font-size: 14px;} .f2 { font-size: 14.5px;} .f3 { font-size: 15px;}
-.f4 { font-size: 13px;} .f5 { font-size: 12px;} .f6 { font-size: 16px;}
-.f7 {font-size: 21px;} .f8 {font-size: 22px;} .f9 {font-size: 22.5px;}
+/* SPECIAL */
+    .txt-bubble { font-family: 'Bubblegum Sans', cursive !important; }
+
+/* BY SIZE */
+
+    .f1 { font-size: 14px;} .f2 { font-size: 14.5px;}
+    .f3 { font-size: 15px;} .f4 { font-size: 13px;}
+    .f5 { font-size: 12px;} .f6 { font-size: 16px;}
+    .f7 {font-size: 21px;} .f8 {font-size: 22px;}
+    .f9 {font-size: 22.5px;}
 
 /*=========================================================*/
 
@@ -164,7 +178,7 @@ body {
 
 /*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ THEMES / W ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
 
-#themeTerm { width: 500px; height: 325.5; }
+#themeTerm { display: block; width: 500px; height: 325.5; }
 .themeTitle { display: block; font-weight: bolder; margin: 5px; }
 .tt a {
     font-size: 13px;
@@ -234,6 +248,18 @@ body {
     border: 1px solid darkgray; border-left: none; 
     
 }
+.fontArticle { height: 100%; }
+.fontArticle .busy-c, .fontArticle .busy-r { height: inherit; border: none; }
+.fontArticle .busy-r {
+    flex-wrap: wrap; justify-content: center; align-content: flex-start;
+}
+.fontArticle a {
+    width: 40%; height: auto;
+    background-color: lightgray;
+    border: .8px groove gray; margin: 6px;
+    text-align: center; font-size: 16.5px;
+}
+
 .thOBtn:focus { outline: none; }
 .backgroundArticle button:focus { outline: none; }
 
@@ -308,6 +334,7 @@ body {
     border: none; background: none;
 }
 #cpMain button:focus { outline: none; }
+
 /*~-~-~-~-~-~-~-~-~-~ ABOUT THIS COMPUTER / W ~-~-~-~-~-~-~-~-~-~*/
 
 #aboutComputerTerm {
