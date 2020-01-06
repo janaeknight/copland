@@ -162,6 +162,8 @@
     });
     $(".dtMyComputer").on( "dblclick", function() {
         $("#myComputerTerm").show();
+        $(".dtCBox").children().hide();
+        $(".dtC1").show();
         $("#myComputerTerm").addClass("activeZ");
     });
     $(".dtSoundMP").on( "dblclick", function() {
@@ -179,6 +181,14 @@
     $(".dtWinona").on( "dblclick", function() {
         $("#winonaTerm").show();
         $("#winonaTerm").addClass("activeZ");
+    });
+    $(".dtControlPanel").on( "dblclick", function() {
+        $("#controlPanelTerm").show();
+        $("#controlPanelTerm").addClass("activeZ");
+    });
+    $(".dtERSC").on( "dblclick", function() {
+        $("#erscTerm").show();
+        $("#erscTerm").addClass("activeZ");
     });
     $(".dtGoodStuffSh").on( "dblclick", function() {
         $("#docsTerm").show();
@@ -229,12 +239,34 @@
 
 // MY COMPUTER
 
+    // Auto hides MC pages
+
+    $(".dtCBox").children().hide();
+
     // On (this) click, change button span color
 
     $(".dtBtn").on( "click", function() {
         $(".dtBtn").children('span').css("background-color", "gainsboro");
         $(this).children('span').css("background-color", "#bdbdbd");
     });
+
+    // Switches to      > Documents
+
+    $(".dtDocuments").on( "dblclick", function() {
+        $(this).parent().hide();
+        $(".dtC2").show();
+    });
+    $(".dtGallery").on( "dblclick", function() {
+        $(this).parent().hide();
+        $(".dtC3").show();
+    });
+
+        /*$(".dtGoodStuffSh").on( "dblclick", function() {
+            $("#docsTerm").show();
+            $(".docFrame").children().hide();
+            $("#doc54").show();
+            $("#docsTerm").addClass("activeZ");
+        });*/
 
 
 // THEMES
@@ -516,6 +548,8 @@
     // removes body font override class
         $(".thfo").on( "click", function() {
             $("body").removeClass();
+            $(".thfo").css("background-color", "lightgray");
+            $(this).css("background-color", "#9898FB");
         });
 
     
