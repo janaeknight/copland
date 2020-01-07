@@ -40,16 +40,16 @@
             clearTimeout(wait);
             wait = setTimeout(cb, ms);
 
-            document.querySelector("#screensaver").style.display = "none";
-            document.querySelector(".desktop").style.display = "flex";
-            document.querySelector(".taskbar").style.display = "flex";
+            $("#screensaver").hide();
+            $(".desktop").show();
+            $(".taskbar").show();
         };
     }
     onInactive(180000, function () {
         console.log('Screensaver activated. (3 minutes)');
-        document.querySelector(".desktop").style.display = "none";
-        document.querySelector(".taskbar").style.display = "none";
-        document.querySelector("#screensaver").style.display = "block";
+        $(".desktop").hide();
+        $(".taskbar").hide();
+        $("#screensaver").show();
     });
 
         // <!--- screensaver apply
@@ -143,16 +143,10 @@
 
 // Taskbar Tab Functions
 
-    document.getElementById("ta-1").addEventListener("click", function(){ 
+    $("#ta-1").on("click", function(){ 
         $("#aboutComputerTerm").show();
         $("#aboutComputerTerm").addClass("activeZ");
     });
-    /*document.getElementById("").addEventListener("click", function(){ 
-        document.getElementById("").style.display = "block";
-    });
-    document.getElementById("").addEventListener("click", function(){ 
-        document.getElementById("").style.display = "block";
-    });*/
 
 // My Computer/Desktop Button Functions
 
@@ -248,7 +242,7 @@
         $(this).children('span').css("background-color", "#bdbdbd");
     });
 
-    // Switches to      > Documents
+    // Switches to      > Documents &&// > Gallery
 
     $(".dtDocuments").on( "dblclick", function() {
         $(this).parent().hide();
@@ -274,6 +268,27 @@
             // ----->   $(".dtDoc").on( "dblclick", function() {
             // ----->       $("#doc").show();
             // ----->   });
+        
+        // GALLERY
+        
+            // Hides nested imgs, shows gallTerm += replaces title
+
+            $(".dtGall").on( "dblclick", function() {
+                $(".thisImg").hide();
+                $("#galleryTerm").show();
+                $("#galleryTitle").html("Gallery");
+                $("#galleryTerm").addClass("activeZ");
+            });
+
+            // -----------------------------
+                $(".img3").on( "dblclick", function() {
+                    $("#galleryTitle").html("thisisfunnylol.jpg");
+                    $("#img3").show();
+                });
+                $(".img46").on( "dblclick", function() {
+                    $("#galleryTitle").html("3DDDD.jpg");
+                    $("#img46").show();
+                });
 
 
 // THEMES

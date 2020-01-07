@@ -358,8 +358,26 @@ body {
 
 /*~-~-~-~-~-~-~-~-~-~ GALLERY / W's ~-~-~-~-~-~-~-~-~-~*/
 
-.galleryWindow { width: 345px; height: auto }
-.galleryWindow img {
+.galleryWindow {
+    min-width: 345px; max-width: 710px; height: auto;
+    top: 15%; left: 3%;
+}
+.imgS1 { width: 345px; height: auto; }
+.imgS2 { width: 400px; height: auto; }
+.imgS3 { width: 470px; height: auto; }
+.imgS4 { width: 510px; height: auto; }
+.imgS5 { width: 560px; height: auto; }
+.imgS6 { width: 634px; height: auto; }
+.thisImg {
+    min-width: inherit; max-width: inherit;
+    height: inherit;
+}
+.thisImg img {
+    display: block; width: 88%; margin: 4px auto;
+    image-rendering: pixelated;
+}
+.soloGalleryWindow { width: 345px; height: auto; }
+.soloGalleryWindow img {
     display: block; image-rendering: pixelated;
     width: 88%; margin: 4px auto;
 }
