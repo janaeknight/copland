@@ -565,6 +565,7 @@ body {
         margin: auto;
     }
     .thisDoc {
+        display: none;
         width: inherit; height: 102.3%;
     }
     .thisDoc textarea {

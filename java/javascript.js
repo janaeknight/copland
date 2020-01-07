@@ -192,7 +192,6 @@
     });
     $(".dtGoodStuffSh").on( "dblclick", function() {
         $("#docsTerm").show();
-        $(".docFrame").children().hide();
         $("#doc54").show();
         $("#docsTerm").addClass("activeZ");
     });
@@ -204,7 +203,6 @@
         $(this).addClass("activeZ");
         // functional, but nonActiveZ window layers stack in html order
     });
-
 
 
 
@@ -261,12 +259,21 @@
         $(".dtC3").show();
     });
 
-        /*$(".dtGoodStuffSh").on( "dblclick", function() {
-            $("#docsTerm").show();
-            $(".docFrame").children().hide();
-            $("#doc54").show();
-            $("#docsTerm").addClass("activeZ");
-        });*/
+        // DOC
+
+            // Hides nested docs, shows docsTerm
+
+            $(".dtFileBtn").on( "dblclick", function() {
+                $(".thisDoc").hide();
+                $("#docsTerm").show();
+                $("#docsTerm").addClass("activeZ");
+            });
+
+            // -----------------------------
+
+            // ----->   $(".dtDoc").on( "dblclick", function() {
+            // ----->       $("#doc").show();
+            // ----->   });
 
 
 // THEMES
