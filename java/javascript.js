@@ -13,10 +13,34 @@
     
     */
 
+    let username = "carlyisagenius";
+    let password = "frickityfrick232";
+
 //  SETS DEFAULT BACKGROUND IMG (onload)
 
     document.body.style.backgroundImage = "url('https://i.ibb.co/n6FVW6V/1999.jpg')";
     document.body.style.backgroundSize = "850px";
+
+// Time - Taskbar
+
+    function clock() {
+        var now    = new Date();
+        var hour   = now.getHours();
+        var minute = now.getMinutes();
+        var second = now.getSeconds();
+        var ap = "AM";
+        if (hour   > 11) { ap = "PM";             }
+        if (hour   > 12) { hour = hour - 12;      }
+        if (hour   == 0) { hour = 12;             }
+        if (hour   < 10) { hour   = "0" + hour;   }
+        if (minute < 10) { minute = "0" + minute; }
+        if (second < 10) { second = "0" + second; }
+        var timeString = hour + ':' + minute  + " " + ap;
+        document.getElementById("date").innerHTML = timeString;
+    }
+    clock(); setInterval(clock, 1000);
+
+    // console.log(now.getFullYear());
 
 
 //  SCREENSAVER / ACTIVITY TIMEOUT
@@ -27,7 +51,7 @@
         $(".thbs").css("background-color", "lightgray");
         $(this).css("background-color", "#b0aeae;");
         $("#screensPreviewBox").removeClass();
-        $("#screensaver").removeClass(); // <!--- removes sel screen
+        $("#screensaver").removeClass(); // <!--- removes sele. screen
     });
 
     // Timeout (3 minutes)
@@ -117,24 +141,6 @@
         winToClose.style.display = "none";
     };
 
-
-// Time - Taskbar
-
-    var now    = new Date();
-    var hour   = now.getHours();
-    var minute = now.getMinutes();
-    var second = now.getSeconds();
-    var ap = "AM";
-    if (hour   > 11) { ap = "PM";             }
-    if (hour   > 12) { hour = hour - 12;      }
-    if (hour   == 0) { hour = 12;             }
-    if (hour   < 10) { hour   = "0" + hour;   }
-    if (minute < 10) { minute = "0" + minute; }
-    if (second < 10) { second = "0" + second; }
-    var timeString = hour + ':' + minute  + " " + ap;
-    document.getElementById("date").innerHTML = timeString;
-    console.log(timeString);
-
 // Window UI
 
     $(".window").addClass("ui-widget-content"); // <-- drag class (REQ.)
@@ -143,12 +149,28 @@
 
 // Taskbar Tab Functions
 
+    // Removes layering on windows on tb click
+
+    $(".taskbar").children("a").on( "click", function() {
+        $(".window").removeClass("activeZ");
+    });
+
+    // --------------------
+
     $("#ta-1").on("click", function(){ 
         $("#aboutComputerTerm").show();
         $("#aboutComputerTerm").addClass("activeZ");
     });
 
 // My Computer/Desktop Button Functions
+
+    // Does ... something. Forgot.
+
+    $("#desk-main").children("button").on( "dblclick", function() {
+        $(".window").removeClass("activeZ");
+    });
+
+    // --------------------
 
     $(".dtFortune").on( "dblclick", function() {
         $("#fortuneTerm").show();
@@ -270,7 +292,7 @@
             // ----->   });
         
         // GALLERY
-        
+
             // Hides nested imgs, shows gallTerm += replaces title
 
             $(".dtGall").on( "dblclick", function() {
@@ -285,11 +307,18 @@
                     $("#galleryTitle").html("thisisfunnylol.jpg");
                     $("#img3").show();
                 });
+                $(".img10").on( "dblclick", function() {
+                    $("#galleryTitle").html("doom_PNG19.png");
+                    $("#img10").show();
+                });
                 $(".img46").on( "dblclick", function() {
                     $("#galleryTitle").html("3DDDD.jpg");
                     $("#img46").show();
                 });
-
+                $(".img104").on( "dblclick", function() {
+                    $("#galleryTitle").html("romymichele.jpg");
+                    $("#img104").show();
+                });
 
 // THEMES
 
@@ -499,19 +528,19 @@
         document.body.style.backgroundRepeat = "repeat";
     });
     $("#bgcCat").on( "click", function() {
-            document.body.style.backgroundImage = "url('https://i.ibb.co/3CnhQdG/cats.png')";
-            document.body.style.backgroundSize = "64px";
-            document.body.style.backgroundRepeat = "repeat";
+        document.body.style.backgroundImage = "url('https://i.ibb.co/3CnhQdG/cats.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
     });
     $("#bgcStars").on( "click", function() {
-            document.body.style.backgroundImage = "url('https://i.ibb.co/VN348TZ/stars.png')";
-            document.body.style.backgroundSize = "64px";
-            document.body.style.backgroundRepeat = "repeat";
+        document.body.style.backgroundImage = "url('https://i.ibb.co/VN348TZ/stars.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
     });
     $("#bgcCircut").on( "click", function() {
-            document.body.style.backgroundImage = "url('https://i.ibb.co/1mKKzzj/circut.png')";
-            document.body.style.backgroundSize = "64px";
-            document.body.style.backgroundRepeat = "repeat";
+        document.body.style.backgroundImage = "url('https://i.ibb.co/1mKKzzj/circut.png')";
+        document.body.style.backgroundSize = "64px";
+        document.body.style.backgroundRepeat = "repeat";
     });
     $("#bgcLines").on( "click", function() {
         document.body.style.backgroundImage = "url('https://i.ibb.co/F4Y8rxD/purplline.jpg')";
@@ -573,8 +602,7 @@
             $(".thfo").css("background-color", "lightgray");
             $(this).css("background-color", "#9898FB");
         });
-
-    
+ 
     $("#foDefault").on( "click", function() {
         $("body").addClass("txt-default");
         $("button").children().css("font-family", "Arial, sans-serif");
@@ -608,6 +636,12 @@
         $("button").children().css("font-family", "Wingdings, Webdings");
     });
 
+// ERSC
+
+    $("#erscCl").on("click", function() {
+        $("#erscTerm").hide();
+    });
+
 // DAILY FORTUNE
 
 var possibleFortunes = [
@@ -621,7 +655,7 @@ let fortune = 0;
 var todayFortune = possibleFortunes[Math.floor(Math.random()*possibleFortunes.length)];
 var todayLuckies = possibleLuckies[Math.floor(Math.random()*possibleLuckies.length)];
 
-document.getElementById("getFortuneBtn").addEventListener("click", function(){
+$("#getFortuneBtn").on("click", function(){
     if (fortune>0) {
         $(".fortunePg1").hide();
         $(".fortunePg2").show();
@@ -636,7 +670,7 @@ document.getElementById("getFortuneBtn").addEventListener("click", function(){
             };
             next();
         });
-        document.getElementById("getFortuneBtn").innerHTML = "« Today's Fortune »"
+        $("#getFortuneBtn").html("« Today's Fortune »");
         fortune += 1;
         console.log(fortune);
     };
@@ -644,8 +678,8 @@ document.getElementById("getFortuneBtn").addEventListener("click", function(){
     console.log("Today's Lucky Numbers: " +todayLuckies);
 });
 
-document.getElementById("todaysCookie").innerHTML = todayFortune;
-document.getElementById("todaysLuckies").innerHTML = "Lucky Numbers:  " +todayLuckies;
+$("#todaysCookie").html(todayFortune);
+$("#todaysLuckies").html("Lucky Numbers:  " +todayLuckies);
 
 $("#fortuneB2M").on( "click", function() {
     $(".fortunePg2").hide();

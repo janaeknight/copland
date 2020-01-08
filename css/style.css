@@ -220,9 +220,7 @@ body {
     margin: 5px 0; overflow-y: scroll;
     border: 1.1px solid black;
 }
-#themeTerm select {
-    border-radius: 5px;
-}
+#themeTerm select { border-radius: 5px; }
 .thb {
     display: flex; flex-direction: row;
     width: 100%; height: 22px;
@@ -350,11 +348,65 @@ body {
 /*~-~-~-~-~-~-~-~-~-~ ERSC / W ~-~-~-~-~-~-~-~-~-~*/
 
 #erscTerm {
-    width: 620px; min-height: 240px;
-    background-color: steelblue;
+    width: 600px; height: 430px;
+    background-color: #747166;
+    border-radius: 0; border: 1.8px solid #656256;
+    padding-bottom: 0;
+    font-family: 'IBM Plex Sans', sans-serif !important;
 }
-#erscTerm .w-tb { background-color: steelblue; }
-#erscTerm .w-tb span, #erscTerm .w-tb button {background-color: steelblue; }
+#erscTerm .erscContainer {
+    display: flex; flex-direction: row;
+    width: inherit; height: inherit;
+}
+#erscLeft {
+    display: flex; flex-direction: column;
+    width: 235px; height: inherit;
+}
+#erscLeft img, #erscLeft button { display: block; margin: 0 auto;}
+#erscLeft img { width: 60%; padding: 5px 0 15px 0; }
+#erscLeft button {
+    height: 60px; width: 75%;
+    margin: 7px auto;
+}
+#erscLeft #erscCl {
+    height: 20px !important; font-size: 10px; margin-top: 10px;
+}
+#erscLeft button:focus, #erscBusy button:focus { outline: none; }
+#erscMain img { width: 20%; } /* <!--------------- */
+#erscBusy {
+    display: flex; flex-direction: column;
+    width: 100%; height: inherit;
+    background-color: #939188; /* #838177 */
+}
+#erscBusy .featured {
+    width: 88%; height: 150px;
+    border: 1px inset black;
+    overflow-y: scroll; margin: 0 auto;
+}
+#erscBusy .featured a { display: block; padding: 3px; }
+#erscBusy .featured .naDark { background-color: lightgrey; }
+#erscBusy .featured .naLight { background-color: gainsboro; }
+
+/*~-~-~-~-~-~-~-~-~-~ DOCS / W's ~-~-~-~-~-~-~-~-~-~*/
+
+#docsTerm {       
+    width: 680.71px; height: 485px;
+}
+.docFrame {
+    width: 100%; height: 94.9%;
+    background-color: snow;
+    margin: auto;
+}
+.thisDoc {
+    display: none;
+    width: inherit; height: 102.3%;
+}
+.thisDoc textarea {
+    min-width: 99.45%; max-width: 99%;
+    min-height: 97%; max-height: 97%; border: none;
+    margin: 0; text-align: left;
+}
+.thisDoc textarea:focus { outline: none; }
 
 /*~-~-~-~-~-~-~-~-~-~ GALLERY / W's ~-~-~-~-~-~-~-~-~-~*/
 
@@ -486,7 +538,6 @@ body {
 
 /*=========================================================*/
 
-
 #screensaver {
     width: 100vw; height: 100vh;
     overflow: hidden; background-color: lightblue;
@@ -544,9 +595,9 @@ body {
     SCROLLBAR SETTINGS 
         -- ADD LEFT AND RIGHT X AXIS ARROWS
 */
-
-
-
+    ::-webkit-scrollbar-corner {
+        background-color: #8888e1;
+    }
     /* width */
     ::-webkit-scrollbar {
         width: 11px;
@@ -573,22 +624,3 @@ body {
         border-width: 8px 8px 0 8px;
         border-color: #555555 transparent transparent transparent;
     }
-
-    #docsTerm {       
-        width: 680.71px; height: 485px;
-    }
-    .docFrame {
-        width: 100%; height: 94.9%;
-        background-color: snow;
-        margin: auto;
-    }
-    .thisDoc {
-        display: none;
-        width: inherit; height: 102.3%;
-    }
-    .thisDoc textarea {
-        min-width: 99.45%; max-width: 99%;
-        min-height: 97%; max-height: 97%; border: none;
-        margin: 0; text-align: left;
-    }
-    .thisDoc textarea:focus { outline: none; }
