@@ -27,7 +27,7 @@ body {
     .f3 { font-size: 15px;} .f4 { font-size: 13px;}
     .f5 { font-size: 12px;} .f6 { font-size: 16px;}
     .f7 {font-size: 21px;} .f8 {font-size: 22px;}
-    .f9 {font-size: 22.5px;}
+    .f9 {font-size: 22.5px;} .f10 { font-size: 10px; }
 
 /*=========================================================*/
 
@@ -353,6 +353,9 @@ body {
     border-radius: 0; border: 1.8px solid #656256;
     padding-bottom: 0;
     font-family: 'IBM Plex Sans', sans-serif !important;
+    -moz-box-shadow:    inset 0 0 50px darkgray;
+    -webkit-box-shadow: inset 0 0 50px darkgray;
+    box-shadow:         inset 0 0 50px darkgray;
 }
 #erscTerm .erscContainer {
     display: flex; flex-direction: row;
@@ -361,18 +364,23 @@ body {
 #erscLeft {
     display: flex; flex-direction: column;
     width: 235px; height: inherit;
+    border-right: 1px inset #656256;
 }
 #erscLeft img, #erscLeft button { display: block; margin: 0 auto;}
-#erscLeft img { width: 60%; padding: 5px 0 15px 0; }
+#erscLeft img { width: 80%; padding: 25px 0 15px 0; }
 #erscLeft button {
-    height: 60px; width: 75%;
-    margin: 7px auto;
+    height: 55px; width: 75%; margin: 6px auto;
+    background-color: #C4BFBF; background-size: cover;
 }
+#nabInternational { background-image: url('../css/news/btnIN.jpg') }
+#nabLocal { background-image: url('../css/news/btnLocal.jpg') }
+#nabFun { background-image: url('../css/news/btnFun.jpg') }
+#nabPolitics { background-image: url('../css/news/btnPolitics.jpg') }
 #erscLeft #erscCl {
     height: 20px !important; font-size: 10px; margin-top: 10px;
 }
 #erscLeft button:focus, #erscBusy button:focus { outline: none; }
-#erscMain img { width: 20%; } /* <!--------------- */
+#erscMain img { width: 30%; }
 #erscBusy {
     display: flex; flex-direction: column;
     width: 100%; height: inherit;
@@ -380,12 +388,22 @@ body {
 }
 #erscBusy .featured {
     width: 88%; height: 150px;
-    border: 1px inset black;
+    border: 1px inset black; font-size: 12px;
     overflow-y: scroll; margin: 0 auto;
 }
 #erscBusy .featured a { display: block; padding: 3px; }
 #erscBusy .featured .naDark { background-color: lightgrey; }
 #erscBusy .featured .naLight { background-color: gainsboro; }
+.mainFeatured {
+    display: block; margin: 6px auto;
+    width: 96%; height: 75px;
+    background-color: darkgray;
+    border: 1px groove dimgray;
+}
+.mainFeatured img { float: left; width: 75px !important; }
+.erscPage { display: none; margin: 5px; }
+#erscInactive { text-align: center; }
+#erscInactive ul { list-style: none; margin-left: -35px; }
 
 /*~-~-~-~-~-~-~-~-~-~ DOCS / W's ~-~-~-~-~-~-~-~-~-~*/
 
@@ -482,6 +500,13 @@ body {
 .preCookie { height: inherit; width: inherit; margin: auto auto;}
 .postCookie p { font-size: 28px; margin: 35px 15px 20px 15px; } 
 .postCookie a { margin: 10px 0;}
+
+/*~-~-~-~-~-~-~-~-~-~ RESTART / W ~-~-~-~-~-~-~-~-~-~*/
+
+#restartTerm {
+    left: 20%; top: 20%;
+    width: 350px; height: 150px;
+}
 
 /*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~ RADIO / W ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
 

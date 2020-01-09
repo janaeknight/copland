@@ -161,6 +161,13 @@
         $("#aboutComputerTerm").show();
         $("#aboutComputerTerm").addClass("activeZ");
     });
+    $("#ta-5").on("click", function(){
+        $("#erscTerm").show();
+        $(".erscPage").hide();
+        $("#erscMain").show();
+        $("#erscTerm").addClass("activeZ");
+    });
+
 
 // My Computer/Desktop Button Functions
 
@@ -204,6 +211,8 @@
     });
     $(".dtERSC").on( "dblclick", function() {
         $("#erscTerm").show();
+        $(".erscPage").hide();
+        $("#erscMain").show();
         $("#erscTerm").addClass("activeZ");
     });
     $(".dtGoodStuffSh").on( "dblclick", function() {
@@ -640,6 +649,22 @@
 
     $("#erscCl").on("click", function() {
         $("#erscTerm").hide();
+        $("#erscMain").children(".featured").children("a").css("border", "none");
+    });
+
+    // Redirects to >// Inactive
+
+    $(".erDefBtn").on("click", function() {
+        $(".erscPage").hide();
+        $("#erscInactive").show();
+    });
+
+    // On featured article click, add/remove highlight
+
+    $("#erscMain").children(".featured").children("a").on("click", function() {
+        $("#erscMain").children(".featured").children("a").css("border", "none");
+        $(this).css("border-bottom", "1px dashed dimgray");
+        $(this).css("border-top", "1px dashed dimgray");
     });
 
 // DAILY FORTUNE

@@ -67,16 +67,16 @@
                 <div class="dc">
                     <a class="txt-center" id="ta-1">About This Computer...</a>
                     <hr>
-                    <a id="ta-"><img src="css/woc/Visor Pro.ico">Domovoi</a>
-                    <a id="ta-"><img src="css/woc/a woman.ico">Contacts</a>
-                    <a id="ta-"><img src="css/woc/Cheap Casette.ico">SMP (Beta)</a>
-                    <a id="ta-"><img src="css/woc/Clipping.ico"> ERSC - Yearly Subscription</a>
+                    <a id="ta-2"><img src="css/woc/Visor Pro.ico">Domovoi</a>
+                    <a id="ta-3"><img src="css/woc/a woman.ico">Contacts</a>
+                    <a id="ta-4"><img src="css/woc/Cheap Casette.ico">SMP (Beta)</a>
+                    <a id="ta-5"><img src="css/woc/Clipping.ico"> ERSC - Yearly Subscription</a>
                     <a id="ta-"><img src="css/woc/Network_Render.ico">The Web</a>
-                    <a id="ta-"><img src="css/woc/CCi_ReWritable.ico">Slot Reader</a>
+                    <a id="ta-6"><img src="css/woc/CCi_ReWritable.ico">Slot Reader</a>
                     <a id="ta-"><img src="css/woc/calendar.ico">Calendar</a>
-                    <a id="ta-"><img src="css/woc/Quickcam.ico">Hype&copy; Instant Chat</a>
-                    <a id="ta-"><img src="css/woc/Construction.ico">Control Panel</a>
-                    <a id="ta-"><img src="css/woc/Post It Notes.ico">Note Stuff</a>
+                    <a id="ta-7"><img src="css/woc/Quickcam.ico">Hype&copy; Instant Chat</a>
+                    <a id="ta-8"><img src="css/woc/Construction.ico">Control Panel</a>
+                    <a id="ta-9"><img src="css/woc/Post It Notes.ico">Note Stuff</a>
                 </div>
             </div>
             <div class="tb-drop"> <!-- FILE -->
@@ -864,23 +864,54 @@
             <div class="window" id="erscTerm">
                 <div class="erscContainer">
                     <div id="erscLeft">
-                        <img src="css/news/earth2.png">
-                        <button class="" id="">BUTTON 1</button>
-                        <button class="" id="">BUTTON 2</button>
-                        <button class="" id="">BUTTON 3</button>
+                        <img src="css/news/brera.png">
+                        <button class="erDefBtn" id="nabInternational"></button>
+                        <button class="erDefBtn" id="nabLocal"></button>
+                        <button class="erDefBtn" id="nabFun"></button>
+                        <button class="erDefBtn" id="nabPolitics"></button>
                         <button id="erscCl"><em>Close ERSC News</em></button>
                     </div>
                     <div id="erscBusy">
                         <div class="erscPage" id="erscMain">
-                            <img id="" src="css/news/earth2.png">
-                            <div class="featured">
-                                <a class="naDark" id="na">First Baby Named With Emoticons</a>
-                                <a class="naLight" id="na">More Japanese Wives Consider Divorce</a>
-                                <a class="naDark" id="na">"Bat Boy" Discovered In Cave</a>
-                                <a class="naLight" id="na">Little People Found Living Inside Computers</a>
-                                <a class="naDark" id="na">New Discovery Uncovers Potential History-Changing Affair</a>
-                                <a class="naLight" id="na">Steve Jobs Breaks the Internet</a>
+                            <img src="css/news/earthGray.png">
+                            <button class="erDefBtn">Newer Articles</button>
+                            <button class="erDefBtn">Older Articles</button>
+                            <button class="erDefBtn"> Article</button>
+                            <div class="mainFeatured">
+                                <img src="css/news/tee.png" alt="totally real group of friends">
+                                <span><b>Genius Kids Find and Expose <em>Lock Ness, Bigfoot</em> (With Pictures!)</b></span><br>
+                                <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    Three high school students (Addison Sutton, Jon Stewart, Hanna Baker) discover a hut <a><em class="erDefBtn"><u>(Read more...)</u></em></a>
+                                </span>
                             </div>
+                            <div class="featured">
+                                <a class="naDark erDefBtn" id="na">First Baby Named With Emoticons</a>
+                                <a class="naLight erDefBtn" id="na">More Japanese Wives Consider Divorce</a>
+                                <a class="naDark erDefBtn" id="na">"Bat Boy" Discovered In Cave</a>
+                                <a class="naLight erDefBtn" id="na">Little People Found Living Inside Computers</a>
+                                <a class="naDark erDefBtn" id="na">New Scam Fools Oldies</a>
+                                <a class="naLight erDefBtn" id="na">Steve Jobs Breaks the Internet</a>
+                                <a class="naDark erDefBtn" id="na">New Discovery Uncovers Potential History-Changing Affair</a>
+                                <a class="naLight erDefBtn" id="na">Baby Breaks Mother's Water</a>
+                                <a class="naDark erDefBtn" id="na">The Dirty Side of Clean Eating</a>
+                            </div>
+                        </div> <!-- erscPageMain -->
+                        <div class="erscPage" id="erscInactive">
+                            <h1 class="txt-comic">Yikes! ☹</h1>
+                            <span class="f2">
+                                Your subscription is <u>Inactive</u>. To keep reading current  news, you must buy a new activation key. You can find <em>ERSC</em> monthly/yearly activation codes in the paper section at:
+                                <ul>
+                                    <li>Best Buy</li>
+                                    <li>Walgreens</li>
+                                    <li>Walmart</li>
+                                    <li>Sears</li>
+                                    <li>Lowe's</li>
+                                </ul>
+                            </span>
+                            <span><b>OR</b></span><br><br>
+                            <span class="f1">Enter an activation key:</span><br>
+                            <input type="input" placeholder="xxxx-xxxx-xxxx-xxxx-xxxx"><br>
+                            <span class="f10">** Must have ethernet connection.**</span>
                         </div>
                     </div>
                 </div>
@@ -952,6 +983,13 @@
                     </div>
                 </div>
             </div> <!-- fortuneTerm -->
+            <div class="window" id="restartTerm">
+                <div class="w-tb">
+                    <span>Restart?</span>
+                </div>
+                <p class="f9">Are you sure you want to restart?</p><br>
+                <p class="f7">** This will</p>
+            </div> <!-- restartTerm -->
             <div class="window" id="soundMPTerm">
                 <div class="innerSoundMP">
                     <div id="smpTop">
