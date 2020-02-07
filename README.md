@@ -7,6 +7,8 @@
 | Fortune                    | Daily Fortune app made by a fictional company that gives out crappy apps on the same disk they put their crappy games on. |
 | Gallery                    | Either holds all the pictures or one of the pictures. |
 | About Computer             | Summary of the history of the Copland OS. |
+| My Computer                | Takes you to literally everything. |
+|  |  |
 |  |  |
 |  |  |
  
