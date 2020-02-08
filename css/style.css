@@ -1,8 +1,9 @@
 body {
     width: 100vw; height: 100vh;
     margin: 0 auto;
-    background-color: #63639D;
-    background-repeat: repeat;
+    background-image: url('../css/person/patterns/age.jpg');
+    background-color: #63639D; background-repeat: repeat;
+    background-size: 850px;
 }
 /* BY COLOR */
     .txt-gray { color:gray; } .txt-red { color: firebrick; }

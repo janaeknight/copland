@@ -18,8 +18,8 @@
 
 //  SETS DEFAULT BACKGROUND IMG (onload)
 
-    document.body.style.backgroundImage = "url('https://i.ibb.co/n6FVW6V/1999.jpg')";
-    document.body.style.backgroundSize = "850px";
+    //document.body.style.backgroundImage = "url('https://i.ibb.co/n6FVW6V/1999.jpg')";
+    //document.body.style.backgroundSize = "850px";
 
 // Time - Taskbar
 
