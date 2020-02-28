@@ -117,7 +117,7 @@ body {
     height: 25px !important; width: 98% !important;
     background-color: #DDDDDD;
     font-weight: bold; font-size: 14.2px;
-    background-image: url("https://i.ibb.co/KWx5ZCT/dots.png");
+    background-image: url("../css/dots.png");
     background-position: center; background-repeat: repeat-x;
     background-size: 20%; margin: 2px auto;
 }
@@ -459,7 +459,7 @@ body {
 
 #fortuneTerm {
     width: 580px; height: auto;
-    top: 17%; left: 4%;
+    top: 17%; left: 4%; z-index: 1;
     background-color: #dead4e;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -472,7 +472,7 @@ body {
 }
 #fortuneTerm .w-tb, #fortuneTerm .w-tb span, #fortuneTerm .w-tb button { background-color: #dead4e; }
 #fortuneTerm .w-tb {
-    background-image: url("https://i.ibb.co/0XXGnbh/fortune-link-2.png");
+    background-image: url("../css/fortune/banner-img1.png");
     background-position: center; background-repeat: repeat-x;
     background-size: auto;
 }
@@ -489,7 +489,7 @@ body {
     padding: 4px 0;
 }
 #fortuneTerm .busy-c a:hover {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/1b/10-band_Rainbow_Flag.png");
+    background-image: url("../css/fortune/highlig1.png");
     background-size: contain;
 }
 #fortuneTerm h1 { font-size: 50px;  margin: 14px 0; }

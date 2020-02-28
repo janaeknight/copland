@@ -151,11 +151,11 @@
 
     // Removes layering on windows on tb click
 
-    $(".taskbar").children("a").on( "click", function() {
+    $(".tb-drop").children("a").on( "click", function() {
         $(".window").removeClass("activeZ");
     });
 
-    // --------------------
+    // -------------------- Opens Windows from Taskbar
 
     $("#ta-1").on("click", function(){ 
         $("#aboutComputerTerm").show();
@@ -166,6 +166,15 @@
         $(".erscPage").hide();
         $("#erscMain").show();
         $("#erscTerm").addClass("activeZ");
+    });
+    $("#ta-8").on("click", function(){
+        $("#controlPanelTerm").show();
+        $("#controlPanelTerm").addClass("activeZ");
+    });
+
+    $("#ts-6").on("click", function() {
+        $("#personalityTerm").show();
+        $("#personalityTerm").addClass("activeZ");
     });
 
 
@@ -361,15 +370,15 @@
         let bgPgSel = $("#themeBgPgSel option:selected").text();
 
         if (bgPgSel === "Color Backgrounds") {
-            $('.bgP2').hide(); $('.bgP3').hide();
+            $('.bgPge').hide();
             $('.bgP1').show();
         };
         if (bgPgSel === "Pattern Backgrounds") {
-            $('.bgP1').hide(); $('.bgP3').hide();
+            $('.bgPge').hide();
             $('.bgP2').show();
         };
         if (bgPgSel === "Custom Backgrounds") {
-            $('.bgP1').hide(); $('.bgP2').hide();
+            $('.bgPge').hide();
             $('.bgP3').show();
         };
     
