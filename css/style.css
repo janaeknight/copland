@@ -346,13 +346,22 @@ body {
 .atct { margin: 5px; }
 #aboutComputerTerm hr { border-top: 1px dashed darkslategray; width: 98%; }
 
+/*~-~-~-~-~-~-~-~-~-~ PERSONALITY / W ~-~-~-~-~-~-~-~-~-~*/
+
+#personalityTerm {
+    display: block;
+    top: 50%; left: 50%;
+    -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);
+    width: 350px; height: 350px;
+}
+
 /*~-~-~-~-~-~-~-~-~-~ ERSC / W ~-~-~-~-~-~-~-~-~-~*/
 
 #erscTerm {
     width: 600px; height: 430px;
     background-color: #747166;
     border-radius: 0; border: 1.8px solid #656256;
-    padding-bottom: 0;
+    padding-bottom: 0; left: 7%; top: 6%;
     font-family: 'IBM Plex Sans', sans-serif !important;
     -moz-box-shadow:    inset 0 0 50px darkgray;
     -webkit-box-shadow: inset 0 0 50px darkgray;
@@ -367,6 +376,7 @@ body {
     width: 235px; height: inherit;
     border-right: 1px inset #656256;
 }
+#erscTerm input { text-align: center; }
 #erscLeft img, #erscLeft button { display: block; margin: 0 auto;}
 #erscLeft img { width: 80%; padding: 25px 0 15px 0; }
 #erscLeft button {
@@ -505,7 +515,8 @@ body {
 /*~-~-~-~-~-~-~-~-~-~ RESTART / W ~-~-~-~-~-~-~-~-~-~*/
 
 #restartTerm {
-    left: 20%; top: 20%;
+    top: 50%; left: 50%;
+    -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);
     width: 350px; height: 150px;
 }
 

@@ -9,7 +9,11 @@
             var x = document.cookie;
                 -- OR
                     document.cookie     returns all cookies in a string
-        ----> 
+        ----> Redefining Cookies
+            document.cookie = "username=Chuck Norris";
+                -- so basically overwriting
+        ----> "Deleting" Cookies
+
     
     */
 
@@ -175,6 +179,11 @@
     $("#ts-6").on("click", function() {
         $("#personalityTerm").show();
         $("#personalityTerm").addClass("activeZ");
+    });
+
+    $("#ts-7").on("click", function() {
+        $("#restartTerm").show();
+        $("#restartTerm").addClass("activeZ");
     });
 
 

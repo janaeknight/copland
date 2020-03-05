@@ -51,16 +51,19 @@ input:hover, input:focus, textarea:hover, textarea:focus {
 
 .cntr-box { width: inherit; height: inherit; margin: 0 auto; }
 
-
-
-
-
-
-
 .margin3 { margin: 3px; }
 .margin4 { margin: 4px; }
 .margin5 { margin: 5px; }
 .margin6 { margin: 6px; }
+
+.t1 { font-size: xx-small; }    .t2 { font-size: x-small; }
+.t3 { font-size: smaller; }     .t4 { font-size: small; }
+.t5 { font-size: medium; }      .t6 { font-size: large; }
+.t7 { font-size: larger; }      .t8 { font-size: x-large; }
+.t9 { font-size: xx-large; }    .t10 { font-size: 90px; }
+.t11 { font-size: 80px; }       .t12 { font-size: 70px; }
+.t13 { font-size: 60px; }       .t14 { font-size: 50px; }
+.t15 { font-size: 40px; }       .t16 { font-size: 30px; }
 
 
 /*=======================================================================*/
