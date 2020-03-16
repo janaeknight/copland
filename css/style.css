@@ -146,6 +146,10 @@ body {
     border: 1px groove lightgray;
     margin: 0 auto; padding-bottom: 5px;
 }
+.innerbusy-c {
+    display: flex; flex-direction: column;
+    width: 97%; height: 92%; margin: 0 5px ;
+}
 
 /*~-~-~-~-~-~-~-~-~-~-~-~ MY COMPUTER / W ~-~-~-~-~-~-~-~~~-~-~-~*/
 
@@ -352,7 +356,13 @@ body {
     display: none;
     top: 50%; left: 50%;
     -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);
-    width: 350px; height: 350px;
+    width: 205px; height: 270px;
+}
+#personalityTerm img {
+    display: block; width: 124.83px; height: 115px;
+    border-radius: 15%; margin: 10px auto;
+    border: 1px solid lightslategray;
+    padding: 1px;
 }
 
 /*~-~-~-~-~-~-~-~-~-~ ERSC / W ~-~-~-~-~-~-~-~-~-~*/
