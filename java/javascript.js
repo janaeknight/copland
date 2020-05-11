@@ -199,6 +199,7 @@
 
     $(".dtFortune").on( "dblclick", function() {
         $("#fortuneTerm").show();
+        $(".fortunePg").hide(); $("#fortunePgMain").show();
         $("#fortuneTerm").addClass("activeZ");
     });
     $(".dtMyComputer").on( "dblclick", function() {
@@ -694,40 +695,108 @@ var possibleLuckies = [
     "19, 75", "41, 71", "22, 24", "60, 42", "94, 70", "30, 51", "19, 51", "65, 66", "93, 82", "27, 4", "82, 39", "23, 3", "94, 6", "16, 98", "40, 28", "25, 45", "99, 37", "91, 76", "93, 71", "3, 31", "15, 55", "72, 68", "10, 92", "39, 9", "72, 19", "76, 67", "39, 33", "38, 22", "48, 2", "26, 31", "80, 36", "28, 69", "6, 78", "30, 24", "41, 91", "64, 45", "38, 37", "66, 65", "66, 19", "41, 84", "99, 59", "68, 84", "15, 69", "64, 21", "42, 89", "12, 33", "27, 99", "46, 67", "7, 63", "59, 66", "9, 51", "15, 33", "45, 21", "86, 94", "64, 81", "24, 92", "78, 27", "62, 30", "27, 26", "14, 46", "77, 96", "44, 7", "100, 49", "4, 84", "11, 93", "2, 62", "58, 12", "65, 88", "49, 70", "80, 74", "79, 92", "22, 28", "40, 53", "57, 99", "92, 74", "16, 67", "69, 7", "94, 76", "72, 50", "85, 58", "66, 47", "77, 18", "31, 88", "97, 77", "41, 45", "50, 24", "40, 62", "80, 100", "60, 49", "6, 55", "90, 57", "11, 86", "41, 3", "63, 80", "82, 55", "35, 97", "77, 65", "44, 47", "79, 49", "96, 32", "54, 31", "97, 11", "74, 97", "84, 59", "71, 21", "41, 46", "67, 78", "13, 13", "31, 87", "75, 21", "90, 97", "48, 78", "28, 92", "54, 27", "21, 5", "8, 19", "29, 75", "16, 15", "35, 16", "20, 43", "36, 64", "53, 50", "14, 35", "33, 37", "67, 77", "80, 6", "91, 25", "73, 29", "86, 32", "19, 29", "93, 68", "86, 38", "45, 65", "8, 73", "75, 19", "98, 15", "58, 47", "6, 24", "52, 88", "47, 99", "16, 63", "94, 53", "79, 35", "42, 96", "80, 29", "2, 94", "73, 91", "67, 78", "52, 51", "75, 39", "67, 89", "82, 47", "20, 90", "7, 76", "85, 10", "81, 25", "32, 56", "99, 47", "42, 62", "84, 58", "29, 36", "43, 49", "1, 78", "64, 67", "46, 28", "17, 65", "67, 79", "52, 77", "44, 45", "23, 94", "35, 15", "19, 23", "23, 12", "90, 33", "38, 37", "87, 99", "11, 10", "95, 88", "25, 100", "95, 22", "29, 48", "34, 59", "65, 13", "13, 2", "82, 64", "44, 90", "96, 93", "55, 90", "71, 25", "21, 46", "42, 50", "61, 48", "96, 93", "85, 76", "86, 19", "50, 31", "60, 16", "62, 44", "77, 45", "35, 78"
 ]
 
-let fortune = 0;
+var fortune = 0;
+var zodiac = 0;
 var todayFortune = possibleFortunes[Math.floor(Math.random()*possibleFortunes.length)];
 var todayLuckies = possibleLuckies[Math.floor(Math.random()*possibleLuckies.length)];
 
-$("#getFortuneBtn").on("click", function(){
-    if (fortune>0) {
-        $(".fortunePg1").hide();
-        $(".fortunePg2").show();
-        console.log(fortune);
-    } else {
-        $(".fortunePg1").hide();
-        $(".fortunePg2").show();
-        $(".preCookie").show().delay(6500).queue(function (next) {
-            $(this).hide();
-            function next() {
-                $(".postCookie").show();
-            };
-            next();
-        });
-        $("#getFortuneBtn").html("« Today's Fortune »");
-        fortune += 1;
-        console.log(fortune);
-    };
-    console.log("Today's Fortune: " +todayFortune);
-    console.log("Today's Lucky Numbers: " +todayLuckies);
-});
+    // Generates and Writes Fortunes
 
-$("#todaysCookie").html(todayFortune);
-$("#todaysLuckies").html("Lucky Numbers:  " +todayLuckies);
+    $("#getFortuneBtn").on("click", function() {
+        if (fortune>0) {
+            $(".fortunePg").hide();
+            $("#fortunePgFortune").show();
+            console.log(fortune);
+        } else {
+            $(".fortunePg").hide();
+            $("#fortunePgFortune").show();
+            $(".preCookie").show().delay(6500).queue(function (next) {
+                $(this).hide();
+                function next() {
+                    $(".postCookie").show();
+                };
+                next();
+            });
+            $("#getFortuneBtn").html("« Today's Fortune »");
+            fortune += 1;
+            console.log(fortune);
+        };
+        console.log("Today's Fortune: " +todayFortune);
+        console.log("Today's Lucky Numbers: " +todayLuckies);
+    });
 
-$("#fortuneB2M").on( "click", function() {
-    $(".fortunePg2").hide();
-    $(".fortunePg1").show();
-});
+    $("#todaysCookie").html(todayFortune);
+    $("#todaysLuckies").html("Lucky Numbers:  " +todayLuckies);
+
+    // Writes Zodiac For Current Year
+
+    $("#getZodiacBtn").on("click", function() {
+        if (zodiac<1) {
+            let year = new Date().getFullYear();
+            let zodiacAnimal = "";
+
+            if (year = 1996||2008||2020) /* rat */ {
+                zodiacAnimal = "rat";
+                $(".fortunePg").hide();
+                $("#fortunePgZodiac").show(); $("#zodiacRat").show();
+            } else if (year = 1997||2009||2021) /* ox */ {
+                zodiacAnimal = "ox";
+                $(".fortunePg").hide();
+                $("#fortunePgZodiac").show(); $("#zodiacOx").show();
+            } else if (year = 1998||2011||2022) /* tiger */ {
+                zodiacAnimal = "tiger";
+                $(".fortunePg").hide();
+                $("#fortunePgZodiac").show(); $("#zodiacTiger").show();
+            } else if (year = 1999||2011||2023) /* rabbit */ {
+                zodiacAnimal = "rabbit";
+                $(".fortunePg").hide();
+                $("#fortunePgZodiac").show(); $("#zodiacRabbit").show();
+            } else if (year = 2000||2012||2024) /* dragon */ {
+                zodiacAnimal = "dragon";
+                $(".fortunePg").hide();
+                $("#fortunePgZodiac").show(); $("#zodiacDragon").show();
+            } else if (year = 2001||2013||2025) /* snake */ {
+                zodiacAnimal = "snake";
+                $(".fortunePg").hide();
+                $("#fortunePgZodiac").show(); $("#zodiacSnake").show();
+            } else if (year = 2002||2014||2026) /* horse */ {
+                zodiacAnimal = "horse";
+                $(".fortunePg").hide();
+                $("#fortunePgZodiac").show(); $("#zodiacHorse").show();
+            } else if (year = 2003||2015||2027) /* goat */ {
+                zodiacAnimal = "goat";
+                $(".fortunePg").hide();
+                $("#fortunePgZodiac").show(); $("#zodiacGoat").show();
+            } else if (year = 2004||2016||2028) /* monkey */ {
+                zodiacAnimal = "monkey";
+                $(".fortunePg").hide();
+                $("#fortunePgZodiac").show(); $("#zodiacMonkey").show();
+            } else if (year = 2005||2017||2029) /* rooster */ {
+                zodiacAnimal = "rooster";
+                $(".fortunePg").hide();
+                $("#fortunePgZodiac").show(); $("#zodiacRooster").show();
+            } else if (year = 2006||2018||2030) /* dog */ {
+                zodiacAnimal = "dog";
+                $(".fortunePg").hide();
+                $("#fortunePgZodiac").show(); $("#zodiacDog").show();
+            } else /* pig */ {
+                zodiacAnimal = "pig";
+                $(".fortunePg").hide();
+                $("#fortunePgZodiac").show(); $("#zodiacPig").show();
+            }
+            zodiac += 1;
+        } else {
+            $(".fortunePg").hide();
+            $("#fortunePgZodiac").show();
+        }
+    });
+
+    // Back to Main/Menu Fortune Btn
+
+    $("#fortuneB2M").on( "click", function() {
+        $(".fortunePg").hide();
+        $("#fortunePgMain").show();
+    });
 
 
 // RADIO

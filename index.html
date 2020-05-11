@@ -959,17 +959,17 @@
                     <button id=""><a>-</a></button>
                 </div>
                 <div class="busy-c">
-                    <div class="fortunePg1">
+                    <div class="fortunePg" id="fortunePgMain">
                         <h1>FORTUNE</h1>
                         <img src="css/fortune/coolok-uy.png">
 
                         <a id="getFortuneBtn">« Open Today's Cookie »</a>
-                        <a id="">« Zodiac Mad »</a>
-                        <a id="">« Settings »</a><br>
+                        <a id="getZodiacBtn">« Zodiac Mad »</a>
+                        <a id="fortuneSettingsBtn">« Settings »</a><br>
 
                         <span class="txt-mono f5">LLC&copy; FreeToPlayGames1.co</span>
                     </div>
-                    <div class="fortunePg2">
+                    <div class="fortunePg" id="fortunePgFortune">
                         <div class="preCookie">
                             <img src="css/fortune/loadingluck.gif">
                             <span class="f7">Opening Cookie...</span>
@@ -980,6 +980,11 @@
                             <span class="f7 txt-bubble" id="todaysLuckies"></span>
                             
                             <a id="fortuneB2M">« Back to Menu »</a>
+                        </div>
+                    </div>
+                    <div class="fortunePg" id="fortunePgZodiac">
+                        <div class="zodiacPg" id="zodiac">
+
                         </div>
                     </div>
                 </div>
@@ -1041,7 +1046,7 @@
                     </div>
                     <div class="smpHidden">
                         <audio id="audioFeed" loop>
-                            <source src="https://www.mboxdrive.com/RandomMix1.mp3" type="audio/mpeg">
+                            <source src="css/audio/seas/PopMix1.mp3" type="audio/mpeg">
                         </audio>
                     </div>
                 </div>

@@ -32,8 +32,10 @@ body {
 
 /*=========================================================*/
 
-.fontArticle, .windowsArticle, .screensaversArticle, #screensaver, .bgP2, .bgP3, .fortunePg2, .fortunePg3, .postCookie
+.fontArticle, .windowsArticle, .screensaversArticle, #screensaver, .bgP2, .bgP3, .fortunePg, .zodiacPg, .postCookie
 { display: none; }
+
+#fortunePgMain { display: block; } /***** DELETE WHEN NOT EIDITNG FORTUNE BLOCK *****/
 
 /*=========================================================*/
 
@@ -478,6 +480,7 @@ body {
 /*~-~-~-~-~-~-~-~-~-~ FORTUNE / W ~-~-~-~-~-~-~-~-~-~*/
 
 #fortuneTerm {
+    display: none;
     width: 580px; height: auto;
     top: 17%; left: 4%; z-index: 1;
     background-color: #dead4e;
