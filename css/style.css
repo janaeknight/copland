@@ -206,7 +206,7 @@ body {
 
 .themeLeftOp {
     width: 85%; height: 250px;
-    background-color: snow;
+    background-color: whitesmoke;
     border: 1px inset black;
     overflow-y: scroll; margin: auto;
 }
