@@ -791,9 +791,16 @@ var todayLuckies = possibleLuckies[Math.floor(Math.random()*possibleLuckies.leng
         }
     });
 
+    // Shows the Settings That Don't Exist in the Daily Fortune
+
+    $("#getSettingsFortuneBtn").on("click", function() {
+        $(".fortunePg").hide();
+        $("#fortunePgSettings").show();
+    });
+
     // Back to Main/Menu Fortune Btn
 
-    $("#fortuneB2M").on( "click", function() {
+    $(".fortuneB2M").on( "click", function() {
         $(".fortunePg").hide();
         $("#fortunePgMain").show();
     });
