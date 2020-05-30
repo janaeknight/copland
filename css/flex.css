@@ -1,11 +1,11 @@
 body, button {
-    cursor: url(http://cur.cursors-4u.net/cursors/cur-4/cur330.cur), auto !important;
+    cursor: url(../cur330.cur), auto !important;
 }
 a, button:active, button:focus, .w-tb button:hover {
-    cursor: url(http://cur.cursors-4u.net/cursors/cur-4/cur328.cur), pointer !important;
+    cursor: url(../cur328.cur), pointer !important;
 }
 input:hover, input:focus, textarea:hover, textarea:focus {
-    cursor: url(http://cur.cursors-4u.net/cursors/cur-4/cur332.cur), auto !important;
+    cursor: url(../cur332.cur), auto !important;
 }
 
 /*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-*/

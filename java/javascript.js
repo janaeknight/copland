@@ -257,7 +257,8 @@
     👏 http://osxdaily.com/2018/01/01/classic-mac-os-tiling-wallpapers/, classic wallpapers
     👏🏻 http://www.iconarchive.com/artist/iconfactory.html, pseudo os icons
     👏🏿 https://stackoverflow.com/questions/24338450/how-to-detect-user-inactivity-with-javascript, imbondbaby -- timeout function
-    👏🏿 https://www.youtube.com/watch?v=VpWQpF7ujMQ&list=PLRmEDzV8AcElZ3Mrm64sq7fgCrTIsDq7n&index=4, -- radio ads
+    👏🏽 https://www.youtube.com/watch?v=VpWQpF7ujMQ&list=PLRmEDzV8AcElZ3Mrm64sq7fgCrTIsDq7n&index=4, -- radio ads
+    👏🏻 https://www.thechinesezodiac.org/horoscope-2020/ -- fortune zodiac info
 
 
         EXTENSIONS
