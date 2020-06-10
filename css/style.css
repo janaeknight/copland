@@ -429,6 +429,48 @@ body {
 #erscInactive { text-align: center; }
 #erscInactive ul { list-style: none; margin-left: -35px; }
 
+/*~-~-~-~-~-~-~-~-~-~ CALCULATOR / W ~-~-~-~-~-~-~-~-~-~*/
+
+#calculatorTerm {
+    width: 250px; height: 375px;
+    background-color: black;
+    right: 6px;
+}
+#calculatorTerm .w-tb, #calculatorTerm .w-tb span, #calculatorTerm button { background-color: black; }
+#calculatorTerm .w-tb span, #calculatorTerm button { color: lightgray; }
+#calculatorTerm button { border: 1px solid lightgray; }
+
+
+
+#calculatorTerm form {
+    display: flex; flex-direction: row;
+    flex-wrap: wrap; width: 94%;
+    background-color: #3E3939; color: whitesmoke;
+    margin: 0 auto;
+    border: 3px solid dark;
+}
+#calculatorTerm form input {
+    width: 98%; height: 50px;
+    margin: 10px 0; font-size: 34px;
+    text-align: right; border: none;
+    background-color: inherit;
+    border-bottom: 1px dashed #322E2E;
+}
+#calculatorTerm form span {
+    width: 33.33%; font-size: 35px;
+    text-align: center;
+}   
+
+
+/*
+
+span {
+    width: 33.33%; font-size: 45px;
+    text-align: center;
+}
+
+*/
+
 /*~-~-~-~-~-~-~-~-~-~ DOCS / W's ~-~-~-~-~-~-~-~-~-~*/
 
 #docsTerm {       

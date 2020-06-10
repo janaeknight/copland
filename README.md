@@ -8,7 +8,7 @@
 | Gallery                    | Either holds all the pictures or one of the pictures. |
 | About Computer             | Summary of the history of the Copland OS. |
 | My Computer                | Takes you to literally everything. |
-|  |  |
+| Calculator                 | Does caculator stuff. |
 |  |  |
 |  |  |
  

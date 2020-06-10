@@ -941,6 +941,32 @@
                     </div>
                 </div>
             </div> <!-- erscTerm -->
+            <div class="window" id="calculatorTerm">
+                <div class="w-tb">
+                    <button class="closeWin"><a>x</a></button>
+                    <span>Calculator</span>
+                    <button id=""><a>-</a></button>
+                </div>
+                <form name="calculator" id="calculator">
+                    <input type="input" id="calcInput" disabled>
+                    <span value="1" onClick="calculator.calcInput.value += '1' ">1</span>
+                    <span value="2" onClick="calculator.calcInput.value += '2' ">2</span>
+                    <span value="3" onClick="calculator.calcInput.value += '3' ">3</span>
+                    <span value="4" onClick="calculator.calcInput.value += '4' ">4</span>
+                    <span value="5" onClick="calculator.calcInput.value += '5' ">5</span>
+                    <span value="6" onClick="calculator.calcInput.value += '6' ">6</span>
+                    <span value="7" onClick="calculator.calcInput.value += '7' ">7</span>
+                    <span value="8" onClick="calculator.calcInput.value += '8' ">8</span>
+                    <span value="9" onClick="calculator.calcInput.value += '9' ">9</span>
+                    <span value="0" onClick="calculator.calcInput.value += '0' ">0</span>
+                    <span value="+" onClick="calculator.calcInput.value += '+' ">+</span>
+                    <span value="-" onClick="calculator.calcInput.value += '-' ">-</span>
+                    <span value="*" onClick="calculator.calcInput.value += '*' ">x</span>
+                    <span value="/" onClick="calculator.calcInput.value += '/' ">/</span>
+                    <span onClick="calculator.calcInput.value = '' ">C</span>
+                    <span value="=" onClick="calculator.calcInput.value = eval(calculator.calcInput.value)">=</span>
+                </form>
+            </div>
             <div class="window galleryWindow" id="galleryTerm">
                 <div class="w-tb">
                     <button class="closeWin"><a>x</a></button>
@@ -1084,13 +1110,13 @@
                     </div>
                     <div class="smpHidden">
                         <audio id="audioFeed" loop>
-                            <source src="https://media.githubusercontent.com/media/janaeknight/copland/master/css/audio/seas/AwkwardMix_Vol1.mp3" type="audio/mpeg">      
+                            <source src="https://www.mboxdrive.com/AwkwardMix_Vol1.mp3" type="audio/mpeg">      
                             <!--
                                 Mirror Link(s):
                                 https://www.mboxdrive.com/AwkwardMix_Vol1.mp3
                                 https://anonfiles.com/F5m4hf30o7/AwkwardMix_Vol1_mp3
-
-                                css/audio/seas/AwkwardMix_Vol1.mp3
+                                https://media.githubusercontent.com/media/janaeknight/copland/master/css/audio/seas/AwkwardMix_Vol1.mp3
+                                - css/audio/seas/AwkwardMix_Vol1.mp3
                             -->
                         </audio>
                     </div>

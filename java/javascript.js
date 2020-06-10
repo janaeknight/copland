@@ -216,6 +216,11 @@
         $("#themeTerm").show();
         $("#themeTerm").addClass("activeZ");
     });
+    $(".dtCalculator").on( "dblclick", function() {
+        $("#calculatorTerm").show();
+        $('#calcInput').val('');
+        $("#calculatorTerm").addClass("activeZ");
+    });
     $(".dtRomeo").on( "dblclick", function() {
         $("#romeoTerm").show();
         $("#romeoTerm").addClass("activeZ");
