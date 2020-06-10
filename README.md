@@ -1,3 +1,5 @@
+![Cur. State](https://i.ibb.co/9h6Pt4q/Screenshot-102.png)
+
 | Name                     | Function                                                     |
 | -------------------------- |:----------------------------------------------------------:|
 | Control Panel              | Leads to other settings-type windows. |
