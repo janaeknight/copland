@@ -458,7 +458,7 @@ body {
 }
 #calculatorTerm form span {
     width: 33.33%; font-size: 35px;
-    text-align: center;
+    text-align: center; cursor: url(../cur328.cur), pointer !important;
 }   
 
 
@@ -478,7 +478,7 @@ span {
 }
 .docFrame {
     width: 100%; height: 94.9%;
-    background-color: snow;
+    background-color: whitesmoke;
     margin: auto;
 }
 .thisDoc {

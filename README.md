@@ -1,4 +1,5 @@
-![Cur. State](https://i.ibb.co/9h6Pt4q/Screenshot-102.png)
+![Cur. State 1](https://i.ibb.co/VMPBgmT/Screenshot-140.png)
+![Cur. State 2](https://i.ibb.co/9h6Pt4q/Screenshot-102.png)
 
 | Name                     | Function                                                     |
 | -------------------------- |:----------------------------------------------------------:|
@@ -11,6 +12,8 @@
 | About Computer             | Summary of the history of the Copland OS. |
 | My Computer                | Takes you to literally everything. |
 | Calculator                 | Does caculator stuff. |
+| Restart                    | Just refreshes the window, effectively resetting everything on the page. Pretty useless. |
+|  |  |
 |  |  |
 |  |  |
  

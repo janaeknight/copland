@@ -145,6 +145,12 @@
         winToClose.style.display = "none";
     };
 
+        // Close restartTerm Window
+
+            function closeRestartTerm() {
+                $("#restartTerm").hide();
+            }; // idk why i'm making a new close for this specific one but here we are
+
 // Window UI
 
     $(".window").addClass("ui-widget-content"); // <-- drag class (REQ.)
